@@ -1,0 +1,155 @@
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+
+name: UpdateCards
+
+on:
+  push:
+    branches:
+      - dev
+  schedule:
+    - cron: '34 3 * * *'
+
+jobs:
+  update-cards:
+    name: Update Repoository status cards
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        repo: [
+          "SimpleNavierStokesSolver",
+          "SimpleIBMSolver",
+          "SimpleVOFSolver",
+          "SimpleTCSolver",
+          "SimpleDecomp",
+          "SimpleNpyIO",
+          "Collision",
+        ]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          repository: 'NaokiHori/NaokiHori'
+          ref: dev
+      - name: Fetch json file, get a repository
+        run: |
+          # ref: https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository
+          filename=get-a-repository.json
+          curl \
+            --request GET \
+            --url https://api.github.com/repos/NaokiHori/${{ matrix.repo }} \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            > ${filename}
+          cat ${filename}
+      - name: Fetch json file, list repository languages
+        run: |
+          # ref: https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repository-languages
+          filename=list-repository-languages.json
+          curl \
+            --request GET \
+            --url https://api.github.com/repos/NaokiHori/${{ matrix.repo }}/languages \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            > ${filename}
+          cat ${filename}
+      - name: Fetch json file, list stargazers
+        run: |
+          # ref: https://docs.github.com/en/rest/activity/starring?apiVersion=2022-11-28#list-stargazers
+          filename=list-stargazers.json
+          curl \
+            --request GET \
+            --url https://api.github.com/repos/NaokiHori/${{ matrix.repo }}/stargazers \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            > ${filename}
+          cat ${filename}
+      - name: Fetch json file, get a branch
+        run: |
+          # ref: https://docs.github.com/en/rest/branches/branches?apiVersion=2022-11-28#get-a-branch
+          filename=get-a-branch.json
+          curl \
+            --request GET \
+            --url https://api.github.com/repos/NaokiHori/${{ matrix.repo }}/branches/main \
+            --header "Accept: application/vnd.github+json" \
+            --header "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            > ${filename}
+          cat ${filename}
+      - name: Extract info from json and create svg card
+        run: |
+          python scripts/card/create-repo-card.py
+      - name: Gather artifacts
+        run: |
+          if [ ! -e card ]; then
+            mkdir card
+          fi
+          mv ${{ matrix.repo }}.svg card/
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.repo }}
+          path: card
+
+  push-artifacts:
+    name: Push svgs to artifacts branch
+    runs-on: ubuntu-latest
+    needs: update-cards
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          repository: 'NaokiHori/NaokiHori'
+          ref: main
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "SimpleNavierStokesSolver"
+          path: card
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "SimpleIBMSolver"
+          path: card
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "SimpleVOFSolver"
+          path: card
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "SimpleTCSolver"
+          path: card
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "SimpleDecomp"
+          path: card
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "SimpleNpyIO"
+          path: card
+      - name: Check files in card directory
+        run: |
+          ls -la card/
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "Collision"
+          path: card
+      - name: Commit changes
+        run: |
+          git switch -c card
+          git config --local user.email "action@github.com"
+          git config --local user.name "Actions"
+          git rm README.md
+          git add card
+          git commit -m "Update cards" -a || true
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: card
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+

@@ -1,0 +1,67 @@
+name: UpdateReadme
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  create-readme:
+    name: Create README.md
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          repository: 'NaokiHori/NaokiHori'
+          ref: dev
+      - name: Create each element
+        run: |
+          python scripts/readme/connect.py
+          python scripts/readme/skillset.py
+          python scripts/readme/acknowledgement.py
+          python scripts/readme/introduction.py
+          python scripts/readme/repository.py
+      - name: Merge them and create README.md
+        run: |
+          python scripts/readme/merger.py
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: README
+          path: README.md
+
+  update-main:
+    name: Push README.md to main branch
+    runs-on: ubuntu-latest
+    needs: create-readme
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          repository: 'NaokiHori/NaokiHori'
+          ref: dev
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: README
+          path: artifact
+      - name: Update file name
+        run: |
+          mv artifact/README.md README.md
+      - name: Commit changes
+        run: |
+          git switch -c main
+          git config --local user.email "action@github.com"
+          git config --local user.name "Actions"
+          # also synchronise workflows
+          git add README.md .github/workflows
+          git commit -m "Update README" -a || true
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: main
+          directory: "."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+
