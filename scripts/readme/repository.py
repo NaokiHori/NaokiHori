@@ -85,6 +85,10 @@ def others():
             "name": "Collision",
             "imageurl": "https://github.com/NaokiHori/Collision/blob/main/.github/snapshot2d.png",
         },
+        {
+            "name": "Pendulum",
+            "imageurl": "https://github.com/NaokiHori/Pendulum/blob/main/docs/source/thumbnail.png",
+        },
     ]
     return kernel(title, elements)
 

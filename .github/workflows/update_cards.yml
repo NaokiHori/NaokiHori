@@ -23,6 +23,7 @@ jobs:
           "SimpleDecomp",
           "SimpleNpyIO",
           "Collision",
+          "Pendulum",
         ]
     steps:
       - name: Checkout repository
@@ -129,14 +130,19 @@ jobs:
         with:
           name: "SimpleNpyIO"
           path: card
-      - name: Check files in card directory
-        run: |
-          ls -la card/
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
           name: "Collision"
           path: card
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "Pendulum"
+          path: card
+      - name: Check files in card directory
+        run: |
+          ls -la card/
       - name: Commit changes
         run: |
           git switch -c card
