@@ -63,7 +63,7 @@ def hpc():
     elements = [
         {
             "name": "SimpleDecomp",
-            "imageurl": "https://naokihori.github.io/SimpleDecomp/_images/transpose1.png",
+            "imageurl": "https://naokihori.github.io/SimpleDecomp/_images/transpose_3d.png",
         },
     ]
     return kernel(title, elements)
