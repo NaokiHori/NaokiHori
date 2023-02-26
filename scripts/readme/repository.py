@@ -7,6 +7,7 @@ def header():
     return string
 
 def kernel(title, elements):
+    align = "center"
     string = list()
     string.append((
         f"<h3>{title}</h3>\n"
@@ -18,7 +19,7 @@ def kernel(title, elements):
         cardurl = f"https://github.com/NaokiHori/NaokiHori/blob/card/card/{name}.svg"
         # repo card
         string.append((
-            f"<div align=\"left\">\n"
+            f"<div align=\"{align}\">\n"
             f"  <a href=\"{repourl}\" target=\"_blank\">\n"
             f"    <img src=\"{cardurl}\" />\n"
             f"  </a>\n"
@@ -27,7 +28,7 @@ def kernel(title, elements):
         # image
         if imageurl:
             string.append((
-                f"<div align=\"left\">\n"
+                f"<div align=\"{align}\">\n"
                 f"  <a href=\"{repourl}\" target=\"_blank\">\n"
                 f"    <img src=\"{imageurl}\" width=\"500\" />\n"
                 f"  </a>\n"
@@ -67,7 +68,7 @@ def hpc():
         },
         {
             "name": "FastHelmholtzSolver",
-            "imageurl": "https://github.com/NaokiHori/FastHelmholtzSolver/blob/main/thumbnail.png",
+            "imageurl": None,
         },
     ]
     return kernel(title, elements)
