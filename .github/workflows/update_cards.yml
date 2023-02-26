@@ -21,6 +21,7 @@ jobs:
           "SimpleVOFSolver",
           "SimpleTCSolver",
           "SimpleDecomp",
+          "FastHelmholtzSolver",
           "SimpleNpyIO",
           "Collision",
           "Pendulum",
@@ -124,6 +125,11 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: "SimpleDecomp"
+          path: card
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: "FastHelmholtzSolver"
           path: card
       - name: Download artifact
         uses: actions/download-artifact@v3

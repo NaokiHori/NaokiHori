@@ -29,7 +29,7 @@ def kernel(title, elements):
             string.append((
                 f"<div align=\"left\">\n"
                 f"  <a href=\"{repourl}\" target=\"_blank\">\n"
-                f"    <img src=\"{imageurl}\" width=\"75%\" />\n"
+                f"    <img src=\"{imageurl}\" width=\"500\" />\n"
                 f"  </a>\n"
                 f"</div>\n"
             ))
@@ -65,11 +65,15 @@ def hpc():
             "name": "SimpleDecomp",
             "imageurl": "https://naokihori.github.io/SimpleDecomp/_images/transpose_3d.png",
         },
+        {
+            "name": "FastHelmholtzSolver",
+            "imageurl": "https://github.com/NaokiHori/FastHelmholtzSolver/blob/main/thumbnail.png",
+        },
     ]
     return kernel(title, elements)
 
-def auxiliary():
-    title = "Auxiliary libraries"
+def utility():
+    title = "Utility libraries"
     elements = [
         {
             "name": "SimpleNpyIO",
@@ -97,7 +101,7 @@ if __name__ == "__main__":
     string.append(header())
     string.append(fluid())
     string.append(hpc())
-    string.append(auxiliary())
+    string.append(utility())
     string.append(others())
     string = "\n".join(string)
     with open("repository.html", "w") as f:
