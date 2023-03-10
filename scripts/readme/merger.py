@@ -2,8 +2,8 @@
 elements = (
     "introduction",
     "skillset",
-    "connect",
     "repository",
+    "connect",
     "acknowledgement",
 )
 
