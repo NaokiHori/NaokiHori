@@ -12,6 +12,11 @@ def main():
         f"    <img style=\"margin: 10px\" src=\"https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white\" alt=\"YouTube\" height=\"50\" />\n"
         f"  </a>\n"
         f"</div>\n"
+        f"\n"
+        f"<div align=\"center\">\n"
+        f"  Bug reports, etc. (also looking for a job, 05/2024-, academia / industry)\n"
+        f"  <img style=\"margin: 10px\" src=\"https://github.com/NaokiHori/NaokiHori/blob/dev/logo/mad.png\" alt=\"mad\" height=\"25\" />\n"
+        f"</div>\n"
     )
     return string
 
