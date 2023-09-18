@@ -1,0 +1,30 @@
+name: UpdateReadme
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  update-readme:
+    name: Update README.md
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          repository: "NaokiHori/NaokiHori"
+          ref: dev
+      - name: Yield README.md
+        run: |
+          python scripts/readme/main.py
+      - name: Commit changes
+        run: |
+          git switch -c main
+          git config --local user.email "36466440+NaokiHori@users.noreply.github.com"
+          git config --local user.name "NaokiHori"
+          # also synchronise workflows
+          git add README.md .github/workflows
+          git commit -m "Update README" -a || true
+          git push -f origin main
+

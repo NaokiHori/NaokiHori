@@ -1,0 +1,38 @@
+name: UpdateCards
+
+on:
+  push:
+    branches:
+      - dev
+  schedule:
+    - cron: "34 3 * * *"
+
+jobs:
+  update-cards:
+    name: Update Repoository status cards
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          repository: "NaokiHori/NaokiHori"
+          ref: dev
+      - name: Extract info from curl result and create svg card
+        run: |
+          set -e
+          set -x
+          if [ ! -e card ]; then
+            mkdir card
+          fi
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
+            python scripts/card/main.py \
+            scripts/repositories.json
+      - name: Commit changes
+        run: |
+          git switch -c card
+          git config --local user.email "36466440+NaokiHori@users.noreply.github.com"
+          git config --local user.name "NaokiHori"
+          git add card
+          git commit -m "Update cards" -a || true
+          git push -f origin card
+
