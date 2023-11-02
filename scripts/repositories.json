@@ -60,6 +60,10 @@
       {
         "name": "Mandelbrot",
         "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/Mandelbrot.jpg"
+      },
+      {
+        "name": "SudokuAssistant",
+        "imgsrc": "https://github.com/NaokiHori/SudokuAssistant/blob/main/.github/thumbnail.jpg"
       }
     ]
   }

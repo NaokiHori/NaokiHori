@@ -26,6 +26,16 @@
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Rust.svg"
     },
     {
+      "name": "JavaScript",
+      "href": "https://github.com/voodootikigod/logo.js/blob/master/js.svg",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/js.svg"
+    },
+    {
+      "name": "TypeScript",
+      "href": "https://www.typescriptlang.org/branding/",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/ts.svg"
+    },
+    {
       "name": "OpenMPI",
       "href": "https://www.open-mpi.org/images/open-mpi-logo.png",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/OpenMPI.png"
