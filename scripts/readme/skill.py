@@ -4,13 +4,13 @@ import json
 def header():
     string = (
         "<h2>\n"
-        "My Skill Set\n"
+        "Skills\n"
         "</h2>\n"
     )
     return string
 
 
-def skillset(path):
+def skill(path):
     with open(path, "r") as fp:
         elements = json.load(fp)
     string = ""
@@ -24,7 +24,7 @@ def skillset(path):
             "<thead>\n"
             "<tr>\n"
             "<th>Languages etc.</th>\n"
-            "<th>DevOps</th>\n"
+            "<th>Tools</th>\n"
             "</tr>\n"
             "</thead>\n"
     )
@@ -54,11 +54,11 @@ def skillset(path):
     string += (
             "</td>\n"
     )
-    # devops
+    # tools
     string += (
             "<td>\n"
     )
-    for element in elements["devops"]:
+    for element in elements["tools"]:
         name = element["name"]
         href = element["href"]
         image = element["image"]
@@ -90,5 +90,5 @@ def skillset(path):
 def execute(path):
     string = ""
     string += header()
-    string += skillset(path)
+    string += skill(path)
     return string

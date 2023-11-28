@@ -2,69 +2,82 @@
   "languages": [
     {
       "name": "C",
-      "href": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
+      "href": "https://en.wikipedia.org/wiki/C_(programming_language)",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/C.svg"
     },
     {
+      "name": "OpenMPI",
+      "href": "https://www.open-mpi.org",
+      "src": "https://www.open-mpi.org/images/open-mpi-logo.png",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/OpenMPI.png"
+    },
+    {
       "name": "Python",
-      "href": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
+      "href": "https://www.python.org",
+      "src": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Python.svg"
     },
     {
-      "name": "Matlab",
-      "href": "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Matlab.png"
-    },
-    {
-      "name": "Fortran",
-      "href": "https://github.com/fortran-lang/fortran-lang.org/blob/master/assets/img/fortran-logo.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Fortran.svg"
-    },
-    {
       "name": "Rust",
-      "href": "https://github.com/rust-lang/rust-artwork/blob/master/logo/rust-logo-blk.svg",
+      "href": "https://www.rust-lang.org",
+      "src": "https://github.com/rust-lang/rust-artwork/blob/master/logo/rust-logo-blk.svg",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Rust.svg"
     },
     {
       "name": "JavaScript",
-      "href": "https://github.com/voodootikigod/logo.js/blob/master/js.svg",
+      "href": "https://en.wikipedia.org/wiki/JavaScript",
+      "src": "https://github.com/voodootikigod/logo.js/blob/master/js.svg",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/js.svg"
     },
     {
       "name": "TypeScript",
-      "href": "https://www.typescriptlang.org/branding/",
+      "href": "https://www.typescriptlang.org",
+      "src": "https://www.typescriptlang.org/branding/",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/ts.svg"
     },
     {
-      "name": "OpenMPI",
-      "href": "https://www.open-mpi.org/images/open-mpi-logo.png",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/OpenMPI.png"
+      "name": "Matlab",
+      "href": "https://www.mathworks.com/products/matlab.html",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Matlab.png"
+    },
+    {
+      "name": "Fortran",
+      "href": "https://fortran-lang.org",
+      "src": "https://github.com/fortran-lang/fortran-lang.org/blob/master/assets/img/fortran-logo.svg",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Fortran.svg"
     }
   ],
-  "devops": [
+  "tools": [
     {
       "name": "Linux",
-      "href": "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png",
+      "href": "https://www.linux.org",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Linux.png"
     },
     {
       "name": "Git",
-      "href": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg",
+      "href": "https://git-scm.com",
+      "src": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Git.svg"
     },
     {
       "name": "GitHub",
-      "href": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+      "href": "https://github.com",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/GitHub.svg"
     },
     {
       "name": "GitHubActions",
-      "href": "https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg",
+      "href": "https://github.com/features/actions",
+      "src": "https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/GitHubActions.svg"
     },
     {
       "name": "Docker",
-      "href": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
+      "href": "https://www.docker.com",
+      "src": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Docker.png"
     }
   ]

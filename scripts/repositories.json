@@ -63,7 +63,11 @@
       },
       {
         "name": "SudokuAssistant",
-        "imgsrc": "https://github.com/NaokiHori/SudokuAssistant/blob/main/.github/thumbnail.jpg"
+        "imgsrc": null
+      },
+      {
+        "name": "SudokuMaker",
+        "imgsrc": null
       }
     ]
   }

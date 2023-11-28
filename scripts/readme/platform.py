@@ -9,6 +9,10 @@ def execute():
                 "href": "https://www.youtube.com/@NaokiHori",
             },
             {
+                "title": "Linkedin",
+                "href": "https://www.linkedin.com/in/naoki-hori-b559032a1/",
+            },
+            {
                 "title": "Qiita (articles in Japanese)",
                 "href": "https://qiita.com/NaokiHori",
             },

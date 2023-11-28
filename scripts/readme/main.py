@@ -1,5 +1,5 @@
 import introduction
-import skillset
+import skill
 import repository
 import platform
 import contact
@@ -8,7 +8,7 @@ import contact
 def main():
     string = ""
     string += introduction.execute()
-    string += skillset.execute("logo/config.json")
+    string += skill.execute("logo/config.json")
     string += repository.execute("scripts/repositories.json")
     string += platform.execute()
     string += contact.execute()
