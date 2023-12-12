@@ -51,15 +51,15 @@
     "elements": [
       {
         "name": "Collision",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/Collision.jpg"
+        "imgsrc": null
       },
       {
         "name": "Pendulum",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/Pendulum.jpg"
+        "imgsrc": null
       },
       {
         "name": "Mandelbrot",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/Mandelbrot.jpg"
+        "imgsrc": null
       },
       {
         "name": "SudokuAssistant",
