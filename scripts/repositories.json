@@ -43,11 +43,15 @@
       {
         "name": "SimpleNpyIO",
         "imgsrc": null
+      },
+      {
+        "name": "MySphinxTheme",
+        "imgsrc": null
       }
     ]
   },
   {
-    "title": "Others",
+    "title": "Physics simulators",
     "elements": [
       {
         "name": "Collision",
@@ -56,7 +60,12 @@
       {
         "name": "Pendulum",
         "imgsrc": null
-      },
+      }
+    ]
+  },
+  {
+    "title": "Others",
+    "elements": [
       {
         "name": "Mandelbrot",
         "imgsrc": null
