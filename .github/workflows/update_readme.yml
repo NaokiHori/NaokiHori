@@ -18,6 +18,13 @@ jobs:
       - name: Yield README.md
         run: |
           python scripts/readme/main.py
+      - name: Format README.md
+        run: |
+          git clone https://github.com/NaokiHori/HTML-Formatter
+          cd HTML-Formatter
+          cargo build --release
+          cd ..
+          ./HTML-Formatter/target/release/html-formatter --ifname=README.md --ofname=README.md
       - name: Commit changes
         run: |
           git switch -c main
