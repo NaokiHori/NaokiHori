@@ -25,7 +25,8 @@ jobs:
             mkdir card
           fi
           GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-            python scripts/card/main.py \
+            python \
+            scripts/card/main.py \
             scripts/repositories.json
       - name: Commit changes
         run: |

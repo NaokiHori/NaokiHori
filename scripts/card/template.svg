@@ -1,0 +1,134 @@
+<svg
+  version="1.1"
+  width="{{ domain.width }}"
+  height="{{ domain.height }}"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  role="img"
+>
+
+  <style>
+    * {
+      font-family: "Courier New";
+    }
+    rect.border {
+      stroke: #888888;
+      fill: #ffffff;
+    }
+    rect.topic {
+      fill: #a9ceec;
+    }
+    text {
+      dominant-baseline: middle;
+    }
+    text.title {
+      font-size: large;
+      font-weight: bold;
+      fill: #2f80ed;
+    }
+    text.descr {
+      font-size: medium;
+      font-weight: normal;
+      fill: #000000;
+    }
+    path.star {
+      stroke: #000000;
+      stroke-width: 1;
+      fill: #ffff00;
+    }
+  </style>
+
+  <rect
+    class="border"
+    x="{{ border.x }}"
+    y="{{ border.y }}"
+    width="{{ border.width }}"
+    height="{{ border.height }}"
+    rx="{{ border.round }}"
+    ry="{{ border.round }}"
+    stroke-width="{{ border.stroke_width }}"
+  />
+
+  <g id="title">
+    <text
+      class="title"
+      x="{{ title.x }}"
+      y="{{ title.y }}"
+    >
+      {{ title.text }}
+    </text>
+  </g>
+
+  <g id="description">
+    {% for descr in descrs %}
+    <text
+      class="descr"
+      x="{{ descr.x }}"
+      y="{{ descr.y }}"
+    >
+      {{ descr.text }}
+    </text>
+    {% endfor %}
+  </g>
+
+  <g id="topics">
+    {% for topic in topics %}
+    <rect
+      class="topic"
+      x="{{ topic.rect.x }}"
+      y="{{ topic.rect.y }}"
+      width="{{ topic.rect.width }}"
+      height="{{ topic.rect.height }}"
+      rx="{{ topic.rect.round }}"
+      ry="{{ topic.rect.round }}"
+    />
+    <text
+      class="descr"
+      fill="#ffffff"
+      x="{{ topic.text.x }}"
+      y="{{ topic.text.y }}"
+    >
+      {{ topic.text.text }}
+    </text>
+    {% endfor %}
+  </g>
+
+  <g id="language">
+    <circle
+      class="lang"
+      cx="{{ lang.mark.cx }}"
+      cy="{{ lang.mark.cy }}"
+      r="{{ lang.mark.r }}"
+      fill="{{ lang.mark.fill }}"
+    />
+    <text
+      class="descr"
+      x="{{ lang.text.x }}"
+      y="{{ lang.text.y }}"
+    >
+      {{ lang.text.text }}
+    </text>
+  </g>
+
+  <g id="star">
+    <path class="star" d="{{ star.mark }}"/>
+    <text
+      class="descr"
+      x="{{ star.text.x }}"
+      y="{{ star.text.y }}"
+    >
+      {{ star.text.text }}
+    </text>
+  </g>
+
+  <g id="last_update">
+    <text
+      class="descr"
+      x="{{ last_update.x }}"
+      y="{{ last_update.y }}"
+    >
+      Last update: {{ last_update.text }}
+    </text>
+  </g>
+
+</svg>
