@@ -4,23 +4,23 @@
     "elements": [
       {
         "name": "SimpleNSSolver",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/SimpleNSSolver.jpg"
+        "imgsrc": null
       },
       {
         "name": "SimpleIBMSolver",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/SimpleIBMSolver.jpg"
+        "imgsrc": null
       },
       {
         "name": "SimpleVOFSolver",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/SimpleVOFSolver.jpg"
+        "imgsrc": null
       },
       {
         "name": "SimpleTCSolver",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/SimpleTCSolver.jpg"
+        "imgsrc": null
       },
       {
         "name": "SpectralNSSolver1",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/SpectralNSSolver1.jpg"
+        "imgsrc": null
       }
     ]
   },
@@ -29,11 +29,11 @@
     "elements": [
       {
         "name": "SimpleDecomp",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/SimpleDecomp.jpg"
+        "imgsrc": null
       },
       {
         "name": "Contour3D",
-        "imgsrc": "https://github.com/NaokiHori/NaokiHori/blob/main/image/Contour3D.jpg"
+        "imgsrc": null
       }
     ]
   },
