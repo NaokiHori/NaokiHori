@@ -28,13 +28,31 @@
       "name": "JavaScript",
       "href": "https://en.wikipedia.org/wiki/JavaScript",
       "src": "https://github.com/voodootikigod/logo.js/blob/master/js.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/js.svg"
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/JavaScript.svg"
     },
     {
       "name": "TypeScript",
       "href": "https://www.typescriptlang.org",
       "src": "https://www.typescriptlang.org/branding/",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/ts.svg"
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/TypeScript.svg"
+    },
+    {
+      "name": "WebAssembly",
+      "href": "https://webassembly.org",
+      "src": "https://en.wikipedia.org/wiki/File:WebAssembly_Logo.svg",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/WebAssembly.svg"
+    },
+    {
+      "name": "HTML",
+      "href": "https://www.w3.org",
+      "src": "https://www.w3.org/html/logo/downloads/HTML5_Badge.svg",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/HTML.svg"
+    },
+    {
+      "name": "CSS",
+      "href": "https://www.w3.org",
+      "src": "https://en.m.wikipedia.org/wiki/File:CSS3_logo_and_wordmark.svg",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/CSS.svg"
     },
     {
       "name": "Matlab",
@@ -79,6 +97,12 @@
       "href": "https://www.docker.com",
       "src": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Docker.png"
+    },
+    {
+      "name": "GitLab",
+      "href": "https://gitlab.com",
+      "src": "https://about.gitlab.com/press/press-kit/",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/GitLab.svg"
     }
   ]
 }

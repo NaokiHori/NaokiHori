@@ -41,11 +41,9 @@ def skill(path):
         href = element["href"]
         image = element["image"]
         string += (
-                f"<a href=\"{href}\" target=\"_blank\">\n"
+                f"<a href=\"{href}\">\n"
                 f"<img\n"
-                f"  style=\"margin: 10px\"\n"
                 f"  src=\"{image}\"\n"
-                f"  onerror=\"this.onerror=null; this.remove();\"\n"
                 f"  alt=\"\"\n"
                 f"  height=\"50\"\n"
                 f"/>\n"
@@ -63,9 +61,8 @@ def skill(path):
         href = element["href"]
         image = element["image"]
         string += (
-                f"<a href=\"{href}\" target=\"_blank\">\n"
+                f"<a href=\"{href}\">\n"
                 f"<img\n"
-                f"  style=\"margin: 10px\"\n"
                 f"  src=\"{image}\"\n"
                 f"  alt=\"{name}\"\n"
                 f"  height=\"50\"\n"
