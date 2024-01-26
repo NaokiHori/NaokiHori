@@ -83,9 +83,17 @@ def skill(path):
     )
     return string
 
+def language_stats():
+    cardurl = f"https://github.com/NaokiHori/NaokiHori/blob/card/card/language.svg"
+    return (
+            f"<div align=\"center\">\n"
+            f"<img src=\"{cardurl}\" />\n"
+            f"</div>\n"
+    )
 
 def execute(path):
     string = ""
     string += header()
     string += skill(path)
+    string += language_stats()
     return string

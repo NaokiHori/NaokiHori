@@ -9,7 +9,7 @@ on:
 
 jobs:
   update-cards:
-    name: Update Repoository status cards
+    name: Update repoository cards and a language card
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -17,17 +17,27 @@ jobs:
         with:
           repository: "NaokiHori/NaokiHori"
           ref: dev
-      - name: Extract info from curl result and create svg card
+      - name: Prepare place for artifacts
         run: |
-          set -e
-          set -x
           if [ ! -e card ]; then
             mkdir card
           fi
+      - name: Update repoository cards
+        run: |
           GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
             python \
-            scripts/card/main.py \
-            scripts/repositories.json
+            scripts/repository_cards/main.py \
+            --config-dir=scripts/config \
+            --out-dir=card \
+            --template-svg-file=scripts/repository_cards/template.svg
+      - name: Update language card
+        run: |
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
+            python \
+            scripts/language_card/main.py \
+            --config-dir=scripts/config \
+            --out-dir=card \
+            --template-svg-file=scripts/language_card/template.svg
       - name: Commit changes
         run: |
           git switch -c card

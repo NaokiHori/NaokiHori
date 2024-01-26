@@ -1,0 +1,103 @@
+<svg
+  version="1.1"
+  width="{{ domain.width }}"
+  height="{{ domain.height }}"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  role="img"
+>
+
+  <style>
+    * {
+      font-family: "Courier New";
+    }
+    <!-- stroke-width is not give here since it is used to decide svg size -->
+    rect.border {
+      stroke: #888888;
+      fill: #ffffff;
+    }
+    rect.hist {
+      stroke-width: 2.5;
+    }
+    rect.lang {
+      fill: "#ffffff";
+      stroke-width: 2.5;
+    }
+    text {
+      dominant-baseline: middle;
+      font-size: medium;
+      font-weight: bold;
+    }
+    text.title {
+      font-size: x-large;
+      fill: #2f80ed;
+    }
+    text.descr {
+      fill: #000000;
+    }
+  </style>
+
+  <rect
+    class="border"
+    x="{{ border.x }}"
+    y="{{ border.y }}"
+    width="{{ border.width }}"
+    height="{{ border.height }}"
+    rx="{{ border.round }}"
+    ry="{{ border.round }}"
+    stroke-width="{{ border.stroke_width }}"
+  />
+
+  <g id="title">
+    <text
+      class="title"
+      x="{{ title.x }}"
+      y="{{ title.y }}"
+    >
+      {{ title.text }}
+    </text>
+  </g>
+
+  <g id="langs">
+    {% for lang in langs %}
+    <g id="lang-{{ lang.text.text }}">
+      <rect
+        class="lang"
+        x="{{ lang.lang.x }}"
+        y="{{ lang.lang.y }}"
+        width="{{ lang.lang.width }}"
+        height="{{ lang.lang.height }}"
+        rx="{{ lang.lang.round }}"
+        ry="{{ lang.lang.round }}"
+        stroke="{{ lang.lang.stroke }}"
+      />
+      <text
+        class="descr"
+        x="{{ lang.text.x }}"
+        y="{{ lang.text.y }}"
+      >
+        {{ lang.text.text }}
+      </text>
+      <text
+        class="descr"
+        x="{{ lang.rate.x }}"
+        y="{{ lang.rate.y }}"
+      >
+        {{ lang.rate.text }}
+      </text>
+      <rect
+        class="hist"
+        x="{{ lang.hist.x }}"
+        y="{{ lang.hist.y }}"
+        width="{{ lang.hist.width }}"
+        height="{{ lang.hist.height }}"
+        rx="{{ lang.hist.round }}"
+        ry="{{ lang.hist.round }}"
+        fill="{{ lang.hist.fill }}"
+        stroke="{{ lang.hist.stroke }}"
+      />
+    </g>
+    {% endfor %}
+  </g>
+
+</svg>

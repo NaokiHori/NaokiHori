@@ -17,7 +17,9 @@ jobs:
           ref: dev
       - name: Yield README.md
         run: |
-          python scripts/readme/main.py
+          python \
+            scripts/readme/main.py \
+            --config-dir=scripts/config
       - name: Format README.md
         run: |
           git clone https://github.com/NaokiHori/HTML-Formatter

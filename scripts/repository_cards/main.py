@@ -1,3 +1,24 @@
+import argparse
+parser = argparse.ArgumentParser(description="Create repository cards")
+parser.add_argument(
+        "--config-dir",
+        type=str,
+        dest="config_dir",
+        help="directory where config json files are contained"
+)
+parser.add_argument(
+        "--out-dir",
+        type=str,
+        dest="out_dir",
+        help="directory where output svg files go"
+)
+parser.add_argument(
+        "--template-svg-file",
+        type=str,
+        dest="template_svg_file",
+        help="template svg file"
+)
+
 class Font:
     def __init__(self, h: float):
         # h/w rate for "Courier New"
@@ -144,15 +165,12 @@ def get_topics(info: dict, domain: dict, margin: dict) -> list:
 
 def get_langs(info: dict, domain: dict, margin: float) -> dict:
     def get_lang_color(key: str):
-        import os
         import json
-        filename = f"{os.path.dirname(__file__)}/colortable.json"
-        with open(filename, "r") as fp:
-            table = json.load(fp)
+        with open(parser.parse_args().config_dir + "/colortable.json", "r") as f:
+            table = json.load(f)
         if key in table.keys():
             return table[key]
         else:
-            # return black if not found
             print("language color is not defined: ", key)
             return "#000000"
     langs = make_boxed_items(info["langs"], domain, margin)
@@ -182,10 +200,8 @@ def get_border(domain: dict) -> dict:
     return border
 
 def dump(filename: str, keywords: dict):
-    import os
     import jinja2
-    tempname = f"{os.path.dirname(__file__)}/template.svg"
-    with open(tempname, "r") as f:
+    with open(parser.parse_args().template_svg_file, "r") as f:
         sample = f.readlines()
     sample = "".join(sample)
     template = jinja2.Template(source=sample)
@@ -196,7 +212,7 @@ def dump(filename: str, keywords: dict):
 def create_card(path_out: str, info: dict):
     domain = {
         # fixed
-        "width": 700,
+        "width": 500,
         # subject to change
         "height": 0,
     }
@@ -208,26 +224,25 @@ def create_card(path_out: str, info: dict):
     updated = get_updated(info, domain, margin)
     border = get_border(domain)
     dump(
-        path_out,
-        {
-            "domain": domain,
-            "border": border,
-            "margin": margin,
-            "title": title,
-            "descrs": descrs,
-            "topics": topics,
-            "langs": langs,
-            "updated": updated,
-        },
+            path_out,
+            {
+                "domain": domain,
+                "border": border,
+                "margin": margin,
+                "title": title,
+                "descrs": descrs,
+                "topics": topics,
+                "langs": langs,
+                "updated": updated,
+            },
     )
 
 def main():
-    import sys
-    import json
-    argv = sys.argv
-    assert 2 == len(argv)
-    path_json = argv[1]
-    with open(path_json, "r") as f:
+    # get all repository names of which the cards are made
+    # json contains nested lists, which is flattened
+    config_dir = parser.parse_args().config_dir
+    with open(f"{config_dir}/repositories.json", "r") as f:
+        import json
         categories = json.load(f)
     names = list()
     for category in categories:
@@ -237,12 +252,12 @@ def main():
     # for each repo,
     #   1. collect information using GitHub REST API,
     #   2. generate an svg card based on it
+    out_dir = parser.parse_args().out_dir
     for name in names:
         info = get_info(name)
         if not info:
             continue
-        path_out = "card/" + info["name"] + ".svg"
-        create_card(path_out, info)
+        create_card(out_dir + "/" + info["name"] + ".svg", info)
 
 def debug():
     info = {
@@ -284,8 +299,8 @@ def debug():
             "aliqua",
         ],
     }
-    path_out = "debug.svg"
-    create_card(path_out, info)
+    out_dir = parser.parse_args().out_dir
+    create_card(out_dir + "/" + "debug.svg", info)
 
 main()
 # debug()

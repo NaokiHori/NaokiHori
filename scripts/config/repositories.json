@@ -67,10 +67,6 @@
     "title": "Others",
     "elements": [
       {
-        "name": "Mandelbrot",
-        "imgsrc": null
-      },
-      {
         "name": "SudokuAssistant",
         "imgsrc": null
       },
