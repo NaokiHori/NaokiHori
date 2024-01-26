@@ -38,6 +38,19 @@
     ]
   },
   {
+    "title": "Physics simulators",
+    "elements": [
+      {
+        "name": "Collision",
+        "imgsrc": null
+      },
+      {
+        "name": "Pendulum",
+        "imgsrc": null
+      }
+    ]
+  },
+  {
     "title": "Utility libraries",
     "elements": [
       {
@@ -55,19 +68,6 @@
     ]
   },
   {
-    "title": "Physics simulators",
-    "elements": [
-      {
-        "name": "Collision",
-        "imgsrc": null
-      },
-      {
-        "name": "Pendulum",
-        "imgsrc": null
-      }
-    ]
-  },
-  {
     "title": "Others",
     "elements": [
       {
@@ -76,10 +76,6 @@
       },
       {
         "name": "SudokuAssistant",
-        "imgsrc": null
-      },
-      {
-        "name": "SudokuMaker",
         "imgsrc": null
       }
     ]

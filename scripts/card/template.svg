@@ -11,15 +11,24 @@
     * {
       font-family: "Courier New";
     }
+    <!-- stroke-width is not give here since it is used to decide svg size -->
     rect.border {
       stroke: #888888;
       fill: #ffffff;
     }
     rect.topic {
-      fill: #a9ceec;
+      stroke: #888888;
+      stroke-width: 2.5;
+      fill: #444444;
+    }
+    rect.lang {
+      stroke-width: 2.5;
+      fill: #ffffff;
     }
     text {
       dominant-baseline: middle;
+      font-size: medium;
+      font-weight: normal;
     }
     text.title {
       font-size: large;
@@ -27,14 +36,10 @@
       fill: #2f80ed;
     }
     text.descr {
-      font-size: medium;
-      font-weight: normal;
       fill: #000000;
     }
-    path.star {
-      stroke: #000000;
-      stroke-width: 1;
-      fill: #ffff00;
+    text.topic {
+      fill: #ffffff;
     }
   </style>
 
@@ -83,7 +88,7 @@
       ry="{{ topic.rect.round }}"
     />
     <text
-      class="descr"
+      class="topic"
       fill="#ffffff"
       x="{{ topic.text.x }}"
       y="{{ topic.text.y }}"
@@ -93,13 +98,17 @@
     {% endfor %}
   </g>
 
-  <g id="language">
-    <circle
+  <g id="langs">
+    {% for lang in langs %}
+    <rect
       class="lang"
-      cx="{{ lang.mark.cx }}"
-      cy="{{ lang.mark.cy }}"
-      r="{{ lang.mark.r }}"
-      fill="{{ lang.mark.fill }}"
+      x="{{ lang.rect.x }}"
+      y="{{ lang.rect.y }}"
+      width="{{ lang.rect.width }}"
+      height="{{ lang.rect.height }}"
+      rx="{{ lang.rect.round }}"
+      ry="{{ lang.rect.round }}"
+      stroke="{{ lang.rect.stroke }}"
     />
     <text
       class="descr"
@@ -108,26 +117,16 @@
     >
       {{ lang.text.text }}
     </text>
+    {% endfor %}
   </g>
 
-  <g id="star">
-    <path class="star" d="{{ star.mark }}"/>
+  <g id="updated">
     <text
       class="descr"
-      x="{{ star.text.x }}"
-      y="{{ star.text.y }}"
+      x="{{ updated.x }}"
+      y="{{ updated.y }}"
     >
-      {{ star.text.text }}
-    </text>
-  </g>
-
-  <g id="last_update">
-    <text
-      class="descr"
-      x="{{ last_update.x }}"
-      y="{{ last_update.y }}"
-    >
-      Last update: {{ last_update.text }}
+      Updated: {{ updated.text }}
     </text>
   </g>
 
