@@ -60,10 +60,6 @@
       {
         "name": "MinimalCanvasExample",
         "imgsrc": null
-      },
-      {
-        "name": "MySphinxTheme",
-        "imgsrc": null
       }
     ]
   },
@@ -76,6 +72,10 @@
       },
       {
         "name": "SudokuAssistant",
+        "imgsrc": null
+      },
+      {
+        "name": "NaokiHori",
         "imgsrc": null
       }
     ]
