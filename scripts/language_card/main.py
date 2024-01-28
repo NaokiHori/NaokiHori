@@ -69,7 +69,33 @@ def fetch() -> dict:
                 result[k] = v
     return {k: v for k, v in sorted(result.items(), reverse=True, key=lambda x: x[1])}
 
-def make_boxed_items(items: dict, domain: dict, margin: float):
+def set_margin(domain: dict) -> float:
+    # left-right margin
+    margin = 1.5 * font_title.w
+    return margin
+
+def get_title(domain: dict, margin: float, nbytes: int) -> dict:
+    domain["height"] += 1.5 * font_title.h
+    unit = "B"
+    thres = 1024.
+    if nbytes > thres:
+        nbytes /= thres
+        unit = "kB"
+    if nbytes > thres:
+        nbytes /= thres
+        unit = "MB"
+    if nbytes > thres:
+        nbytes /= thres
+        unit = "GB"
+    title = {
+            "text": f"Language Stats ({nbytes:.1f}{unit})",
+            "x": margin,
+            "y": domain["height"],
+    }
+    domain["height"] += 2. * font_title.h
+    return title
+
+def get_langs(items: dict, domain: dict, margin: float) -> list:
     def get_lang_color(key: str):
         import json
         with open(parser.parse_args().config_dir + "/colortable.json", "r") as f:
@@ -106,26 +132,26 @@ def make_boxed_items(items: dict, domain: dict, margin: float):
         # inserting multiple whitespaces is tricky
         # take another approach (right-shift start when less than 10%)
         rate_text = "{:.2f}%".format(100. * v / vsum)
-        nspace = 6 - len(rate_text)
+        nspace = 7 - len(rate_text)
         result.append({
             # rect around language text
             "lang": {
-                "x": x - 0.5 * font_descr.w,
+                "x": x,
                 "y": y - 0.5 * rect_height,
-                "width": textwidth + 2. * font_descr.w,
+                "width": textwidth + 1. * font_descr.w,
                 "height": rect_height,
                 "round": 4,
                 "stroke": get_lang_color(k),
             },
             # language text
             "text": {
-                "x": x,
+                "x": x + 0.5 * font_descr.w,
                 "y": y,
                 "text": k,
             },
             # percentage
             "rate": {
-                "x": x + textwidth + (2.5 + nspace) * font_descr.w,
+                "x": x + textwidth + (1.5 + nspace) * font_descr.w,
                 "y": y,
                 "text": rate_text,
             },
@@ -143,35 +169,6 @@ def make_boxed_items(items: dict, domain: dict, margin: float):
         y += h_update
         domain["height"] += h_update
     return result
-
-def set_margin(domain: dict) -> float:
-    # left-right margin
-    margin = 1.5 * font_title.w
-    return margin
-
-def get_title(domain: dict, margin: float, nbytes: int) -> dict:
-    domain["height"] += 1.5 * font_title.h
-    unit = "B"
-    thres = 1024.
-    if nbytes > thres:
-        nbytes /= thres
-        unit = "kB"
-    if nbytes > thres:
-        nbytes /= thres
-        unit = "MB"
-    if nbytes > thres:
-        nbytes /= thres
-        unit = "GB"
-    title = {
-            "text": f"Language Stats ({nbytes:.1f}{unit})",
-            "x": margin,
-            "y": domain["height"],
-    }
-    domain["height"] += 2. * font_title.h
-    return title
-
-def get_langs(langs: dict, domain: dict, margin: float) -> list:
-    return make_boxed_items(langs, domain, margin)
 
 def get_border(domain: dict) -> dict:
     stroke_width = 2
@@ -217,11 +214,17 @@ def create_card(path_out: str, langs: dict):
             },
     )
 
-def main():
+def main(debug):
     langs = fetch()
     if not langs:
         return
+    if debug:
+        import json
+        with open("language.json", "w") as f:
+            json.dump(langs, f)
+        with open("language.json", "r") as f:
+            langs = json.load(f)
     create_card(parser.parse_args().out_dir + "/language.svg", langs)
 
-main()
+main(False)
 
