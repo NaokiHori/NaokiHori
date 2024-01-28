@@ -41,6 +41,11 @@
     text.topic {
       fill: #ffffff;
     }
+    path.star {
+      stroke: #000000;
+      stroke-width: 1;
+      fill: #ffff00;
+    }
   </style>
 
   <rect
@@ -118,6 +123,17 @@
       {{ lang.text.text }}
     </text>
     {% endfor %}
+  </g>
+
+  <g id="star">
+    <path class="star" d="{{ star.mark }}"/>
+    <text
+      class="descr"
+      x="{{ star.text.x }}"
+      y="{{ star.text.y }}"
+    >
+      {{ star.text.text }}
+    </text>
   </g>
 
   <g id="updated">

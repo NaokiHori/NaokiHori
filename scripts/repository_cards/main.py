@@ -63,6 +63,7 @@ def get_info(name: str):
             "descr": data["description"],
             "topics": data["topics"],
             "langs": [data["language"]],
+            "nstars": str(data["stargazers_count"]),
             "lastcommit": get_lastcommit(data["updated_at"]),
     }
     # try to fetch all languages
@@ -178,6 +179,43 @@ def get_langs(info: dict, domain: dict, margin: float) -> dict:
         lang["rect"]["stroke"] = get_lang_color(lang["text"]["text"])
     return langs
 
+def get_star(info: dict, domain: dict, margin: float) -> (dict, float):
+    xmin = 1e100
+    yave = 0.
+    xs = list()
+    ys = list()
+    for cnt in range(10):
+        import math
+        ro = 0.5 * font_descr.h
+        ri = 0.5 * ro
+        t = 2. * math.pi * cnt / 10 - 0.5 * math.pi
+        r = ro if cnt % 2 == 0 else ri
+        x = r * math.cos(t)
+        y = r * math.sin(t)
+        xs.append(x)
+        ys.append(y)
+        xmin = min(xmin, x)
+        yave += y / 10.
+    for cnt in range(10):
+        xs[cnt] += margin - xmin
+        ys[cnt] += domain["height"] - yave
+    path = ""
+    for cnt, (x, y) in enumerate(zip(xs, ys)):
+        prefix = "M" if cnt ==           0 else "L"
+        suffix = "Z" if cnt == len(xs) - 1 else " "
+        path += f"{prefix} {x} {y} {suffix}"
+    margin += 2.5 * ro
+    star = {
+        "mark": path,
+        "text": {
+            "x": margin,
+            "y": domain["height"],
+            "text": info["nstars"],
+        },
+    }
+    margin = margin + (len(info["nstars"]) + 1.5) * font_descr.w
+    return (star, margin)
+
 def get_updated(info: dict, domain: dict, margin: float) -> dict:
     updated = {
         "x": margin,
@@ -221,6 +259,7 @@ def create_card(path_out: str, info: dict):
     descrs = get_descrs(info, domain, margin)
     topics = get_topics(info, domain, margin)
     langs = get_langs(info, domain, margin)
+    star, margin = get_star(info, domain, margin)
     updated = get_updated(info, domain, margin)
     border = get_border(domain)
     dump(
@@ -233,6 +272,7 @@ def create_card(path_out: str, info: dict):
                 "descrs": descrs,
                 "topics": topics,
                 "langs": langs,
+                "star": star,
                 "updated": updated,
             },
     )
@@ -273,6 +313,7 @@ def debug():
             "CSS",
             "WebAssembly",
         ],
+        "nstars": "10",
         "lastcommit": "Jan 01 1970",
         "topics": [
             "Lorem",
