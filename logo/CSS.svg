@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="363"
+   width="512"
    height="512"
-   viewBox="74 0 363 512"
+   viewBox="0 0 512 512"
    id="svg3476"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -52,7 +52,7 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <rect x="74" y="0" width="363" height="512" fill="white" stroke="white" />
+  <rect x="0" y="0" width="512" height="512" fill="white"/>
   <polygon
      id="polygon2989"
      points="437.367,100.62 404.321,470.819 255.778,512 107.644,470.877 74.633,100.62 "
