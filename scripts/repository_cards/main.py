@@ -206,21 +206,79 @@ def get_star(info: dict, domain: dict, margin: float) -> (dict, float):
         path += f"{prefix} {x} {y} {suffix}"
     margin += 2.5 * ro
     star = {
-        "mark": path,
-        "text": {
-            "x": margin,
-            "y": domain["height"],
-            "text": info["nstars"],
-        },
+            "mark": path,
+            "text": {
+                "x": margin,
+                "y": domain["height"],
+                "text": info["nstars"],
+            },
     }
     margin = margin + (len(info["nstars"]) + 1.5) * font_descr.w
     return (star, margin)
 
+def get_clock(info: dict, domain: dict, margin: float) -> (dict, float):
+    def add_domain(size: int, result: dict):
+        width  = size
+        height = size
+        result["domain"] = dict()
+        result["domain"]["width"]  = width
+        result["domain"]["height"] = height
+    def add_outer(size: int, centre: (float, float), result: dict):
+        import math
+        result["outer"] = dict()
+        # circle
+        result["outer"]["circle"] = dict()
+        stroke_width = 0.125 * size
+        r  = 0.4 * size
+        a1 =   0
+        a2 = 315
+        x1 = centre[0] + r * math.cos(math.radians(a1 + 0.00))
+        y1 = centre[1] + r * math.sin(math.radians(a1 + 0.00))
+        x2 = centre[0] + r * math.cos(math.radians(a2 + 0.01))
+        y2 = centre[1] + r * math.sin(math.radians(a2 + 0.01))
+        result["outer"]["circle"]["data"] = f"d=\"M{x1} {y1} A{r} {r} {a1} 1 1 {x2} {y2}\""
+        result["outer"]["circle"]["stroke_width"] = stroke_width
+        # triangle
+        result["outer"]["triangle"] = dict()
+        r1 = r - 0.2 * size
+        r2 = r + 0.2 * size
+        x1 = centre[0] + r1 * math.cos(math.radians(a2))
+        y1 = centre[1] + r1 * math.sin(math.radians(a2))
+        x2 = centre[0] + r2 * math.cos(math.radians(a2))
+        y2 = centre[1] + r2 * math.sin(math.radians(a2))
+        result["outer"]["triangle"]["data"] = f"points=\"{x1} {y1} {x2} {y1} {x2} {y2}\""
+    def add_inner(size: int, centre: (float, float), result: dict):
+        result["inner"] = dict()
+        stroke_width = 0.1 * size
+        result["inner"]["stroke_width"] = stroke_width
+        # big hand
+        result["inner"]["big"] = dict()
+        x1 = centre[0]
+        y1 = centre[1] + 0.5 * stroke_width
+        x2 = centre[0]
+        y2 = centre[1] - 0.3 * size
+        result["inner"]["big"]["data"] = f"x1=\"{x1}\" y1=\"{y1}\" x2=\"{x2}\" y2=\"{y2}\""
+        # small hand
+        result["inner"]["small"] = dict()
+        x1 = centre[0] - 0.5 * stroke_width
+        y1 = centre[1]
+        x2 = centre[0] + 0.2 * size
+        y2 = centre[1]
+        result["inner"]["small"]["data"] = f"x1=\"{x1}\" y1=\"{y1}\" x2=\"{x2}\" y2=\"{y2}\""
+    size = 1.2 * font_descr.h
+    centre = (margin + 0.5 * size, domain["height"])
+    clock = dict()
+    add_domain(size, clock)
+    add_outer(size, centre, clock)
+    add_inner(size, centre, clock)
+    margin += 1.5 * size
+    return (clock, margin)
+
 def get_updated(info: dict, domain: dict, margin: float) -> dict:
     updated = {
-        "x": margin,
-        "y": domain["height"],
-        "text": info["lastcommit"],
+            "x": margin,
+            "y": domain["height"],
+            "text": info["lastcommit"],
     }
     domain["height"] += 1.5 * font_title.h
     return updated
@@ -228,12 +286,12 @@ def get_updated(info: dict, domain: dict, margin: float) -> dict:
 def get_border(domain: dict) -> dict:
     stroke_width = 2
     border = {
-        "x": 0.5 * stroke_width,
-        "y": 0.5 * stroke_width,
-        "width": domain["width"] - stroke_width,
-        "height": domain["height"] - stroke_width,
-        "round": 10,
-        "stroke_width": stroke_width,
+            "x": 0.5 * stroke_width,
+            "y": 0.5 * stroke_width,
+            "width": domain["width"] - stroke_width,
+            "height": domain["height"] - stroke_width,
+            "round": 10,
+            "stroke_width": stroke_width,
     }
     return border
 
@@ -260,6 +318,7 @@ def create_card(path_out: str, info: dict):
     topics = get_topics(info, domain, margin)
     langs = get_langs(info, domain, margin)
     star, margin = get_star(info, domain, margin)
+    clock, margin = get_clock(info, domain, margin)
     updated = get_updated(info, domain, margin)
     border = get_border(domain)
     dump(
@@ -273,6 +332,7 @@ def create_card(path_out: str, info: dict):
                 "topics": topics,
                 "langs": langs,
                 "star": star,
+                "clock": clock,
                 "updated": updated,
             },
     )

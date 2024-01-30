@@ -43,7 +43,7 @@
     }
     path.star {
       stroke: #000000;
-      stroke-width: 1;
+      stroke-width: 2;
       fill: #ffff00;
     }
   </style>
@@ -136,13 +136,24 @@
     </text>
   </g>
 
+  <g id="clock" stroke="#000000">
+    <g id="outer">
+      <path class="circle" {{ clock.outer.circle.data }} stroke-width="{{ clock.outer.circle.stroke_width }}"/>
+      <polygon class="triangle" {{ clock.outer.triangle.data }} fill="#000000"/>
+    </g>
+    <g id="inner">
+      <line class="big" {{ clock.inner.big.data }} stroke-width="{{ clock.inner.stroke_width }}"/>
+      <line class="small" {{ clock.inner.small.data }} stroke-width="{{ clock.inner.stroke_width }}"/>
+    </g>
+  </g>
+
   <g id="updated">
     <text
       class="descr"
       x="{{ updated.x }}"
       y="{{ updated.y }}"
     >
-      Updated: {{ updated.text }}
+      {{ updated.text }}
     </text>
   </g>
 
