@@ -3,24 +3,19 @@
     "title": "Fluid dynamics",
     "elements": [
       {
-        "name": "SimpleNSSolver",
-        "imgsrc": null
+        "name": "SimpleNSSolver"
       },
       {
-        "name": "SimpleIBMSolver",
-        "imgsrc": null
+        "name": "SimpleIBMSolver"
       },
       {
-        "name": "SimpleVOFSolver",
-        "imgsrc": null
+        "name": "SimpleVOFSolver"
       },
       {
-        "name": "SimpleTCSolver",
-        "imgsrc": null
+        "name": "SimpleTCSolver"
       },
       {
-        "name": "SpectralNSSolver1",
-        "imgsrc": null
+        "name": "SpectralNSSolver1"
       }
     ]
   },
@@ -28,12 +23,10 @@
     "title": "High performance computing",
     "elements": [
       {
-        "name": "SimpleDecomp",
-        "imgsrc": null
+        "name": "SimpleDecomp"
       },
       {
-        "name": "Contour3D",
-        "imgsrc": null
+        "name": "Contour3D"
       }
     ]
   },
@@ -41,12 +34,13 @@
     "title": "Physics simulators",
     "elements": [
       {
-        "name": "Collision",
-        "imgsrc": null
+        "name": "WebNSSolver"
       },
       {
-        "name": "Pendulum",
-        "imgsrc": null
+        "name": "Collision"
+      },
+      {
+        "name": "Pendulum"
       }
     ]
   },
@@ -54,12 +48,10 @@
     "title": "Utility libraries",
     "elements": [
       {
-        "name": "SimpleNpyIO",
-        "imgsrc": null
+        "name": "SimpleNpyIO"
       },
       {
-        "name": "MinimalCanvasExample",
-        "imgsrc": null
+        "name": "MinimalCanvasExample"
       }
     ]
   },
@@ -67,12 +59,10 @@
     "title": "Others",
     "elements": [
       {
-        "name": "GameCentre",
-        "imgsrc": null
+        "name": "GameCentre"
       },
       {
-        "name": "NaokiHori",
-        "imgsrc": null
+        "name": "NaokiHori"
       }
     ]
   }

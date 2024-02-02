@@ -22,7 +22,6 @@ def kernel(category):
     )
     for element in elements:
         name = element["name"]
-        imgsrc = element["imgsrc"]
         repourl = f"https://github.com/NaokiHori/{name}"
         cardurl = f"https://github.com/NaokiHori/NaokiHori/blob/card/card/{name}.svg"
         # repo card
@@ -33,15 +32,6 @@ def kernel(category):
                 f"</a>\n"
                 f"</div>\n"
         )
-        # image
-        if imgsrc:
-            string += (
-                    f"<div align=\"{align}\">\n"
-                    f"<a href=\"{repourl}\" target=\"_blank\">\n"
-                    f"<img src=\"{imgsrc}\" width=\"500\" />\n"
-                    f"</a>\n"
-                    f"</div>\n"
-            )
     return string
 
 
