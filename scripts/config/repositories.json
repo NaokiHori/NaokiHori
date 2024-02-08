@@ -49,9 +49,6 @@
     "elements": [
       {
         "name": "SimpleNpyIO"
-      },
-      {
-        "name": "MinimalCanvasExample"
       }
     ]
   },
