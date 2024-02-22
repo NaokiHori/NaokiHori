@@ -8,6 +8,44 @@ import (
 	"os"
 )
 
+type Skill struct {
+	Name  string
+	Href  string
+	Src   string
+	Image string
+}
+
+type Skills struct {
+	Languages []Skill
+	Tools     []Skill
+}
+
+func getSkill(mypaths *MyPaths) Skills {
+	bytes := load(fmt.Sprintf("%s/skill.json", *mypaths.ConfigDir))
+	var skills Skills
+	err := json.Unmarshal(bytes, &skills)
+	check(err)
+	var languages []Skill = skills.Languages
+	var tools []Skill = skills.Tools
+	result := Skills{
+		Languages: []Skill{},
+		Tools:     []Skill{},
+	}
+	for _, language := range languages {
+		href := language.Href
+		src := language.Image
+		name := language.Name
+		result.Languages = append(result.Languages, Skill{Href: href, Src: src, Name: name})
+	}
+	for _, tool := range tools {
+		href := tool.Href
+		src := tool.Image
+		name := tool.Name
+		result.Tools = append(result.Tools, Skill{Href: href, Src: src, Name: name})
+	}
+	return result
+}
+
 type Repository struct {
 	Href string
 	Src  string
@@ -16,32 +54,6 @@ type Repository struct {
 type RepositoryType struct {
 	Title string
 	Items []Repository
-}
-
-func getSkill(mypaths *MyPaths) map[string][]map[string]string {
-	bytes := load(fmt.Sprintf("%s/skill.json", *mypaths.ConfigDir))
-	var skill map[string][]map[string]string
-	err := json.Unmarshal(bytes, &skill)
-	check(err)
-	var languages []map[string]string = skill["languages"]
-	var tools []map[string]string = skill["tools"]
-	result := map[string][]map[string]string{
-		"Languages": []map[string]string{},
-		"Tools":     []map[string]string{},
-	}
-	for _, language := range languages {
-		href := language["href"]
-		src := language["image"]
-		name := language["name"]
-		result["Languages"] = append(result["Languages"], map[string]string{"href": href, "src": src, "name": name})
-	}
-	for _, tool := range tools {
-		href := tool["href"]
-		src := tool["image"]
-		name := tool["name"]
-		result["Tools"] = append(result["Tools"], map[string]string{"href": href, "src": src, "name": name})
-	}
-	return result
 }
 
 func getRepositoryTypes(mypaths *MyPaths) []RepositoryType {
@@ -113,7 +125,7 @@ func dump(filename string, t *template.Template, data interface{}) {
 
 func Create(mypaths *MyPaths) {
 	result := struct {
-		Skill           map[string][]map[string]string
+		Skill           Skills
 		RepositoryTypes []RepositoryType
 		Platforms       []Platform
 	}{

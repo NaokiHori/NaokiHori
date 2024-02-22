@@ -57,15 +57,15 @@
     <tbody>
       <td>
         {{- range .Skill.Languages }}
-        <a href="{{ .href }}">
-          <img src="{{ .src }}" alt="{{ .name }}" height="50"/>
+        <a href="{{ .Href }}">
+          <img src="{{ .Src }}" alt="{{ .Name }}" height="50"/>
         </a>
         {{- end }}
       </td>
       <td>
         {{- range .Skill.Tools }}
-        <a href="{{ .href }}">
-          <img src="{{ .src }}" alt="{{ .name }}" height="50"/>
+        <a href="{{ .Href }}">
+          <img src="{{ .Src }}" alt="{{ .Name }}" height="50"/>
         </a>
         {{- end }}
       </td>
