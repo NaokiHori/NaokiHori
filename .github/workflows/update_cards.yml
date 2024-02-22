@@ -17,6 +17,10 @@ jobs:
         with:
           repository: "NaokiHori/NaokiHori"
           ref: dev
+      - name: Setup Go
+        uses: actions/setup-go@main
+        with:
+          go-version: 1.21.5
       - name: Prepare place for artifacts
         run: |
           if [ ! -e card ]; then
@@ -32,12 +36,14 @@ jobs:
             --template-svg-file=scripts/repository_cards/template.svg
       - name: Update language card
         run: |
+          cd scripts/language_card
+          go build .
+          cd ../..
           GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-            python \
-            scripts/language_card/main.py \
+            ./scripts/language_card/langcard \
             --config-dir=scripts/config \
             --out-dir=card \
-            --template-svg-file=scripts/language_card/template.svg
+            --template-file=scripts/language_card/template.svg
       - name: Commit changes
         run: |
           git switch -c card

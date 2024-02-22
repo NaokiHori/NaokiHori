@@ -43,6 +43,12 @@
       "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/WebAssembly.svg"
     },
     {
+      "name": "Go",
+      "href": "https://go.dev",
+      "src": "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Aqua.svg",
+      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Go.svg"
+    },
+    {
       "name": "HTML",
       "href": "https://www.w3.org",
       "src": "https://www.w3.org/html/logo/downloads/HTML5_Badge.svg",

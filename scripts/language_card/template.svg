@@ -1,7 +1,7 @@
 <svg
   version="1.1"
-  width="{{ domain.width }}"
-  height="{{ domain.height }}"
+  width="{{ .Domain.Width }}"
+  height="{{ .Domain.Height }}"
   xmlns="http://www.w3.org/2000/svg"
   fill="none"
   role="img"
@@ -11,12 +11,11 @@
     * {
       font-family: "Courier New";
     }
-    <!-- stroke-width is not give here since it is used to decide svg size -->
     rect.border {
       stroke: #888888;
       fill: #ffffff;
     }
-    rect.hist {
+    rect.graph {
       stroke-width: 2.5;
     }
     rect.lang {
@@ -39,65 +38,65 @@
 
   <rect
     class="border"
-    x="{{ border.x }}"
-    y="{{ border.y }}"
-    width="{{ border.width }}"
-    height="{{ border.height }}"
-    rx="{{ border.round }}"
-    ry="{{ border.round }}"
-    stroke-width="{{ border.stroke_width }}"
+    x="{{ .Border.x }}"
+    y="{{ .Border.y }}"
+    width="{{ .Border.width }}"
+    height="{{ .Border.height }}"
+    rx="{{ .Border.round }}"
+    ry="{{ .Border.round }}"
+    stroke-width="{{ .Border.stroke_width }}"
   />
 
   <g id="title">
     <text
       class="title"
-      x="{{ title.x }}"
-      y="{{ title.y }}"
+      x="{{ .Title.x }}"
+      y="{{ .Title.y }}"
     >
-      {{ title.text }}
+      {{ .Title.text }}
     </text>
   </g>
 
   <g id="langs">
-    {% for lang in langs %}
-    <g id="lang-{{ lang.text.text }}">
+    {{ range .Langs }}
+    <g id="lang-{{ .text.text }}">
       <rect
         class="lang"
-        x="{{ lang.lang.x }}"
-        y="{{ lang.lang.y }}"
-        width="{{ lang.lang.width }}"
-        height="{{ lang.lang.height }}"
-        rx="{{ lang.lang.round }}"
-        ry="{{ lang.lang.round }}"
-        stroke="{{ lang.lang.stroke }}"
+        x="{{ .labelrect.x }}"
+        y="{{ .labelrect.y }}"
+        width="{{ .labelrect.width }}"
+        height="{{ .labelrect.height }}"
+        rx="{{ .labelrect.round }}"
+        ry="{{ .labelrect.round }}"
+        stroke="{{ .labelrect.stroke }}"
       />
       <text
         class="descr"
-        x="{{ lang.text.x }}"
-        y="{{ lang.text.y }}"
+        x="{{ .labeltext.x }}"
+        y="{{ .labeltext.y }}"
       >
-        {{ lang.text.text }}
+        {{ .labeltext.text }}
       </text>
       <text
         class="descr"
-        x="{{ lang.rate.x }}"
-        y="{{ lang.rate.y }}"
+        x="{{ .share.x }}"
+        y="{{ .share.y }}"
       >
-        {{ lang.rate.text }}
+        {{ .share.text }}
       </text>
       <rect
-        class="hist"
-        x="{{ lang.hist.x }}"
-        y="{{ lang.hist.y }}"
-        width="{{ lang.hist.width }}"
-        height="{{ lang.hist.height }}"
-        rx="{{ lang.hist.round }}"
-        ry="{{ lang.hist.round }}"
-        fill="{{ lang.hist.fill }}"
-        stroke="{{ lang.hist.stroke }}"
+        class="graph"
+        x="{{ .graph.x }}"
+        y="{{ .graph.y }}"
+        width="{{ .graph.width }}"
+        height="{{ .graph.height }}"
+        rx="{{ .graph.round }}"
+        ry="{{ .graph.round }}"
+        fill="{{ .graph.fill }}"
+        stroke="{{ .graph.stroke }}"
       />
     </g>
-    {% endfor %}
+    {{ end }}
   </g>
 
 </svg>

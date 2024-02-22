@@ -4,7 +4,7 @@ import json
 def header():
     string = (
         "<h2>\n"
-        "Skills\n"
+        "Skill\n"
         "</h2>\n"
     )
     return string
