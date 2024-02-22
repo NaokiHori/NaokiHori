@@ -1,66 +1,40 @@
 [
   {
     "title": "Fluid dynamics",
-    "elements": [
-      {
-        "name": "SimpleNSSolver"
-      },
-      {
-        "name": "SimpleIBMSolver"
-      },
-      {
-        "name": "SimpleVOFSolver"
-      },
-      {
-        "name": "SimpleTCSolver"
-      },
-      {
-        "name": "SpectralNSSolver1"
-      }
+    "items": [
+      "SimpleNSSolver",
+      "SimpleIBMSolver",
+      "SimpleVOFSolver",
+      "SimpleTCSolver",
+      "SpectralNSSolver1"
     ]
   },
   {
     "title": "High performance computing",
-    "elements": [
-      {
-        "name": "SimpleDecomp"
-      },
-      {
-        "name": "Contour3D"
-      }
+    "items": [
+      "SimpleDecomp",
+      "Contour3D"
     ]
   },
   {
     "title": "Physics simulators",
-    "elements": [
-      {
-        "name": "WebNSSolver"
-      },
-      {
-        "name": "Collision"
-      },
-      {
-        "name": "Pendulum"
-      }
+    "items": [
+      "WebNSSolver",
+      "Collision",
+      "Pendulum"
     ]
   },
   {
     "title": "Utility libraries",
-    "elements": [
-      {
-        "name": "SimpleNpyIO"
-      }
+    "items": [
+      "SimpleNpyIO"
     ]
   },
   {
     "title": "Others",
-    "elements": [
-      {
-        "name": "GameCentre"
-      },
-      {
-        "name": "NaokiHori"
-      }
+    "items": [
+      "GameCentre",
+      "NaokiHori"
     ]
   }
 ]

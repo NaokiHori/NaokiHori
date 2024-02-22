@@ -15,11 +15,18 @@ jobs:
         with:
           repository: "NaokiHori/NaokiHori"
           ref: dev
-      - name: Yield README.md
+      - name: Setup Go
+        uses: actions/setup-go@main
+        with:
+          go-version: 1.21.5
+      - name: Generate README.md
         run: |
-          python \
-            scripts/readme/main.py \
-            --config-dir=scripts/config
+          cd scripts/readme
+          go build .
+          cd ../..
+          ./scripts/readme/readme \
+            --config-dir=scripts/config \
+            --template-file=scripts/readme/template.md
       - name: Commit changes
         run: |
           git switch -c main

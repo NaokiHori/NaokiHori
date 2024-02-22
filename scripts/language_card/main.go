@@ -34,7 +34,6 @@ func main() {
 		langs = &tmp
 	} else {
 		langs = FetchData()
-		CreateCard(mypaths, langs)
 	}
 	CreateCard(mypaths, langs)
 }

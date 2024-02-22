@@ -346,9 +346,9 @@ def main():
         categories = json.load(f)
     names = list()
     for category in categories:
-        repositories = category["elements"]
+        repositories = category["items"]
         for repository in repositories:
-            names.append(repository["name"])
+            names.append(repository)
     # for each repo,
     #   1. collect information using GitHub REST API,
     #   2. generate an svg card based on it
