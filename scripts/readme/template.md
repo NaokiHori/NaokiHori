@@ -6,7 +6,7 @@
 
 <div align="center">
   <img
-  src="https://github.com/NaokiHori/NaokiHori/blob/dev/image/cover.png"
+  src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/image/cover.png"
   alt="cover"
   width="95%"
   />
@@ -56,14 +56,14 @@
     </thead>
     <tbody>
       <td>
-        {{- range .Skill.Languages }}
+        {{- range .Skills.Languages }}
         <a href="{{ .Href }}">
           <img src="{{ .Src }}" alt="{{ .Name }}" height="50"/>
         </a>
         {{- end }}
       </td>
       <td>
-        {{- range .Skill.Tools }}
+        {{- range .Skills.Tools }}
         <a href="{{ .Href }}">
           <img src="{{ .Src }}" alt="{{ .Name }}" height="50"/>
         </a>
@@ -74,7 +74,7 @@
 </div>
 
 <div align="center">
-  <img src="https://github.com/NaokiHori/NaokiHori/blob/card/card/language.svg" />
+  <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/card/card/language.svg" />
 </div>
 
 <h2>

@@ -20,7 +20,7 @@ type Skills struct {
 	Tools     []Skill
 }
 
-func getSkill(mypaths *MyPaths) Skills {
+func getSkills(mypaths *MyPaths) Skills {
 	bytes := load(fmt.Sprintf("%s/skill.json", *mypaths.ConfigDir))
 	var skills Skills
 	err := json.Unmarshal(bytes, &skills)
@@ -72,7 +72,7 @@ func getRepositoryTypes(mypaths *MyPaths) []RepositoryType {
 		items := repositoryType.Items
 		for _, item := range items {
 			href := fmt.Sprintf("https://github.com/NaokiHori/%s", item)
-			src := fmt.Sprintf("https://github.com/NaokiHori/NaokiHori/blob/card/card/%s.svg", item)
+			src := fmt.Sprintf("https://raw.githubusercontent.com/NaokiHori/NaokiHori/card/card/%s.svg", item)
 			items_ = append(items_, Repository{Href: href, Src: src})
 		}
 		result = append(result, RepositoryType{Title: title, Items: items_})
@@ -125,11 +125,11 @@ func dump(filename string, t *template.Template, data interface{}) {
 
 func Create(mypaths *MyPaths) {
 	result := struct {
-		Skill           Skills
+		Skills          Skills
 		RepositoryTypes []RepositoryType
 		Platforms       []Platform
 	}{
-		Skill:           getSkill(mypaths),
+		Skills:          getSkills(mypaths),
 		RepositoryTypes: getRepositoryTypes(mypaths),
 		Platforms:       getPlatforms(mypaths),
 	}

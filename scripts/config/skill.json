@@ -4,73 +4,73 @@
       "name": "C",
       "href": "https://en.wikipedia.org/wiki/C_(programming_language)",
       "src": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/C.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/C.svg"
     },
     {
       "name": "OpenMPI",
       "href": "https://www.open-mpi.org",
       "src": "https://www.open-mpi.org/images/open-mpi-logo.png",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/OpenMPI.png"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/OpenMPI.png"
     },
     {
       "name": "Python",
       "href": "https://www.python.org",
       "src": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Python.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Python.svg"
     },
     {
       "name": "Rust",
       "href": "https://www.rust-lang.org",
       "src": "https://github.com/rust-lang/rust-artwork/blob/master/logo/rust-logo-blk.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Rust.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Rust.svg"
     },
     {
       "name": "JavaScript",
       "href": "https://en.wikipedia.org/wiki/JavaScript",
       "src": "https://github.com/voodootikigod/logo.js/blob/master/js.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/JavaScript.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/JavaScript.svg"
     },
     {
       "name": "TypeScript",
       "href": "https://www.typescriptlang.org",
       "src": "https://www.typescriptlang.org/branding/",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/TypeScript.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/TypeScript.svg"
     },
     {
       "name": "WebAssembly",
       "href": "https://webassembly.org",
       "src": "https://en.wikipedia.org/wiki/File:WebAssembly_Logo.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/WebAssembly.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/WebAssembly.svg"
     },
     {
       "name": "Go",
       "href": "https://go.dev",
       "src": "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Aqua.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Go.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Go.svg"
     },
     {
       "name": "HTML",
       "href": "https://www.w3.org",
       "src": "https://www.w3.org/html/logo/downloads/HTML5_Badge.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/HTML.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/HTML.svg"
     },
     {
       "name": "CSS",
       "href": "https://www.w3.org",
       "src": "https://en.m.wikipedia.org/wiki/File:CSS3_logo_and_wordmark.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/CSS.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/CSS.svg"
     },
     {
       "name": "Matlab",
       "href": "https://www.mathworks.com/products/matlab.html",
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Matlab.png"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Matlab.png"
     },
     {
       "name": "Fortran",
       "href": "https://fortran-lang.org",
       "src": "https://github.com/fortran-lang/fortran-lang.org/blob/master/assets/img/fortran-logo.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Fortran.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Fortran.svg"
     }
   ],
   "tools": [
@@ -78,37 +78,37 @@
       "name": "Linux",
       "href": "https://www.linux.org",
       "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Linux.png"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Linux.png"
     },
     {
       "name": "Git",
       "href": "https://git-scm.com",
       "src": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Git.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Git.svg"
     },
     {
       "name": "GitHub",
       "href": "https://github.com",
       "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/GitHub.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitHub.svg"
     },
     {
       "name": "GitHubActions",
       "href": "https://github.com/features/actions",
       "src": "https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/GitHubActions.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitHubActions.svg"
     },
     {
       "name": "Docker",
       "href": "https://www.docker.com",
       "src": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/Docker.png"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Docker.png"
     },
     {
       "name": "GitLab",
       "href": "https://gitlab.com",
       "src": "https://about.gitlab.com/press/press-kit/",
-      "image": "https://github.com/NaokiHori/NaokiHori/blob/dev/logo/GitLab.svg"
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitLab.svg"
     }
   ]
 }
