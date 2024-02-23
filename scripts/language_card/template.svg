@@ -58,7 +58,7 @@
   </g>
 
   <g id="langs">
-    {{ range .Langs }}
+    {{- range .Langs }}
     <g id="lang-{{ .text.text }}">
       <rect
         class="lang"
@@ -96,7 +96,7 @@
         stroke="{{ .graph.stroke }}"
       />
     </g>
-    {{ end }}
+    {{- end }}
   </g>
 
 </svg>

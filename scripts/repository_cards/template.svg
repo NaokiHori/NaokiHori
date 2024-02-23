@@ -1,7 +1,7 @@
 <svg
   version="1.1"
-  width="{{ domain.width }}"
-  height="{{ domain.height }}"
+  width="{{ .Domain.Width }}"
+  height="{{ .Domain.Height }}"
   xmlns="http://www.w3.org/2000/svg"
   fill="none"
   role="img"
@@ -50,110 +50,110 @@
 
   <rect
     class="border"
-    x="{{ border.x }}"
-    y="{{ border.y }}"
-    width="{{ border.width }}"
-    height="{{ border.height }}"
-    rx="{{ border.round }}"
-    ry="{{ border.round }}"
-    stroke-width="{{ border.stroke_width }}"
+    x="{{ .Border.x }}"
+    y="{{ .Border.y }}"
+    width="{{ .Border.width }}"
+    height="{{ .Border.height }}"
+    rx="{{ .Border.round }}"
+    ry="{{ .Border.round }}"
+    stroke-width="{{ .Border.stroke_width }}"
   />
 
   <g id="title">
     <text
       class="title"
-      x="{{ title.x }}"
-      y="{{ title.y }}"
+      x="{{ .Title.x }}"
+      y="{{ .Title.y }}"
     >
-      {{ title.text }}
+      {{ .Title.text }}
     </text>
   </g>
 
   <g id="description">
-    {% for descr in descrs %}
+    {{- range .Descrs }}
     <text
       class="descr"
-      x="{{ descr.x }}"
-      y="{{ descr.y }}"
+      x="{{ .x }}"
+      y="{{ .y }}"
     >
-      {{ descr.text }}
+      {{ .text }}
     </text>
-    {% endfor %}
+    {{- end }}
   </g>
 
   <g id="topics">
-    {% for topic in topics %}
+    {{- range .Topics }}
     <rect
       class="topic"
-      x="{{ topic.rect.x }}"
-      y="{{ topic.rect.y }}"
-      width="{{ topic.rect.width }}"
-      height="{{ topic.rect.height }}"
-      rx="{{ topic.rect.round }}"
-      ry="{{ topic.rect.round }}"
+      x="{{ .rect.x }}"
+      y="{{ .rect.y }}"
+      width="{{ .rect.width }}"
+      height="{{ .rect.height }}"
+      rx="{{ .rect.round }}"
+      ry="{{ .rect.round }}"
     />
     <text
       class="topic"
       fill="#ffffff"
-      x="{{ topic.text.x }}"
-      y="{{ topic.text.y }}"
+      x="{{ .text.x }}"
+      y="{{ .text.y }}"
     >
-      {{ topic.text.text }}
+      {{ .text.text }}
     </text>
-    {% endfor %}
+    {{- end }}
   </g>
 
   <g id="langs">
-    {% for lang in langs %}
+    {{- range .Langs }}
     <rect
       class="lang"
-      x="{{ lang.rect.x }}"
-      y="{{ lang.rect.y }}"
-      width="{{ lang.rect.width }}"
-      height="{{ lang.rect.height }}"
-      rx="{{ lang.rect.round }}"
-      ry="{{ lang.rect.round }}"
-      stroke="{{ lang.rect.stroke }}"
+      x="{{ .rect.x }}"
+      y="{{ .rect.y }}"
+      width="{{ .rect.width }}"
+      height="{{ .rect.height }}"
+      rx="{{ .rect.round }}"
+      ry="{{ .rect.round }}"
+      stroke="{{ .rect.stroke }}"
     />
     <text
       class="descr"
-      x="{{ lang.text.x }}"
-      y="{{ lang.text.y }}"
+      x="{{ .text.x }}"
+      y="{{ .text.y }}"
     >
-      {{ lang.text.text }}
+      {{ .text.text }}
     </text>
-    {% endfor %}
+    {{- end }}
   </g>
 
   <g id="star">
-    <path class="star" d="{{ star.mark }}"/>
+    <path class="star" d="{{ .Star.mark }}"/>
     <text
       class="descr"
-      x="{{ star.text.x }}"
-      y="{{ star.text.y }}"
+      x="{{ .Star.text.x }}"
+      y="{{ .Star.text.y }}"
     >
-      {{ star.text.text }}
+      {{ .Star.text.text }}
     </text>
   </g>
 
   <g id="clock" stroke="#000000">
     <g id="outer">
-      <path class="circle" {{ clock.outer.circle.data }} stroke-width="{{ clock.outer.circle.stroke_width }}"/>
-      <polygon class="triangle" {{ clock.outer.triangle.data }} fill="#000000"/>
+      <path class="circle" d="{{ .Clock.circle.path }}" stroke-width="{{ .Clock.circle.stroke_width }}"/>
+      <polygon class="triangle" points="{{ .Clock.triangle }}" fill="#000000"/>
     </g>
     <g id="inner">
-      <line class="big" {{ clock.inner.big.data }} stroke-width="{{ clock.inner.stroke_width }}"/>
-      <line class="small" {{ clock.inner.small.data }} stroke-width="{{ clock.inner.stroke_width }}"/>
+      <line class="big" x1="{{ .Clock.big.x1 }}" y1="{{ .Clock.big.y1 }}" x2="{{ .Clock.big.x2 }}" y2="{{ .Clock.big.y2 }}" stroke-width="{{ .Clock.big.stroke_width }}"/>
+      <line class="small" x1="{{ .Clock.small.x1 }}" y1="{{ .Clock.small.y1 }}" x2="{{ .Clock.small.x2 }}" y2="{{ .Clock.small.y2 }}" stroke-width="{{ .Clock.small.stroke_width }}"/>
     </g>
   </g>
 
   <g id="updated">
     <text
       class="descr"
-      x="{{ updated.x }}"
-      y="{{ updated.y }}"
+      x="{{ .LastUpdate.x }}"
+      y="{{ .LastUpdate.y }}"
     >
-      {{ updated.text }}
+      {{ .LastUpdate.text }}
     </text>
   </g>
 

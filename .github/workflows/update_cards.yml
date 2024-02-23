@@ -28,12 +28,14 @@ jobs:
           fi
       - name: Update repoository cards
         run: |
+          cd scripts/repository_cards
+          go build .
+          cd ../..
           GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-            python \
-            scripts/repository_cards/main.py \
+            ./scripts/repository_cards/repository_cards \
             --config-dir=scripts/config \
             --out-dir=card \
-            --template-svg-file=scripts/repository_cards/template.svg
+            --template-file=scripts/repository_cards/template.svg
       - name: Update language card
         run: |
           cd scripts/language_card
