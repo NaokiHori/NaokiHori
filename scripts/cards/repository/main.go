@@ -1,57 +1,45 @@
-package main
+package repository
 
 import (
-	"encoding/json"
+	"create_cards/colortable"
+	"create_cards/path"
+	"create_cards/template"
+	"create_cards/util"
 	"fmt"
-	"html/template"
-	"io/ioutil"
 	"math"
-	"os"
 )
 
-// a generic data type to store 2d sizes
-type Size struct {
-	Height float64
-	Width  float64
-}
+const Large uint = 0
+const Small uint = 1
 
-// to distinguish two font sizes
-type fontType int
-
-const (
-	TitleFont fontType = iota
-	NormalFont
-)
-
-func defineFont(height float64) Size {
-	// assume Courier-new, whose aspect ratio is known
-	const ratio = 0.607
-	width := height * ratio
-	return Size{
-		Height: height,
-		Width:  width,
-	}
+type Info struct {
+	name       string
+	descr      string
+	topics     []string
+	langs      []string
+	nStars     uint
+	lastUpdate string
 }
 
 // left-edge margin
-func getMargin(fontSizes *[2]Size) float64 {
-	return 1.5 * fontSizes[TitleFont].Width
+func getMargin(fontSizes *[2]util.Size) float64 {
+	return 1.5 * fontSizes[Large].Width
 }
 
 // set position and text of the title section
-func getTitle(fontSizes *[2]Size, domainSize *Size, info *Info) map[string]interface{} {
+func getTitle(fontSizes *[2]util.Size, domainSize *util.Size, info *Info) map[string]interface{} {
 	// move downward a bit, above text
-	domainSize.Height += 1.5 * fontSizes[TitleFont].Height
+	domainSize.Height += 1.5 * fontSizes[Large].Height
 	result := make(map[string]interface{})
 	result["x"] = getMargin(fontSizes)
 	result["y"] = domainSize.Height
 	result["text"] = info.name
 	// move downward a bit, below text
-	domainSize.Height += 1.5 * fontSizes[TitleFont].Height
+	domainSize.Height += 1.5 * fontSizes[Large].Height
 	return result
 }
 
-func getDescrs(fontSizes *[2]Size, domainSize *Size, info *Info) []map[string]interface{} {
+func getDescrs(fontSizes *[2]util.Size, domainSize *util.Size, info *Info) []map[string]interface{} {
 	width := domainSize.Width - 2.*getMargin(fontSizes)
 	chars := info.descr
 	var texts []string
@@ -60,11 +48,11 @@ func getDescrs(fontSizes *[2]Size, domainSize *Size, info *Info) []map[string]in
 	for _, char := range chars {
 		if width <= w {
 			texts = append(texts, text)
-			w = fontSizes[NormalFont].Width
+			w = fontSizes[Small].Width
 			text = string(char)
 		} else {
 			text += string(char)
-			w += fontSizes[NormalFont].Width
+			w += fontSizes[Small].Width
 		}
 	}
 	texts = append(texts, text)
@@ -75,26 +63,26 @@ func getDescrs(fontSizes *[2]Size, domainSize *Size, info *Info) []map[string]in
 		r["y"] = domainSize.Height
 		r["text"] = text
 		result = append(result, r)
-		domainSize.Height += 1.5 * fontSizes[TitleFont].Height
+		domainSize.Height += 1.5 * fontSizes[Large].Height
 	}
 	return result
 }
 
-func createBoxedItems(fontSizes *[2]Size, domainSize *Size, items *[]string) []map[string]map[string]interface{} {
+func createBoxedItems(fontSizes *[2]util.Size, domainSize *util.Size, items *[]string) []map[string]map[string]interface{} {
 	width := domainSize.Width - 2*getMargin(fontSizes)
-	x0 := getMargin(fontSizes) + 0.5*fontSizes[NormalFont].Width
-	h_update := 2. * fontSizes[NormalFont].Height
+	x0 := getMargin(fontSizes) + 0.5*fontSizes[Small].Width
+	h_update := 2. * fontSizes[Small].Height
 	x := x0
 	y := domainSize.Height
 	var result []map[string]map[string]interface{}
 	for _, item := range *items {
-		dx := float64(len(item)+2) * fontSizes[NormalFont].Width
+		dx := float64(len(item)+2) * fontSizes[Small].Width
 		if width < x+dx {
 			x = x0
 			y += h_update
 			domainSize.Height += h_update
 		}
-		rect_height := 1.4 * fontSizes[NormalFont].Height
+		rect_height := 1.4 * fontSizes[Small].Height
 		r := make(map[string]map[string]interface{})
 		r["text"] = map[string]interface{}{
 			"x":    x,
@@ -102,9 +90,9 @@ func createBoxedItems(fontSizes *[2]Size, domainSize *Size, items *[]string) []m
 			"text": item,
 		}
 		r["rect"] = map[string]interface{}{
-			"x":      x - 0.5*fontSizes[NormalFont].Width,
+			"x":      x - 0.5*fontSizes[Small].Width,
 			"y":      y - 0.5*rect_height,
-			"width":  float64(len(item)+1) * fontSizes[NormalFont].Width,
+			"width":  float64(len(item)+1) * fontSizes[Small].Width,
 			"height": rect_height,
 			"round":  4,
 		}
@@ -115,25 +103,12 @@ func createBoxedItems(fontSizes *[2]Size, domainSize *Size, items *[]string) []m
 	return result
 }
 
-func getTopics(fontSizes *[2]Size, domainSize *Size, info *Info) []map[string]map[string]interface{} {
+func getTopics(fontSizes *[2]util.Size, domainSize *util.Size, info *Info) []map[string]map[string]interface{} {
 	return createBoxedItems(fontSizes, domainSize, &info.topics)
 }
 
-// load language-color table from a given json
-func getLangColorTable(path string) map[string]string {
-	// load from file: series of bytes
-	bytes, err := os.ReadFile(path)
-	check(err)
-	// convert it to a hash table
-	var table map[string]string
-	err = json.Unmarshal(bytes, &table)
-	check(err)
-	return table
-}
-
-func getLangs(mypaths *MyPaths, fontSizes *[2]Size, domainSize *Size, info *Info) []map[string]map[string]interface{} {
-	// look-up json to obtain a color table
-	langColorTable := getLangColorTable(fmt.Sprintf("%s/colortable.json", *mypaths.ConfigDir))
+func getLangs(mypaths *path.MyPaths, fontSizes *[2]util.Size, domainSize *util.Size, info *Info) []map[string]map[string]interface{} {
+	langColorTable := colortable.Get(fmt.Sprintf("%s/colortable.json", *mypaths.ConfigDir))
 	langs := createBoxedItems(fontSizes, domainSize, &info.langs)
 	for _, lang := range langs {
 		lang["rect"]["stroke"] = langColorTable[lang["text"]["text"].(string)]
@@ -141,9 +116,9 @@ func getLangs(mypaths *MyPaths, fontSizes *[2]Size, domainSize *Size, info *Info
 	return langs
 }
 
-func getStar(fontSizes *[2]Size, domainSize *Size, info *Info, x0 *float64) map[string]interface{} {
+func getStar(fontSizes *[2]util.Size, domainSize *util.Size, info *Info, x0 *float64) map[string]interface{} {
 	const nVertices = 10
-	ro := 0.5 * fontSizes[NormalFont].Height
+	ro := 0.5 * fontSizes[Small].Height
 	ri := 0.5 * ro
 	xmin := 1e100
 	yave := 0.
@@ -199,12 +174,12 @@ func getStar(fontSizes *[2]Size, domainSize *Size, info *Info, x0 *float64) map[
 			"text": info.nStars,
 		},
 	}
-	*x0 += (float64(len(fmt.Sprintf("%d", info.nStars))) + 1.5) * fontSizes[NormalFont].Width
+	*x0 += (float64(len(fmt.Sprintf("%d", info.nStars))) + 1.5) * fontSizes[Small].Width
 	return star
 }
 
-func getClock(fontSizes *[2]Size, domainSize *Size, info *Info, x0 *float64) map[string]interface{} {
-	size := fontSizes[NormalFont].Height
+func getClock(fontSizes *[2]util.Size, domainSize *util.Size, info *Info, x0 *float64) map[string]interface{} {
+	size := fontSizes[Small].Height
 	centre := []float64{*x0 + 0.5*size, domainSize.Height}
 	result := make(map[string]interface{})
 	radians := func(degree float64) float64 {
@@ -267,15 +242,15 @@ func getClock(fontSizes *[2]Size, domainSize *Size, info *Info, x0 *float64) map
 	return result
 }
 
-func getLastUpdate(fontSizes *[2]Size, domainSize *Size, info *Info, x *float64) map[string]interface{} {
+func getLastUpdate(fontSizes *[2]util.Size, domainSize *util.Size, info *Info, x float64) map[string]interface{} {
 	return map[string]interface{}{
-		"x":    *x,
+		"x":    x,
 		"y":    domainSize.Height,
 		"text": info.lastUpdate,
 	}
 }
 
-func getBorder(domainSize *Size) map[string]interface{} {
+func getBorder(domainSize *util.Size) map[string]interface{} {
 	const strokeWidth float64 = 2.
 	result := make(map[string]interface{})
 	result["x"] = 0.5 * strokeWidth
@@ -287,48 +262,35 @@ func getBorder(domainSize *Size) map[string]interface{} {
 	return result
 }
 
-func load(filename string) []byte {
-	f, err := os.Open(filename)
-	defer f.Close()
-	check(err)
-	contents, err := ioutil.ReadAll(f)
-	check(err)
-	return contents
-}
-
-func dump(filename string, t *template.Template, data interface{}) {
-	f, err := os.Create(filename)
-	defer f.Close()
-	check(err)
-	err = t.Execute(f, data)
-	check(err)
-}
-
-func Create(mypaths *MyPaths, repo *string) {
+func process(mypaths *path.MyPaths, repo *string) {
 	// font sizes for larger (title) and smaller (others) texts
-	fontSizes := [2]Size{
-		defineFont(20),
-		defineFont(16),
+	fontSizes := [2]util.Size{
+		util.DefineFont(20),
+		util.DefineFont(16),
 	}
-	// get information
-	info := GetInfo(repo)
+	// access github to get information, which is parsed
+	var info *Info = getAndParse(repo)
 	// overall svg size
 	// width is fixed, while height is subject to change
-	domainSize := Size{Width: 500, Height: 0}
+	domainSize := util.Size{Width: 500, Height: 0}
 	// collect information to construct svg
 	title := getTitle(&fontSizes, &domainSize, info)
 	descrs := getDescrs(&fontSizes, &domainSize, info)
 	topics := getTopics(&fontSizes, &domainSize, info)
 	langs := getLangs(mypaths, &fontSizes, &domainSize, info)
+	// star, clock, and last-update date are on the same row
+	// the left-most positions are to be adjusted
 	x := getMargin(&fontSizes)
 	star := getStar(&fontSizes, &domainSize, info, &x)
 	clock := getClock(&fontSizes, &domainSize, info, &x)
-	lastUpdate := getLastUpdate(&fontSizes, &domainSize, info, &x)
-	domainSize.Height += 1.5 * fontSizes[TitleFont].Height
+	lastUpdate := getLastUpdate(&fontSizes, &domainSize, info, x)
+	// after adding the bottom margin, the whole size is finally settled
+	//   and the border can be drawn
+	domainSize.Height += 1.5 * fontSizes[Large].Height
 	border := getBorder(&domainSize)
-	// embed it into the template
+	// embed all elements into the template
 	result := struct {
-		Domain     Size
+		Domain     util.Size
 		Title      map[string]interface{}
 		Descrs     []map[string]interface{}
 		Topics     []map[string]map[string]interface{}
@@ -348,8 +310,16 @@ func Create(mypaths *MyPaths, repo *string) {
 		LastUpdate: lastUpdate,
 		Border:     border,
 	}
-	tpl := load(*mypaths.TemplateFile)
-	t, err := template.New("svg").Parse(string(tpl))
-	check(err)
-	dump(fmt.Sprintf("%s/%s.svg", *mypaths.OutDir, *repo), t, result)
+	template.EmbedAndSave(
+		fmt.Sprintf("%s/repository.svg", *mypaths.TemplateDir),
+		fmt.Sprintf("%s/%s.svg", *mypaths.OutDir, *repo),
+		result,
+	)
+}
+
+func Create(mypaths *path.MyPaths) {
+	repos := getAllRepos(mypaths)
+	for _, repo := range repos {
+		process(mypaths, &repo)
+	}
 }

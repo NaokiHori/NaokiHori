@@ -26,26 +26,16 @@ jobs:
           if [ ! -e card ]; then
             mkdir card
           fi
-      - name: Update repoository cards
+      - name: Update language and repoository cards
         run: |
-          cd scripts/repository_cards
+          cd scripts/cards
           go build .
           cd ../..
           GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-            ./scripts/repository_cards/repository_cards \
+            ./scripts/cards/create_cards \
             --config-dir=scripts/config \
             --out-dir=card \
-            --template-file=scripts/repository_cards/template.svg
-      - name: Update language card
-        run: |
-          cd scripts/language_card
-          go build .
-          cd ../..
-          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-            ./scripts/language_card/langcard \
-            --config-dir=scripts/config \
-            --out-dir=card \
-            --template-file=scripts/language_card/template.svg
+            --template-dir=scripts/cards/view
       - name: Commit changes
         run: |
           git switch -c card

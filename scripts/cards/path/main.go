@@ -1,13 +1,13 @@
-package main
+package path
 
 import (
 	"flag"
 )
 
 type MyPaths struct {
-	ConfigDir    *string
-	OutDir       *string
-	TemplateFile *string
+	ConfigDir   *string
+	OutDir      *string
+	TemplateDir *string
 }
 
 func kernel(key string, descr string) *string {
@@ -17,10 +17,10 @@ func kernel(key string, descr string) *string {
 }
 
 func ParseArgs() *MyPaths {
-	var mypaths MyPaths = MyPaths{}
+	var mypaths MyPaths
 	mypaths.ConfigDir = kernel("config-dir", "Directory storing config files")
 	mypaths.OutDir = kernel("out-dir", "Destination of the artifacts")
-	mypaths.TemplateFile = kernel("template-file", "SVG Template")
+	mypaths.TemplateDir = kernel("template-dir", "Directory storing SVG Templates")
 	flag.Parse()
 	return &mypaths
 }

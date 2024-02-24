@@ -1,40 +1,19 @@
-package main
+package language
 
 import (
-	"encoding/json"
+	"create_cards/colortable"
+	"create_cards/path"
+	"create_cards/template"
+	"create_cards/util"
 	"fmt"
-	"html/template"
-	"io/ioutil"
-	"os"
 )
 
-// a generic data type to store 2d sizes
-type Size struct {
-	Height float64
-	Width  float64
-}
-
-// to distinguish two font sizes
-type fontType int
-
-const (
-	TitleFont fontType = iota
-	NormalFont
-)
-
-func defineFont(height float64) Size {
-	// assume Courier-new, whose aspect ratio is known
-	const ratio = 0.607
-	width := height * ratio
-	return Size{
-		Height: height,
-		Width:  width,
-	}
-}
+const Large uint = 0
+const Small uint = 1
 
 // left-edge margin
-func getMargin(fontSizes *[2]Size) float64 {
-	return 1.5 * fontSizes[TitleFont].Width
+func getMargin(fontSizes *[2]util.Size) float64 {
+	return 1.5 * fontSizes[Large].Width
 }
 
 // convert raw bytes into one of the others
@@ -53,11 +32,11 @@ func formatBytes(bytes float64) string {
 }
 
 // set position and text of the title section
-func getTitle(fontSizes *[2]Size, domainSize *Size, langs *[]Lang) map[string]interface{} {
+func getTitle(fontSizes *[2]util.Size, domainSize *util.Size, langs *[]util.OrderedDict[float64]) map[string]interface{} {
 	// move downward a bit, above text
-	domainSize.Height += 1.5 * fontSizes[TitleFont].Height
+	domainSize.Height += 1.5 * fontSizes[Large].Height
 	// get total bytes
-	getTotalBytes := func(langs *[]Lang) float64 {
+	getTotalBytes := func(langs *[]util.OrderedDict[float64]) float64 {
 		totalBytes := 0.
 		for _, lang := range *langs {
 			totalBytes += float64(lang.Value)
@@ -70,20 +49,8 @@ func getTitle(fontSizes *[2]Size, domainSize *Size, langs *[]Lang) map[string]in
 	result["y"] = domainSize.Height
 	result["text"] = fmt.Sprintf("Language Stats (%s)", formatBytes(totalBytes))
 	// move downward a bit, below text
-	domainSize.Height += 2. * fontSizes[TitleFont].Height
+	domainSize.Height += 1.5 * fontSizes[Large].Height
 	return result
-}
-
-// load language-color table from a given json
-func getLangColorTable(path string) map[string]string {
-	// load from file: series of bytes
-	bytes, err := os.ReadFile(path)
-	check(err)
-	// convert it to a hash table
-	var table map[string]string
-	err = json.Unmarshal(bytes, &table)
-	check(err)
-	return table
 }
 
 // create bar graph for each language
@@ -92,13 +59,13 @@ func getLangColorTable(path string) map[string]string {
 // |label| share ||||||bar||||||
 // +-----+
 // I need to prescribe margins between each element and at the edges
-func getLangData(mypaths *MyPaths, fontSizes *[2]Size, domainSize *Size, langs *[]Lang) []map[string]map[string]interface{} {
+func getLangData(mypaths *path.MyPaths, fontSizes *[2]util.Size, domainSize *util.Size, langs *[]util.OrderedDict[float64]) []map[string]map[string]interface{} {
 	// look-up json to obtain a color table
-	langColorTable := getLangColorTable(fmt.Sprintf("%s/colortable.json", *mypaths.ConfigDir))
+	langColorTable := colortable.Get(fmt.Sprintf("%s/colortable.json", *mypaths.ConfigDir))
 	// reference width: width of the normal font
-	w := fontSizes[NormalFont].Width
+	w := fontSizes[Small].Width
 	// height for each language
-	heightOfLine := 2. * fontSizes[NormalFont].Height
+	heightOfLine := 2. * fontSizes[Small].Height
 	// decide width of the first part by checking the length of the longest name
 	// at the same time get the max and sum of the whole values
 	labelWidth := 0.
@@ -172,7 +139,7 @@ func getLangData(mypaths *MyPaths, fontSizes *[2]Size, domainSize *Size, langs *
 	return result
 }
 
-func getBorder(domainSize *Size) map[string]float64 {
+func getBorder(domainSize *util.Size) map[string]float64 {
 	const strokeWidth = 2.
 	result := make(map[string]float64)
 	result["x"] = 0.5 * strokeWidth
@@ -184,39 +151,23 @@ func getBorder(domainSize *Size) map[string]float64 {
 	return result
 }
 
-func load(filename string) []byte {
-	f, err := os.Open(filename)
-	defer f.Close()
-	check(err)
-	contents, err := ioutil.ReadAll(f)
-	check(err)
-	return contents
-}
-
-func dump(filename string, t *template.Template, data interface{}) {
-	f, err := os.Create(filename)
-	defer f.Close()
-	check(err)
-	err = t.Execute(f, data)
-	check(err)
-}
-
-func CreateCard(mypaths *MyPaths, langs *[]Lang) {
+func Create(mypaths *path.MyPaths) {
+	var langs []util.OrderedDict[float64] = fetch()
 	// font sizes for larger (title) and smaller (others) texts
-	fontSizes := [2]Size{
-		defineFont(24),
-		defineFont(16),
+	fontSizes := [2]util.Size{
+		util.DefineFont(24),
+		util.DefineFont(16),
 	}
 	// overall svg size
 	// width is fixed, while height is subject to change
-	domainSize := Size{Width: 500, Height: 0}
+	domainSize := util.Size{Width: 500, Height: 0}
 	// collect information to construct svg
-	title := getTitle(&fontSizes, &domainSize, langs)
-	langdata := getLangData(mypaths, &fontSizes, &domainSize, langs)
+	title := getTitle(&fontSizes, &domainSize, &langs)
+	langdata := getLangData(mypaths, &fontSizes, &domainSize, &langs)
 	border := getBorder(&domainSize)
 	// embed it into the template
 	result := struct {
-		Domain Size
+		Domain util.Size
 		Title  map[string]interface{}
 		Border map[string]float64
 		Langs  []map[string]map[string]interface{}
@@ -226,8 +177,5 @@ func CreateCard(mypaths *MyPaths, langs *[]Lang) {
 		Border: border,
 		Langs:  langdata,
 	}
-	tpl := load(*mypaths.TemplateFile)
-	t, err := template.New("svg").Parse(string(tpl))
-	check(err)
-	dump(fmt.Sprintf("%s/language.svg", *mypaths.OutDir), t, result)
+	template.EmbedAndSave(fmt.Sprintf("%s/language.svg", *mypaths.TemplateDir), fmt.Sprintf("%s/language.svg", *mypaths.OutDir), result)
 }
