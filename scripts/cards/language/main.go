@@ -6,14 +6,16 @@ import (
 	"create_cards/template"
 	"create_cards/util"
 	"fmt"
+	"time"
 )
 
-const Large uint = 0
-const Small uint = 1
+// font sizes for larger (title) and smaller (others) texts
+const LargeFont float64 = 24.
+const SmallFont float64 = 16.
 
 // left-edge margin
-func getMargin(fontSizes *[2]util.Size) float64 {
-	return 1.5 * fontSizes[Large].Width
+func getMargin() float64 {
+	return 1.5 * util.GetFontWidth(LargeFont)
 }
 
 // convert raw bytes into one of the others
@@ -32,9 +34,9 @@ func formatBytes(bytes float64) string {
 }
 
 // set position and text of the title section
-func getTitle(fontSizes *[2]util.Size, domainSize *util.Size, langs *[]util.OrderedDict[float64]) map[string]interface{} {
+func getTitle(domainSize *util.Size, langs *[]util.OrderedDict[float64]) map[string]interface{} {
 	// move downward a bit, above text
-	domainSize.Height += 1.5 * fontSizes[Large].Height
+	domainSize.Height += 1.5 * util.GetFontHeight(LargeFont)
 	// get total bytes
 	getTotalBytes := func(langs *[]util.OrderedDict[float64]) float64 {
 		totalBytes := 0.
@@ -45,11 +47,11 @@ func getTitle(fontSizes *[2]util.Size, domainSize *util.Size, langs *[]util.Orde
 	}
 	totalBytes := getTotalBytes(langs)
 	result := make(map[string]interface{})
-	result["x"] = getMargin(fontSizes)
+	result["x"] = getMargin()
 	result["y"] = domainSize.Height
 	result["text"] = fmt.Sprintf("Language Stats (%s)", formatBytes(totalBytes))
 	// move downward a bit, below text
-	domainSize.Height += 1.5 * fontSizes[Large].Height
+	domainSize.Height += 1.5 * util.GetFontHeight(LargeFont)
 	return result
 }
 
@@ -59,13 +61,13 @@ func getTitle(fontSizes *[2]util.Size, domainSize *util.Size, langs *[]util.Orde
 // |label| share ||||||bar||||||
 // +-----+
 // I need to prescribe margins between each element and at the edges
-func getLangData(mypaths *path.MyPaths, fontSizes *[2]util.Size, domainSize *util.Size, langs *[]util.OrderedDict[float64]) []map[string]map[string]interface{} {
+func getLangData(mypaths *path.MyPaths, domainSize *util.Size, langs *[]util.OrderedDict[float64]) []map[string]map[string]interface{} {
 	// look-up json to obtain a color table
 	langColorTable := colortable.Get(fmt.Sprintf("%s/colortable.json", *mypaths.ConfigDir))
 	// reference width: width of the normal font
-	w := fontSizes[Small].Width
+	w := util.GetFontWidth(SmallFont)
 	// height for each language
-	heightOfLine := 2. * fontSizes[Small].Height
+	heightOfLine := 2. * util.GetFontHeight(SmallFont)
 	// decide width of the first part by checking the length of the longest name
 	// at the same time get the max and sum of the whole values
 	labelWidth := 0.
@@ -83,7 +85,7 @@ func getLangData(mypaths *path.MyPaths, fontSizes *[2]util.Size, domainSize *uti
 	var result []map[string]map[string]interface{}
 	for cntr, lang := range *langs {
 		// origin
-		x := getMargin(fontSizes)
+		x := getMargin()
 		y := domainSize.Height + float64(cntr)*heightOfLine
 		// height of rectangles, both label and graph
 		rectHeight := 0.7 * heightOfLine
@@ -139,6 +141,17 @@ func getLangData(mypaths *path.MyPaths, fontSizes *[2]util.Size, domainSize *uti
 	return result
 }
 
+func getLastUpdate(domainSize *util.Size) map[string]interface{} {
+	domainSize.Height += 0.5 * util.GetFontHeight(SmallFont)
+	t := time.Now()
+	result := make(map[string]interface{})
+	result["x"] = getMargin()
+	result["y"] = domainSize.Height
+	result["text"] = fmt.Sprintf("%d %s %d", t.Day(), t.Month(), t.Year())
+	domainSize.Height += util.GetFontHeight(LargeFont)
+	return result
+}
+
 func getBorder(domainSize *util.Size) map[string]float64 {
 	const strokeWidth = 2.
 	result := make(map[string]float64)
@@ -153,29 +166,27 @@ func getBorder(domainSize *util.Size) map[string]float64 {
 
 func Create(mypaths *path.MyPaths) {
 	var langs []util.OrderedDict[float64] = fetch()
-	// font sizes for larger (title) and smaller (others) texts
-	fontSizes := [2]util.Size{
-		util.DefineFont(24),
-		util.DefineFont(16),
-	}
 	// overall svg size
 	// width is fixed, while height is subject to change
 	domainSize := util.Size{Width: 500, Height: 0}
 	// collect information to construct svg
-	title := getTitle(&fontSizes, &domainSize, &langs)
-	langdata := getLangData(mypaths, &fontSizes, &domainSize, &langs)
+	title := getTitle(&domainSize, &langs)
+	langData := getLangData(mypaths, &domainSize, &langs)
+	lastUpdate := getLastUpdate(&domainSize)
 	border := getBorder(&domainSize)
 	// embed it into the template
 	result := struct {
-		Domain util.Size
-		Title  map[string]interface{}
-		Border map[string]float64
-		Langs  []map[string]map[string]interface{}
+		Domain     util.Size
+		Title      map[string]interface{}
+		Border     map[string]float64
+		Langs      []map[string]map[string]interface{}
+		LastUpdate map[string]interface{}
 	}{
-		Domain: domainSize,
-		Title:  title,
-		Border: border,
-		Langs:  langdata,
+		Domain:     domainSize,
+		Title:      title,
+		Border:     border,
+		Langs:      langData,
+		LastUpdate: lastUpdate,
 	}
 	template.EmbedAndSave(fmt.Sprintf("%s/language.svg", *mypaths.TemplateDir), fmt.Sprintf("%s/language.svg", *mypaths.OutDir), result)
 }

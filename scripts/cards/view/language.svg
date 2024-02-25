@@ -99,4 +99,14 @@
     {{- end }}
   </g>
 
+  <g id="lastupdate">
+    <text
+      class="descr"
+      x="{{ .LastUpdate.x }}"
+      y="{{ .LastUpdate.y }}"
+    >
+      Last Update: {{ .LastUpdate.text }}
+    </text>
+  </g>
+
 </svg>
