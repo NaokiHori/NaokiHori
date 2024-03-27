@@ -1,7 +1,7 @@
 import { JSX } from 'react'
 import { Heading1, Heading2, UnorderedList } from './Utils'
-import { CoverImage } from "./CoverImage"
-import coverImgUrl from "./assets/three-phase.png"
+import { CoverImage } from './CoverImage'
+import coverImgUrl from './assets/three-phase.png'
 
 export function About (): JSX.Element {
   const workElements: string[] = [
@@ -14,7 +14,7 @@ export function About (): JSX.Element {
   ]
   return (
     <>
-      <CoverImage src={coverImgUrl} backgroundColor='#1865ac' />
+      <CoverImage src={coverImgUrl} />
       <Heading1 title='Naoki HORI' />
       <div>
         Ph.D. candidate at University of Twente.

@@ -1,8 +1,9 @@
 import { JSX } from 'react'
 import { Heading1, Heading2 } from '../Utils'
 import { Info, SkillInfo, useSkillHooks } from './info'
-import { CoverImage } from "../CoverImage"
-import coverImgUrl from "../assets/rb2d.jpg"
+import { CoverImage } from '../CoverImage'
+import { LanguageStats } from './LanguageStats/LanguageStats'
+import coverImgUrl from '../assets/rb2d.jpg'
 
 function SkillItem ({ info }: { info: Info }): JSX.Element {
   const name: string = info.name
@@ -27,27 +28,18 @@ function Container ({ infoList }: { infoList: Info[] }): JSX.Element {
   )
 }
 
-function LanguageCard (): JSX.Element {
-  const src: string = 'https://raw.githubusercontent.com/NaokiHori/NaokiHori/card/card/language.svg'
-  return (
-    <div style={{ textAlign: 'center' }}>
-      <img className='Card' src={src} alt='Language Card' />
-    </div>
-  )
-}
-
 export function Skill (): JSX.Element {
   const skillInfo: SkillInfo = useSkillHooks()
   return (
     <>
-      <CoverImage src={coverImgUrl} backgroundColor='#aaaaaa' />
+      <CoverImage src={coverImgUrl} />
       <Heading1 title='Skill' />
       <Heading2 title='Languages, libraries, frameworks' />
       <Container infoList={skillInfo.languages} />
       <Heading2 title='Tools, DevOps, Platforms' />
       <Container infoList={skillInfo.tools} />
       <Heading2 title='Language statistics' />
-      <LanguageCard />
+      <LanguageStats />
     </>
   )
 }

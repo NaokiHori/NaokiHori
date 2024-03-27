@@ -1,6 +1,6 @@
 import { Heading1, Heading2 } from '../Utils'
-import { CoverImage } from "../CoverImage"
-import coverImgUrl from "../assets/collision.jpg"
+import { CoverImage } from '../CoverImage'
+import coverImgUrl from '../assets/collision.jpg'
 
 interface Info {
   role: string
@@ -61,7 +61,7 @@ export function Cv (): JSX.Element {
   ]
   return (
     <>
-      <CoverImage src={coverImgUrl} backgroundColor='#242424' />
+      <CoverImage src={coverImgUrl} />
       <Heading1 title='Curriculum Vitae' />
       {infoList.map((info: Info, index: number) => (
         <Element key={index} info={info} />

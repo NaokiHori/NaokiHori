@@ -1,6 +1,6 @@
-import React, { JSX } from "react";
+import React, { JSX } from 'react'
 
-export function CoverImage ({src, backgroundColor}: {src: string, backgroundColor: string}): JSX.Element {
+export function CoverImage ({ src }: { src: string }): JSX.Element {
   const width: string = '100%'
   const [loading, setLoading] = React.useState<boolean>(true)
   React.useEffect(() => {
@@ -18,7 +18,7 @@ export function CoverImage ({src, backgroundColor}: {src: string, backgroundColo
       <div style={{
         width,
         aspectRatio: '6',
-        backgroundColor,
+        backgroundColor: '#242424'
       }}
       />
     )
@@ -32,4 +32,3 @@ export function CoverImage ({src, backgroundColor}: {src: string, backgroundColo
     )
   }
 }
-

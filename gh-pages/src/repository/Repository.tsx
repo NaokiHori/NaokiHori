@@ -1,8 +1,8 @@
 import React, { JSX } from 'react'
 import { Heading1, Heading2 } from '../Utils'
 import { CategoryType, useRepositoryHooks } from './info'
-import { CoverImage } from "../CoverImage"
-import coverImgUrl from "../assets/hdt2d.jpg"
+import { CoverImage } from '../CoverImage'
+import coverImgUrl from '../assets/hdt2d.jpg'
 
 function Element ({ item }: { item: string }): JSX.Element {
   const href: string = `https://github.com/NaokiHori/${item}`
@@ -38,7 +38,7 @@ export function Repository (): JSX.Element {
   const categories: CategoryType[] = useRepositoryHooks()
   return (
     <>
-      <CoverImage src={coverImgUrl} backgroundColor='#aaaaaa' />
+      <CoverImage src={coverImgUrl} />
       <Heading1 title='GitHub Repository' />
       {categories.map((category: CategoryType, index: number) => (
         <Category key={index} category={category} />
