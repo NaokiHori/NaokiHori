@@ -21,12 +21,13 @@ jobs:
           go-version: 1.21.5
       - name: Generate README.md
         run: |
-          cd scripts/readme
+          cd scripts/update_readme
           go build .
           cd ../..
-          ./scripts/readme/readme \
+          ./scripts/update_readme/update_readme \
             --config-dir=scripts/config \
-            --template-file=scripts/readme/template.md
+            --template-file=scripts/update_readme/template.md
+          cat README.md
       - name: Commit changes
         run: |
           git switch -c main
@@ -34,6 +35,6 @@ jobs:
           git config --local user.name "NaokiHori"
           # also synchronise workflows
           git add README.md .github/workflows
-          git commit -m "Update README" -a || true
+          git commit -m "Update README.md" -a || true
           git push -f origin main
 

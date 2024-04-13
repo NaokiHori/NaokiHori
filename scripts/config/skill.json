@@ -7,12 +7,6 @@
       "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/C.svg"
     },
     {
-      "name": "OpenMPI",
-      "href": "https://www.open-mpi.org",
-      "src": "https://www.open-mpi.org/images/open-mpi-logo.png",
-      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/OpenMPI.png"
-    },
-    {
       "name": "Python",
       "href": "https://www.python.org",
       "src": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
@@ -59,6 +53,18 @@
       "href": "https://www.w3.org",
       "src": "https://en.m.wikipedia.org/wiki/File:CSS3_logo_and_wordmark.svg",
       "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/CSS.svg"
+    },
+    {
+      "name": "OpenMPI",
+      "href": "https://www.open-mpi.org",
+      "src": "https://www.open-mpi.org/images/open-mpi-logo.png",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/OpenMPI.png"
+    },
+    {
+      "name": "React",
+      "href": "https://react.dev",
+      "src": "https://react.dev",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/React.svg"
     },
     {
       "name": "Matlab",
@@ -109,6 +115,24 @@
       "href": "https://gitlab.com",
       "src": "https://about.gitlab.com/press/press-kit/",
       "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitLab.svg"
+    },
+    {
+      "name": "Sphinx",
+      "href": "https://www.sphinx-doc.org/en/master/",
+      "src": "https://raw.githubusercontent.com/sphinx-doc/sphinx/master/doc/_themes/sphinx13/static/sphinx-logo.svg",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Sphinx.svg"
+    },
+    {
+      "name": "Prisma",
+      "href": "https://www.prisma.io",
+      "src": "https://github.com/prisma/presskit",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Prisma.svg"
+    },
+    {
+      "name": "VanillaExtract",
+      "href": "https://vanilla-extract.style",
+      "src": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/site/logo.svg",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/VanillaExtract.svg"
     }
   ]
 }

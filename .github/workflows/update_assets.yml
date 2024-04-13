@@ -1,0 +1,58 @@
+name: UpdateAssets
+
+# when pushed, trigger this workflow after update_readme to avoid push conflict
+
+on:
+  workflow_run:
+    workflows: [UpdateReadme]
+    types:
+      - completed
+  schedule:
+    - cron: "34 3 * * *"
+
+jobs:
+  update-and-push:
+    name: Update json files, repoository / language cards, and push them
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@main
+        with:
+          repository: "NaokiHori/NaokiHori"
+          ref: dev
+          fetch-depth: 0
+      - name: Setup Go
+        uses: actions/setup-go@main
+        with:
+          go-version: 1.21.5
+      - name: Check all branches
+        run: |
+          git branch
+      - name: Prepare place for artifacts
+        run: |
+          if [ ! -e newassets ]; then
+            mkdir newassets
+          fi
+      - name: Generate all
+        run: |
+          cd scripts/update_assets
+          go build .
+          cd ../..
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
+            ./scripts/update_assets/update_assets \
+            --config-dir=scripts/config \
+            --out-dir=newassets \
+            --template-dir=scripts/update_assets/view
+      - name: Commit changes
+        run: |
+          git switch main
+          git config --local user.email "36466440+NaokiHori@users.noreply.github.com"
+          git config --local user.name "NaokiHori"
+          if [ ! -e assets ]; then
+            mkdir assets
+          fi
+          mv newassets/* assets/
+          git add assets
+          git commit -m "Update assets" -a || true
+          git push -f origin main
+

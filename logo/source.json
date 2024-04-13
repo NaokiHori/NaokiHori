@@ -1,0 +1,102 @@
+[
+  {
+    "name": "C",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20220802133510%21The_C_Programming_Language_logo.svg"
+  },
+  {
+    "name": "Python",
+    "src": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+  },
+  {
+    "name": "Rust",
+    "src": "https://github.com/rust-lang/rust-artwork/blob/master/logo/rust-logo-blk.svg"
+  },
+  {
+    "name": "JavaScript",
+    "src": "https://github.com/voodootikigod/logo.js/blob/master/js.svg"
+  },
+  {
+    "name": "TypeScript",
+    "src": "https://www.typescriptlang.org/branding/"
+  },
+  {
+    "name": "WebAssembly",
+    "src": "https://en.wikipedia.org/wiki/File:WebAssembly_Logo.svg"
+  },
+  {
+    "name": "Go",
+    "src": "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Aqua.svg"
+  },
+  {
+    "name": "HTML",
+    "src": "https://www.w3.org/html/logo/downloads/HTML5_Badge.svg"
+  },
+  {
+    "name": "CSS",
+    "src": "https://en.m.wikipedia.org/wiki/File:CSS3_logo_and_wordmark.svg"
+  },
+  {
+    "name": "OpenMPI",
+    "src": "https://www.open-mpi.org/images/open-mpi-logo.png"
+  },
+  {
+    "name": "React",
+    "src": "https://react.dev"
+  },
+  {
+    "name": "Matlab",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png"
+  },
+  {
+    "name": "Fortran",
+    "src": "https://github.com/fortran-lang/fortran-lang.org/blob/master/assets/img/fortran-logo.svg"
+  },
+  {
+    "name": "Linux",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png"
+  },
+  {
+    "name": "Git",
+    "src": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.svg"
+  },
+  {
+    "name": "GitHub",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+  },
+  {
+    "name": "GitHubActions",
+    "src": "https://github.githubassets.com/images/modules/site/features/actions-icon-actions.svg"
+  },
+  {
+    "name": "Docker",
+    "src": "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png"
+  },
+  {
+    "name": "GitLab",
+    "src": "https://about.gitlab.com/press/press-kit/"
+  },
+  {
+    "name": "Sphinx",
+    "src": "https://raw.githubusercontent.com/sphinx-doc/sphinx/master/doc/_themes/sphinx13/static/sphinx-logo.svg"
+  },
+  {
+    "name": "Prisma",
+    "src": "https://github.com/prisma/presskit"
+  },
+  {
+    "name": "YouTube",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+  },
+  {
+    "name": "LinkedIn",
+    "src": "https://brand.linkedin.com/downloads"
+  },
+  {
+    "name": "Qiita",
+    "src": "https://help.qiita.com/ja/articles/others-brand-guideline"
+  },
+  {
+    "name": "VanillaExtract",
+    "src": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/site/logo.svg"
+  }
+]
