@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import { Svg, SvgProps } from "../../components/Svg";
-import { lineStyle, fillStyle } from "../style.css";
+import { line, fill } from "../style.css";
 
 type HandType = "small" | "big";
 
@@ -20,7 +20,7 @@ function Arc({ radius }: { radius: number }): JSX.Element {
     A${radius.toString()} ${radius.toString()} 0 1 1
     ${end[0].toString()} ${end[1].toString()}
   `;
-  return <path className={lineStyle} d={d} />;
+  return <path className={line} d={d} />;
 }
 
 function ArrowHead({ radius }: { radius: number }): JSX.Element {
@@ -38,7 +38,7 @@ function ArrowHead({ radius }: { radius: number }): JSX.Element {
     ${end[0].toString()} ${start[1].toString()}
     ${end[0].toString()} ${end[1].toString()}
   `;
-  return <polygon className={fillStyle} points={points} />;
+  return <polygon className={fill} points={points} />;
 }
 
 function Hand({
@@ -52,7 +52,7 @@ function Hand({
   const y1 = 0;
   const x2: number = handType === "small" ? 0.2 * size : 0;
   const y2: number = handType === "big" ? -0.3 * size : 0;
-  return <line className={lineStyle} x1={x1} y1={y1} x2={x2} y2={y2} />;
+  return <line className={line} x1={x1} y1={y1} x2={x2} y2={y2} />;
 }
 
 export const Clock: React.NamedExoticComponent<object> = React.memo(

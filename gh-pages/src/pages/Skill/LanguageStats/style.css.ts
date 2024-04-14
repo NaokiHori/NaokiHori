@@ -27,7 +27,7 @@ export const narrow = style({
   flexWrap: "nowrap",
   justifyContent: "center",
   alignItems: "center",
-  gap: "10px",
+  rowGap: "10px",
   width: "90%",
   margin: "auto",
   "@media": {

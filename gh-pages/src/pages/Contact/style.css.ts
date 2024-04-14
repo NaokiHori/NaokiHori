@@ -7,7 +7,7 @@ export const container = style({
   justifyContent: "center",
   alignContent: "flex-start",
   alignItems: "center",
-  gap: "24px",
+  columnGap: "24px",
 });
 
 export const element = style({

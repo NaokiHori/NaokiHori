@@ -25,7 +25,7 @@ export function App(): JSX.Element {
   const [currentPage, setPage] = React.useState<Page>(pages[0]);
   return (
     <div className={style.app}>
-      <Header pages={pages} setPage={setPage} />
+      <Header pages={pages} currentPage={currentPage} setPage={setPage} />
       {pages.map((page: Page, index: number) => {
         if (page.title === currentPage.title) {
           return <React.Fragment key={index}>{page.component}</React.Fragment>;

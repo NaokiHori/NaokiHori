@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { themeVars } from "../../../styles/theme.css";
+import { themeColors } from "../../../styles/theme.css";
 import { WideScreen, NarrowScreen } from "../../../styles/responsive";
 import { BORDER_WIDTH } from "./constants";
 
@@ -9,9 +9,9 @@ export const label = style({
   flexWrap: "nowrap",
   justifyContent: "first",
   alignItems: "center",
-  gap: "10px",
-  color: themeVars.color,
-  borderColor: themeVars.backgroundColor,
+  columnGap: "10px",
+  color: themeColors.foreground,
+  borderColor: themeColors.background,
   borderStyle: "solid",
   borderWidth: BORDER_WIDTH,
   marginBottom: "5px",

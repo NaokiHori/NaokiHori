@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import { Svg, SvgProps } from "../../components/Svg";
-import { lineStyle } from "../style.css";
+import { line } from "../style.css";
 
 export const School: React.NamedExoticComponent<object> = React.memo(
   function (): JSX.Element {
@@ -28,17 +28,17 @@ export const School: React.NamedExoticComponent<object> = React.memo(
     );
     return (
       <Svg svgProps={svgProps}>
-        <polygon className={lineStyle} points={polygon} />
-        <polyline className={lineStyle} points={polyline} />
+        <polygon className={line} points={polygon} />
+        <polyline className={line} points={polyline} />
         <line
-          className={lineStyle}
+          className={line}
           x1={line1[0]}
           y1={line1[1]}
           x2={line1[2]}
           y2={line1[3]}
         />
         <line
-          className={lineStyle}
+          className={line}
           x1={line2[0]}
           y1={line2[1]}
           x2={line2[2]}

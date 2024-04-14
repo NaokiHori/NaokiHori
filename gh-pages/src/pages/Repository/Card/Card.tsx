@@ -4,12 +4,15 @@ import { useCard } from "./hooks";
 import { Info } from "./models";
 import { Star as StarIcon } from "../../../icons/Star/Star";
 import { Clock as ClockIcon } from "../../../icons/Clock/Clock";
-import { themeVars } from "../../../styles/theme.css";
+import { themeColors } from "../../../styles/theme.css";
 import * as style from "./style.css";
 
 function Topic({ topic }: { topic: string }): JSX.Element {
   return (
-    <div className={style.borderedBox} style={{ borderColor: themeVars.color }}>
+    <div
+      className={style.borderedBox}
+      style={{ borderColor: themeColors.foreground }}
+    >
       {topic}
     </div>
   );

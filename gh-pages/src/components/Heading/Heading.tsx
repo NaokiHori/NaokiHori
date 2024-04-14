@@ -2,9 +2,17 @@ import { JSX } from "react";
 import * as style from "./style.css";
 
 export function Heading1({ children }: { children: string }): JSX.Element {
-  return <h1 className={style.heading1}>{children}</h1>;
+  return (
+    <div className={style.heading1Container}>
+      <div className={style.heading1Text}>{children}</div>
+    </div>
+  );
 }
 
 export function Heading2({ children }: { children: string }): JSX.Element {
-  return <h2 className={style.heading2}>{children}</h2>;
+  return (
+    <div className={style.heading2Container}>
+      <div className={style.heading2Text}>{children}</div>
+    </div>
+  );
 }

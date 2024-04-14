@@ -22,7 +22,7 @@ export function useExperienceInfoList(): ExperienceInfo[] {
       duration: "Mar. 2024 - Apr. 2024",
       company: "Polyfit Ltd.",
       country: "JAPAN",
-      skillList: ["TypeScript", "React"],
+      skillList: ["TypeScript", "React", "PostgreSQL"],
     },
     {
       index: 1,

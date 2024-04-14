@@ -1,7 +1,7 @@
 import { style } from "@vanilla-extract/css";
-import { themeVars } from "../../styles/theme.css";
+import { themeColors } from "../../styles/theme.css";
 
 export const star = style({
   fill: "#ffff00",
-  stroke: themeVars.color,
+  stroke: themeColors.foreground,
 });

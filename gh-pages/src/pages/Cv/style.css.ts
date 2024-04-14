@@ -1,6 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { WideScreen, NarrowScreen } from "../../styles/responsive";
-import { themeVars } from "../../styles/theme.css";
+import { themeColors } from "../../styles/theme.css";
 
 // stores both education and experience
 // for wider screen they sit side-by-side,
@@ -14,7 +14,7 @@ export const main = style({
       justifyContent: "center",
       alignContent: "flex-start",
       alignItems: "flex-start",
-      gap: "20px",
+      columnGap: "20px",
     },
     [NarrowScreen]: {
       display: "flex",
@@ -48,7 +48,6 @@ export const educationOrExperience = style({
   justifyContent: "flex-start",
   alignContent: "flex-start",
   alignItems: "stretch",
-  gap: "0px",
 });
 
 export const container = style({
@@ -58,30 +57,18 @@ export const container = style({
   justifyContent: "flex-start",
   alignContent: "flex-start",
   alignItems: "stretch",
-  gap: "10px",
-  "@media": {
-    [NarrowScreen]: {
-      paddingLeft: "10px",
-      paddingRight: "10px",
-    },
-  },
+  rowGap: "10px",
 });
 
 export const card = style({
-  paddingLeft: "20px",
-  paddingRight: "20px",
-  paddingTop: "10px",
-  paddingBottom: "10px",
+  paddingLeft: "10px",
+  paddingRight: "10px",
+  paddingTop: "5px",
+  paddingBottom: "5px",
   borderStyle: "solid",
-  borderColor: "#aaaaaa",
-  borderWidth: "1px",
+  borderColor: themeColors.foreground,
+  borderWidth: "2px",
   borderRadius: "4px",
-  "@media": {
-    [NarrowScreen]: {
-      margin: "auto",
-      width: "90%",
-    },
-  },
 });
 
 export const element = style({
@@ -91,7 +78,7 @@ export const element = style({
   justifyContent: "flex-start",
   alignContent: "flex-start",
   alignItems: "stretch",
-  gap: "10px",
+  columnGap: "10px",
   paddingTop: "5px",
   paddingBottom: "5px",
   whiteSpace: "wrap",
@@ -114,6 +101,6 @@ export const title = style({
   flexShrink: "1",
   flexBasis: "auto",
   fontSize: "x-large",
-  color: themeVars.color,
+  color: themeColors.foreground,
   textAlign: "left",
 });

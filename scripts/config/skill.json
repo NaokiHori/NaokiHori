@@ -133,6 +133,18 @@
       "href": "https://vanilla-extract.style",
       "src": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/site/logo.svg",
       "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/VanillaExtract.svg"
+    },
+    {
+      "name": "PostgreSQL",
+      "href": "https://www.postgresql.org",
+      "src": "https://wiki.postgresql.org/wiki/Logo",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/PostgreSQL.svg"
+    },
+    {
+      "name": "Vite",
+      "href": "https://vitejs.dev",
+      "src": "https://github.com/vitejs/vite/blob/main/docs/images/vite.svg",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Vite.svg"
     }
   ]
 }

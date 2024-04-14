@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import { Svg, SvgProps } from "../../components/Svg";
-import { lineStyle } from "../style.css";
+import { line } from "../style.css";
 
 export const Programming: React.NamedExoticComponent<object> = React.memo(
   function (): JSX.Element {
@@ -23,14 +23,14 @@ export const Programming: React.NamedExoticComponent<object> = React.memo(
     return (
       <Svg svgProps={svgProps}>
         <rect
-          className={lineStyle}
+          className={line}
           x={(-0.45 * size).toString()}
           y={(-0.45 * size).toString()}
           width={(0.9 * size).toString()}
           height={(0.9 * size).toString()}
         />
-        <path className={lineStyle} d={paths[0]} />
-        <path className={lineStyle} d={paths[1]} />
+        <path className={line} d={paths[0]} />
+        <path className={line} d={paths[1]} />
       </Svg>
     );
   },

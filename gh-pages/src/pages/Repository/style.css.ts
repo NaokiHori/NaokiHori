@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { themeVars } from "../../styles/theme.css";
+import { themeColors } from "../../styles/theme.css";
 import { WideScreen, NarrowScreen } from "../../styles/responsive";
 
 export const mainTitle = style({
@@ -7,12 +7,13 @@ export const mainTitle = style({
   flexShrink: "1",
   flexBasis: "auto",
   fontSize: "x-large",
-  color: themeVars.unfocusedTextColor,
+  lineHeight: "2.5",
+  color: themeColors.unfocusedText,
   textAlign: "left",
   cursor: "pointer",
   transition: "color 0.2s",
   ":hover": {
-    color: themeVars.focusedTextColor,
+    color: themeColors.focusedText,
   },
 });
 
@@ -22,9 +23,10 @@ export const mainTitle = style({
 export const modalTitle = style({
   width: "80%",
   paddingTop: "0.75em",
+  paddingBottom: "0.75em",
   fontSize: "x-large",
   fontWeight: "bold",
-  color: themeVars.color,
+  color: themeColors.foreground,
   textAlign: "left",
   whiteSpace: "wrap",
 });
@@ -36,8 +38,8 @@ export const cardListContainer = style({
 });
 
 export const cardContainer = style({
-  paddingTop: "10px",
-  paddingBottom: "10px",
+  paddingTop: "5px",
+  paddingBottom: "5px",
 });
 
 export const titleListContainer = style({
@@ -48,7 +50,7 @@ export const titleListContainer = style({
   alignContent: "flex-start",
   alignItems: "flex-start",
   whiteSpace: "nowrap",
-  gap: "10px",
+  rowGap: "10px",
   "@media": {
     [NarrowScreen]: {
       flexGrow: "0",

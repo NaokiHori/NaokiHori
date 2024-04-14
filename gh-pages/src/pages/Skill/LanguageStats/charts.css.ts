@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { themeVars } from "../../../styles/theme.css";
+import { themeColors } from "../../../styles/theme.css";
 import { BORDER_WIDTH } from "./constants";
 
 export const pieChart = style({
@@ -8,7 +8,7 @@ export const pieChart = style({
   maxWidth: "480px",
   aspectRatio: "1",
   borderRadius: "50%",
-  borderColor: themeVars.color,
+  borderColor: themeColors.foreground,
   borderStyle: "solid",
   borderWidth: "2px",
 });

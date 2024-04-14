@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { themeVars } from "../../styles/theme.css";
+import { themeColors } from "../../styles/theme.css";
 
 export const container = style({
   fontSize: "small",
@@ -14,10 +14,10 @@ export const main = style({
   paddingBottom: "0.5em",
   width: "100%",
   margin: "auto",
-  backgroundColor: themeVars.backgroundColor,
+  backgroundColor: themeColors.background,
   textAlign: "center",
 });
 
 export const text = style({
-  color: themeVars.color,
+  color: themeColors.foreground,
 });

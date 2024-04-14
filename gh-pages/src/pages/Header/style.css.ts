@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { themeVars } from "../../styles/theme.css";
+import { themeColors } from "../../styles/theme.css";
 
 export const container = style({
   display: "flex",
@@ -10,7 +10,7 @@ export const container = style({
 
 export const element = style({
   padding: "10px",
-  color: themeVars.unfocusedTextColor,
+  color: themeColors.unfocusedText,
   flexGrow: "1",
   flexShrink: "1",
   flexBasis: "auto",
@@ -19,7 +19,7 @@ export const element = style({
   cursor: "default",
   transition: "color 0.2s",
   ":hover": {
-    color: themeVars.focusedTextColor,
+    color: themeColors.focusedText,
     cursor: "pointer",
   },
 });

@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
 import { Svg, SvgProps } from "../../components/Svg";
-import { lineStyle } from "../style.css";
+import { line } from "../style.css";
 
 export const Award: React.NamedExoticComponent<object> = React.memo(
   function (): JSX.Element {
@@ -18,8 +18,8 @@ export const Award: React.NamedExoticComponent<object> = React.memo(
     `;
     return (
       <Svg svgProps={svgProps}>
-        <path className={lineStyle} d={path} />
-        <circle className={lineStyle} cx="0" cy={-0.5 * radius} r={radius} />
+        <path className={line} d={path} />
+        <circle className={line} cx="0" cy={-0.5 * radius} r={radius} />
       </Svg>
     );
   },

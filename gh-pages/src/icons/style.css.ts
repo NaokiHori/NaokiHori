@@ -1,12 +1,13 @@
 import { style } from "@vanilla-extract/css";
+import { themeColors } from "../styles/theme.css";
 
-export const lineStyle = style({
-  stroke: "#ffffff",
+export const line = style({
+  stroke: themeColors.foreground,
   strokeWidth: "2px",
   strokeLinecap: "round",
   fill: "none",
 });
 
-export const fillStyle = style({
-  fill: "#ffffff",
+export const fill = style({
+  fill: themeColors.foreground,
 });

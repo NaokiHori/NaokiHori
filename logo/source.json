@@ -80,6 +80,10 @@
     "src": "https://raw.githubusercontent.com/sphinx-doc/sphinx/master/doc/_themes/sphinx13/static/sphinx-logo.svg"
   },
   {
+    "name": "PostgreSQL",
+    "src": "https://wiki.postgresql.org/wiki/Logo"
+  },
+  {
     "name": "Prisma",
     "src": "https://github.com/prisma/presskit"
   },
@@ -98,5 +102,9 @@
   {
     "name": "VanillaExtract",
     "src": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/site/logo.svg"
+  },
+  {
+    "name": "Vite",
+    "src": "https://raw.githubusercontent.com/vitejs/vite/main/docs/images/vite.svg"
   }
 ]

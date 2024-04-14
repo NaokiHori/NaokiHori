@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot, Root } from "react-dom/client";
-import { App } from "./pages/Page";
-import "./styles/style.css";
+import { App } from "./pages/App";
+import "./styles/theme.css";
 
 const id = "root";
 const rootElement: HTMLElement | null = document.getElementById(id);

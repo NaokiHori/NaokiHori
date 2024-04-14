@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import { Svg, SvgProps } from "../../../components/Svg";
 import { Info, LanguageInfo } from "./models";
-import { themeVars } from "../../../styles/theme.css";
+import { themeColors } from "../../../styles/theme.css";
 import * as style from "./labels.css";
 
 function Circle({
@@ -17,7 +17,7 @@ function Circle({
   };
   return (
     <Svg svgProps={svgProps}>
-      <circle r={radius} fill={themeVars.color} />
+      <circle r={radius} fill={themeColors.foreground} />
       <circle r={0.8 * radius} fill={color} />
     </Svg>
   );
