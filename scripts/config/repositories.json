@@ -6,7 +6,8 @@
       "SimpleIBMSolver",
       "SimpleVOFSolver",
       "SimpleTCSolver",
-      "SpectralNSSolver1"
+      "SpectralNSSolver1",
+      "SimpleBubblyFlowSolver"
     ]
   },
   {
