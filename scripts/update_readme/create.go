@@ -70,7 +70,7 @@ func getRepositoryTypes(mypaths *MyPaths) []RepositoryType {
 		var items_ []Repository
 		title := repositoryType.Title
 		items := repositoryType.Items
-		for _, item := range items {
+		for _, item := range items[0:1] {
 			href := fmt.Sprintf("https://github.com/NaokiHori/%s", item)
 			src := fmt.Sprintf("https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/%s.svg", item)
 			items_ = append(items_, Repository{Href: href, Src: src})

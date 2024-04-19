@@ -20,8 +20,8 @@
   {
     "title": "Physics simulators",
     "items": [
-      "WebNSSolver",
       "Collision",
+      "WebNSSolver",
       "Pendulum"
     ]
   },
@@ -34,8 +34,8 @@
   {
     "title": "Others",
     "items": [
-      "GameCentre",
-      "NaokiHori"
+      "NaokiHori",
+      "GameCentre"
     ]
   }
 ]
