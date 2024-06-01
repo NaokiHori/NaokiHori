@@ -1,0 +1,44 @@
+{
+  "name": "Pendulum",
+  "descr": "Energy-conserving N-body pendulum simulator",
+  "topics": [
+    "pendulum",
+    "physics-simulation",
+    "webapp",
+    "webassembly"
+  ],
+  "langs": [
+    {
+      "name": "Rust",
+      "size": 28384,
+      "color": "#dea584"
+    },
+    {
+      "name": "Python",
+      "size": 11536,
+      "color": "#3572A5"
+    },
+    {
+      "name": "CSS",
+      "size": 3034,
+      "color": "#563d7c"
+    },
+    {
+      "name": "HTML",
+      "size": 2944,
+      "color": "#e34c26"
+    },
+    {
+      "name": "TypeScript",
+      "size": 1363,
+      "color": "#3178c6"
+    },
+    {
+      "name": "Shell",
+      "size": 457,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 2,
+  "lastUpdate": 1712500822000
+}
