@@ -12,12 +12,12 @@
   "langs": [
     {
       "name": "C",
-      "size": 329254,
+      "size": 320515,
       "color": "#555555"
     },
     {
       "name": "Python",
-      "size": 11521,
+      "size": 12167,
       "color": "#3572A5"
     },
     {
@@ -27,10 +27,10 @@
     },
     {
       "name": "Shell",
-      "size": 1157,
+      "size": 1145,
       "color": "#89e051"
     }
   ],
   "nStars": 4,
-  "lastUpdate": 1715537677000
+  "lastUpdate": 1717856399000
 }
