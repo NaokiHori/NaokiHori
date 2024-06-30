@@ -11,14 +11,14 @@
       "color": "#dea584"
     },
   {
+      "name": "TypeScript",
+      "size": 130054,
+      "color": "#3178c6"
+    },
+  {
       "name": "Python",
       "size": 120633,
       "color": "#3572A5"
-    },
-  {
-      "name": "TypeScript",
-      "size": 116490,
-      "color": "#3178c6"
     },
   {
       "name": "Go",
@@ -27,7 +27,7 @@
     },
   {
       "name": "Shell",
-      "size": 18263,
+      "size": 18321,
       "color": "#89e051"
     },
   {
@@ -42,7 +42,7 @@
     },
   {
       "name": "HTML",
-      "size": 10908,
+      "size": 11218,
       "color": "#e34c26"
     },
   {
@@ -57,7 +57,7 @@
     },
   {
       "name": "JavaScript",
-      "size": 452,
+      "size": 904,
       "color": "#f1e05a"
     },
   {
@@ -66,5 +66,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1719114069463
+  "date": 1719718854932
 }
