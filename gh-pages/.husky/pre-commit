@@ -1,0 +1,2 @@
+cd gh-pages
+npx lint-staged
