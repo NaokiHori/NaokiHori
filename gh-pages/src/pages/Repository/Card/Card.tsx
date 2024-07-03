@@ -2,8 +2,8 @@ import { JSX } from "react";
 import { getDateString } from "../../../util/getDateString";
 import { useCard } from "./hooks";
 import { Info } from "./models";
-import { Star as StarIcon } from "../../../icons/Star/Star";
-import { Clock as ClockIcon } from "../../../icons/Clock/Clock";
+import { Star as StarIcon } from "../../../icons/Star";
+import { Clock as ClockIcon } from "../../../icons/Clock";
 import { themeColors } from "../../../styles/theme.css";
 import * as style from "./style.css";
 

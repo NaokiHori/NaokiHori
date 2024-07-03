@@ -1,5 +1,5 @@
 import React, { JSX } from "react";
-import { Svg, SvgProps } from "../../components/Svg";
+import { Svg, SvgProps } from "../components/Svg";
 import * as style from "./style.css";
 
 export const Star: React.NamedExoticComponent<object> = React.memo(
@@ -24,7 +24,7 @@ export const Star: React.NamedExoticComponent<object> = React.memo(
     };
     return (
       <Svg svgProps={svgProps}>
-        <path className={style.star} d={path} />
+        <path className={style.line} d={path} />
       </Svg>
     );
   },

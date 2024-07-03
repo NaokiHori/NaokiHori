@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
-import { Svg, SvgProps } from "../../components/Svg";
-import { line, fill } from "../style.css";
+import { Svg, SvgProps } from "../components/Svg";
+import { line, fill } from "./style.css";
 
 type HandType = "small" | "big";
 

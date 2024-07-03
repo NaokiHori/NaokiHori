@@ -1,8 +1,8 @@
 import { JSX } from "react";
-import { School as SchoolIcon } from "../../icons/School/School";
-import { Clock as ClockIcon } from "../../icons/Clock/Clock";
-import { World as WorldIcon } from "../../icons/World/World";
-import { Award as AwardIcon } from "../../icons/Award/Award";
+import { School as SchoolIcon } from "../../icons/School";
+import { Clock as ClockIcon } from "../../icons/Clock";
+import { World as WorldIcon } from "../../icons/World";
+import { Award as AwardIcon } from "../../icons/Award";
 import * as style from "./style.css";
 
 export interface EducationInfo {

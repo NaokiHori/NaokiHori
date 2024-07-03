@@ -1,6 +1,6 @@
 import React, { JSX } from "react";
-import { Svg, SvgProps } from "../../components/Svg";
-import { line } from "../style.css";
+import { Svg, SvgProps } from "../components/Svg";
+import { line } from "./style.css";
 
 export const Company: React.NamedExoticComponent<object> = React.memo(
   function (): JSX.Element {

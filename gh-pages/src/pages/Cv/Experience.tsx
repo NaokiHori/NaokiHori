@@ -1,8 +1,8 @@
 import { JSX } from "react";
-import { Company as CompanyIcon } from "../../icons/Company/Company";
-import { Clock as ClockIcon } from "../../icons/Clock/Clock";
-import { World as WorldIcon } from "../../icons/World/World";
-import { Programming as ProgrammingIcon } from "../../icons/Programming/Programming";
+import { Company as CompanyIcon } from "../../icons/Company";
+import { Clock as ClockIcon } from "../../icons/Clock";
+import { World as WorldIcon } from "../../icons/World";
+import { Programming as ProgrammingIcon } from "../../icons/Programming";
 import * as style from "./style.css";
 
 export interface ExperienceInfo {
