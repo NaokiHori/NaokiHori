@@ -1,5 +1,5 @@
 import { JSX } from "react";
-import { getDateString } from "../../../util/getDateString";
+import { getDateString } from "../../../utils/getDateString";
 import { useCard } from "./hooks";
 import { Info } from "./models";
 import { Star as StarIcon } from "../../../icons/Star";

@@ -1,5 +1,5 @@
 import { JSX } from "react";
-import { getDateString } from "../../../util/getDateString";
+import { getDateString } from "../../../utils/getDateString";
 import { LanguageInfo } from "./models";
 import { useLanguageInfo } from "./hooks";
 import { Labels } from "./Labels";

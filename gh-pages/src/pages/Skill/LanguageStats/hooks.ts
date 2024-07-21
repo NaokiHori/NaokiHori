@@ -1,5 +1,5 @@
 import React from "react";
-import { fetchAndParseJson } from "../../../util/fetchAndParseJson";
+import { fetchAndParseJson } from "../../../utils/fetchAndParseJson";
 import { Info, GlobalStats, LanguageInfo } from "./models";
 import { getSum, getMax, squashMinorStats } from "./utils";
 

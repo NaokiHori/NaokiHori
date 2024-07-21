@@ -1,5 +1,5 @@
 import React from "react";
-import { fetchAndParseJson } from "../../util/fetchAndParseJson";
+import { fetchAndParseJson } from "../../utils/fetchAndParseJson";
 import { Category, RepositoryInfo } from "./models";
 
 // original data type of json
