@@ -14,7 +14,7 @@ export function getDateString(date: Date): string {
     } else if (month === 4) {
       return "May";
     } else if (month === 5) {
-      return "Jun";
+      return "Jun.";
     } else if (month === 6) {
       return "Jul.";
     } else if (month === 7) {
