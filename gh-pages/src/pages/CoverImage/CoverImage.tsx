@@ -5,12 +5,13 @@ export function CoverImage({ src }: { src: string }): JSX.Element {
   const [loading, setLoading] = React.useState<boolean>(true);
   React.useEffect(() => {
     const image = new Image();
-    image.src = src;
     image.onload = () => {
       setLoading(false);
     };
+    image.src = src;
     return () => {
       image.onload = null;
+      image.src = "";
     };
   }, [src]);
   if (loading) {
