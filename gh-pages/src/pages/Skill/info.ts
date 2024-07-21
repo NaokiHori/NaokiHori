@@ -16,10 +16,11 @@ export interface SkillInfo {
 export function useSkillInfo(): SkillInfo {
   const configSrc =
     "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/scripts/config/skill.json";
-  const [skillInfo, setSkillInfo] = React.useState<SkillInfo>({
+  const defaultSkillInfo = {
     languages: Array<Info>(),
     tools: Array<Info>(),
-  });
+  };
+  const [skillInfo, setSkillInfo] = React.useState<SkillInfo>(defaultSkillInfo);
   React.useEffect(() => {
     fetchAndParseJson<SkillInfo>(configSrc).then(
       (data: SkillInfo): void => {
@@ -29,6 +30,9 @@ export function useSkillInfo(): SkillInfo {
         throw new Error(error.message);
       },
     );
+    return () => {
+      setSkillInfo(defaultSkillInfo);
+    };
   }, [configSrc]);
   return skillInfo;
 }

@@ -27,17 +27,18 @@ export function useCard(repositoryName: string): [boolean, Info] {
   React.useEffect(() => {
     fetchAndParseJson<RawData>(configSrc).then(
       (rawData: RawData): void => {
-        // convert json data to data type of use
-        const info: Info = {
-          name: rawData.name,
-          topics: rawData.topics,
-          languages: rawData.langs,
-          descr: rawData.descr,
-          nStars: rawData.nStars,
-          // receive milli-sec string, convert it to Date
-          lastUpdate: new Date(rawData.lastUpdate),
-        };
-        setInfo(info);
+        setInfo(
+          // convert json data to data type of use
+          {
+            name: rawData.name,
+            topics: rawData.topics,
+            languages: rawData.langs,
+            descr: rawData.descr,
+            nStars: rawData.nStars,
+            // receive milli-sec string, convert it to Date
+            lastUpdate: new Date(rawData.lastUpdate),
+          } satisfies Info,
+        );
         setIsLoaded(true);
       },
       (error: Error): never => {

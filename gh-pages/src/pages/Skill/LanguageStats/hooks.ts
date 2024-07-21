@@ -21,7 +21,7 @@ export function useLanguageInfo(): {
   // fetch json file storing information about my language use
   const configSrc =
     "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/language.json";
-  const emptyLanguageInfo: LanguageInfo = {
+  const defaultLanguageInfo: LanguageInfo = {
     infoList: new Array<Info>(),
     globalStats: {
       maxOfSizes: 0,
@@ -30,9 +30,9 @@ export function useLanguageInfo(): {
   };
   const [date, setDate] = React.useState<Date>(new Date());
   const [originalInfo, setOriginalInfo] =
-    React.useState<LanguageInfo>(emptyLanguageInfo);
+    React.useState<LanguageInfo>(defaultLanguageInfo);
   const [squashedInfo, setSquashedInfo] =
-    React.useState<LanguageInfo>(emptyLanguageInfo);
+    React.useState<LanguageInfo>(defaultLanguageInfo);
   React.useEffect(() => {
     fetchAndParseJson<RawData>(configSrc).then(
       (rawData: RawData): void => {
@@ -75,6 +75,10 @@ export function useLanguageInfo(): {
         throw new Error(error.message);
       },
     );
+    return () => {
+      setOriginalInfo(defaultLanguageInfo);
+      setSquashedInfo(defaultLanguageInfo);
+    };
   }, [configSrc]);
   return { date, original: originalInfo, squashed: squashedInfo };
 }
