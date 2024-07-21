@@ -39,13 +39,17 @@ function Star({ nStars }: { nStars: number }): JSX.Element {
   );
 }
 
-function LastUpdate({ lastUpdate }: { lastUpdate: Date }): JSX.Element {
-  return (
-    <div className={style.iconAndTextContainer}>
-      <ClockIcon />
-      <div className={style.textAfterIcon}>{getDateString(lastUpdate)}</div>
-    </div>
-  );
+function LastUpdate({ lastUpdate }: { lastUpdate: Date | null }): JSX.Element {
+  if (lastUpdate) {
+    return (
+      <div className={style.iconAndTextContainer}>
+        <ClockIcon />
+        <div className={style.textAfterIcon}>{getDateString(lastUpdate)}</div>
+      </div>
+    );
+  } else {
+    return <></>;
+  }
 }
 
 export function Card({

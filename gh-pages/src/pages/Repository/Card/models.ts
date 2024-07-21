@@ -4,5 +4,5 @@ export interface Info {
   topics: string[];
   languages: { name: string; size: number; color: string }[];
   nStars: number;
-  lastUpdate: Date;
+  lastUpdate: Date | null;
 }

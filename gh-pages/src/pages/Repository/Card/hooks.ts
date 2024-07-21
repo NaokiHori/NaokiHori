@@ -19,7 +19,7 @@ export function useCard(repositoryName: string): [boolean, Info] {
     topics: [],
     languages: [],
     nStars: 0,
-    lastUpdate: new Date(),
+    lastUpdate: null,
   };
   const configSrc = `https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/${repositoryName}.json`;
   const [info, setInfo] = React.useState<Info>(defaultInfo);
@@ -44,6 +44,10 @@ export function useCard(repositoryName: string): [boolean, Info] {
         throw new Error(error.message);
       },
     );
+    return () => {
+      setInfo(defaultInfo);
+      setIsLoaded(false);
+    };
   }, [configSrc]);
   return [isLoaded, info];
 }
