@@ -1,20 +1,20 @@
 // header component at the top of all pages
 
-import React, { JSX } from "react";
+import { JSX } from "react";
 import { Page } from "../App";
 import * as style from "./style.css";
 
 function Element({
   page,
   currentPage,
-  setPage,
+  updatePage,
 }: {
   page: Page;
   currentPage: Page;
-  setPage: React.Dispatch<React.SetStateAction<Page>>;
+  updatePage: (newPage: Page) => void;
 }): JSX.Element {
   const handleClick = (newPage: Page): void => {
-    setPage(newPage);
+    updatePage(newPage);
   };
   return (
     <div
@@ -34,11 +34,11 @@ function Element({
 export function Header({
   pages,
   currentPage,
-  setPage,
+  updatePage,
 }: {
   pages: Page[];
   currentPage: Page;
-  setPage: React.Dispatch<React.SetStateAction<Page>>;
+  updatePage: (newPage: Page) => void;
 }): JSX.Element {
   return (
     <div className={style.container}>
@@ -47,7 +47,7 @@ export function Header({
           key={index}
           page={page}
           currentPage={currentPage}
-          setPage={setPage}
+          updatePage={updatePage}
         />
       ))}
     </div>
