@@ -46,10 +46,6 @@ export function About(): JSX.Element {
     <>
       <CoverImage src={coverImageSrc} />
       <Heading1>Naoki HORI</Heading1>
-      <Heading2>Affiliation</Heading2>
-      <div className={style.descr}>
-        Ph.D. candidate at University of Twente, Physics of Fluids group
-      </div>
       <Heading2>Work</Heading2>
       <List elements={workElements} />
       <Heading2>Interest</Heading2>

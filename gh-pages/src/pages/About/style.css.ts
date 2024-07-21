@@ -1,12 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { themeColors } from "../../styles/theme.css";
 
-export const descr = style({
-  paddingLeft: "10px",
-  paddingRight: "10px",
-  fontSize: "large",
-});
-
 export const listContainer = style({
   paddingLeft: "10px",
   paddingRight: "10px",
