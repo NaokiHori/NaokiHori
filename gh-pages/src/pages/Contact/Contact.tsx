@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import { Heading1 } from "../../components/Heading/Heading";
 import { CoverImage } from "../CoverImage/CoverImage";
-import coverImageSrc from "./three-phase.png";
+import coverImageSrc from "./karman.jpg";
 import * as style from "./style.css";
 
 interface ContactInfo {
