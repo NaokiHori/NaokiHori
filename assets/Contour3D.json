@@ -1,0 +1,25 @@
+{
+  "name": "Contour3D",
+  "descr": "Library-independent streamlined 3D contouring for massively-parallelised CFD simulations",
+  "topics": [
+    "computer-graphics",
+    "hpc",
+    "isosurface",
+    "marching-tetrahedra",
+    "visualization"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 80626,
+      "color": "#555555"
+    },
+    {
+      "name": "Makefile",
+      "size": 740,
+      "color": "#427819"
+    }
+  ],
+  "nStars": 5,
+  "lastUpdate": 1721388726000
+}

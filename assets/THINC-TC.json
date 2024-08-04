@@ -1,0 +1,36 @@
+{
+  "name": "THINC-TC",
+  "descr": "THINC (volume-of-fluid) method for Taylor-Couette flows",
+  "topics": [
+    "cfd",
+    "finite-difference",
+    "hpc",
+    "taylor-couette",
+    "turbulence",
+    "volume-of-fluid"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 320515,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 12167,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Makefile",
+      "size": 1492,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 1145,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 5,
+  "lastUpdate": 1717921046000
+}
