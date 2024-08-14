@@ -37,17 +37,11 @@ function List({ elements }: { elements: string[] }): JSX.Element {
 }
 
 export function About(): JSX.Element {
-  const workElements: string[] = [
-    "Direct numerical simulations (bubbly flows, Taylor-Couette flows)",
-    "High performance computings",
-  ];
   const interestElements: string[] = ["Numerical methods", "Software design"];
   return (
     <>
       <CoverImage src={coverImageSrc} />
       <Heading1>Naoki HORI</Heading1>
-      <Heading2>Work</Heading2>
-      <List elements={workElements} />
       <Heading2>Interest</Heading2>
       <List elements={interestElements} />
     </>

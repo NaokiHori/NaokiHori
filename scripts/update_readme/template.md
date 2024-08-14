@@ -18,21 +18,6 @@
 
 <h2>
   <div align="left">
-    Work
-  </div>
-</h2>
-
-<ul>
-  <li>
-    Fluid mechanics (turbulent multiphase flows)
-  </li>
-  <li>
-    High performance computing
-  </li>
-</ul>
-
-<h2>
-  <div align="left">
     Interest
   </div>
 </h2>
@@ -104,11 +89,3 @@
   </li>
   {{ end }}
 </ul>
-
-<h2>
-  Contact
-</h2>
-
-<div align="center">
-  Bug reports, jobs, etc.: n (dot) hori [__at__] utwente (dot) nl
-</div>
