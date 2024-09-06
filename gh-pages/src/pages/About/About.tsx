@@ -41,7 +41,7 @@ export function About(): JSX.Element {
   return (
     <>
       <CoverImage src={coverImageSrc} />
-      <Heading1>Naoki HORI</Heading1>
+      <Heading1>Naoki HORI, Ph.D.</Heading1>
       <Heading2>Interest</Heading2>
       <List elements={interestElements} />
     </>
