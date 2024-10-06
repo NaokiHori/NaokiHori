@@ -12,17 +12,17 @@
     },
   {
       "name": "TypeScript",
-      "size": 147484,
+      "size": 133886,
       "color": "#3178c6"
     },
   {
       "name": "Python",
-      "size": 132001,
+      "size": 120928,
       "color": "#3572A5"
     },
   {
       "name": "Makefile",
-      "size": 38029,
+      "size": 37559,
       "color": "#427819"
     },
   {
@@ -37,12 +37,12 @@
     },
   {
       "name": "CSS",
-      "size": 13484,
+      "size": 13656,
       "color": "#563d7c"
     },
   {
       "name": "HTML",
-      "size": 11943,
+      "size": 11629,
       "color": "#e34c26"
     },
   {
@@ -57,7 +57,7 @@
     },
   {
       "name": "JavaScript",
-      "size": 904,
+      "size": 1554,
       "color": "#f1e05a"
     },
   {
@@ -66,5 +66,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1727581601429
+  "date": 1728186391157
 }

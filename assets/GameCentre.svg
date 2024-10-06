@@ -252,6 +252,23 @@
     >
       HTML
     </text>
+    <rect
+      class="lang"
+      x="299.858"
+      y="142.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#f1e05a"
+    />
+    <text
+      class="descr"
+      x="304.714"
+      y="154"
+    >
+      JavaScript
+    </text>
   </g>
 
   <g id="star">
@@ -282,7 +299,7 @@
       x="86.49000000000001"
       y="186"
     >
-      27 September 2024
+      30 September 2024
     </text>
   </g>
 

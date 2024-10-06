@@ -12,7 +12,7 @@
   "langs": [
     {
       "name": "TypeScript",
-      "size": 47379,
+      "size": 33600,
       "color": "#3178c6"
     },
     {
@@ -22,15 +22,20 @@
     },
     {
       "name": "CSS",
-      "size": 6299,
+      "size": 6673,
       "color": "#563d7c"
     },
     {
       "name": "HTML",
-      "size": 3000,
+      "size": 2690,
       "color": "#e34c26"
+    },
+    {
+      "name": "JavaScript",
+      "size": 650,
+      "color": "#f1e05a"
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1727437297000
+  "lastUpdate": 1727738643000
 }
