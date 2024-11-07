@@ -1,0 +1,50 @@
+{
+  "name": "Wave",
+  "descr": "A minimalistic simulator for solving scalar wave equations using the Fourier-Galerkin method",
+  "topics": [
+    "fourier-transform",
+    "galerkin-method",
+    "physics-simulation",
+    "sound-propagation",
+    "wave-equation"
+  ],
+  "langs": [
+    {
+      "name": "Rust",
+      "size": 21548,
+      "color": "#dea584"
+    },
+    {
+      "name": "TypeScript",
+      "size": 3571,
+      "color": "#3178c6"
+    },
+    {
+      "name": "HTML",
+      "size": 521,
+      "color": "#e34c26"
+    },
+    {
+      "name": "JavaScript",
+      "size": 452,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "CSS",
+      "size": 446,
+      "color": "#563d7c"
+    },
+    {
+      "name": "Makefile",
+      "size": 256,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 130,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1730960636000
+}

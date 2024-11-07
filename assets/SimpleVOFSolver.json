@@ -1,0 +1,36 @@
+{
+  "name": "SimpleVOFSolver",
+  "descr": "Massively-parallelised Navier-Stokes solver with a volume-of-fluid method for droplet-laden flows",
+  "topics": [
+    "cfd",
+    "finite-volume",
+    "fluid-dynamics",
+    "hpc",
+    "navier-stokes",
+    "turbulence"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 217943,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 10957,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Makefile",
+      "size": 1484,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 1231,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 8,
+  "lastUpdate": 1703518249000
+}
