@@ -23,7 +23,8 @@
     "items": [
       "Collision",
       "WebNSSolver",
-      "Pendulum"
+      "Pendulum",
+      "Wave"
     ]
   },
   {
