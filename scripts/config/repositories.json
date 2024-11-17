@@ -6,9 +6,8 @@
       "SimpleIBMSolver",
       "SimpleVOFSolver",
       "SimpleTCSolver",
-      "SpectralNSSolver1",
       "SimpleBubblyFlowSolver",
-      "THINC-TC"
+      "SpectralNSSolver1"
     ]
   },
   {
@@ -22,8 +21,8 @@
     "title": "Physics simulators",
     "items": [
       "Collision",
-      "WebNSSolver",
       "Pendulum",
+      "WebNSSolver",
       "Wave"
     ]
   },
