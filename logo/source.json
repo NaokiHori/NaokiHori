@@ -106,5 +106,9 @@
   {
     "name": "Vite",
     "src": "https://raw.githubusercontent.com/vitejs/vite/main/docs/images/vite.svg"
+  },
+  {
+    "name": "Gnuplot",
+    "src": "https://sourceforge.net/projects/gnuplot/"
   }
 ]

@@ -67,6 +67,12 @@
       "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/React.svg"
     },
     {
+      "name": "Gnuplot",
+      "href": "https://gnuplot.sourceforge.net",
+      "src": "https://sourceforge.net/projects/gnuplot/",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Gnuplot.svg"
+    },
+    {
       "name": "Matlab",
       "href": "https://www.mathworks.com/products/matlab.html",
       "src": "https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png",
