@@ -37,13 +37,17 @@ function List({ elements }: { elements: string[] }): JSX.Element {
 }
 
 export function About(): JSX.Element {
-  const interestElements: string[] = ["Numerical methods", "Software design"];
+  const introductionElements: string[] = [
+    "Modeling and simulating various phenomena using computational methods.",
+    "Coding enthusiast (C, Rust, Python, TypeScript, among others) striving for direct, transparent, elegant, and efficient solutions.",
+    "Fan of CFD: 'Colorful Fluid Dynamics' - or Computational Fluid Dynamics",
+  ];
   return (
     <>
       <CoverImage src={coverImageSrc} />
       <Heading1>Naoki HORI, Ph.D.</Heading1>
-      <Heading2>Interest</Heading2>
-      <List elements={interestElements} />
+      <Heading2>About Me</Heading2>
+      <List elements={introductionElements} />
     </>
   );
 }
