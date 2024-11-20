@@ -33,6 +33,13 @@
     ]
   },
   {
+    "title": "Sandboxes",
+    "items": [
+      "C-Misc",
+      "WebGLSandbox"
+    ]
+  },
+  {
     "title": "Others",
     "items": [
       "NaokiHori",
