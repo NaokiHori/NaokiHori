@@ -123,6 +123,12 @@
       "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitLab.svg"
     },
     {
+      "name": "WebGL",
+      "href": "https://www.khronos.org/webgl/",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/WebGL.svg"
+    },
+    {
       "name": "Sphinx",
       "href": "https://www.sphinx-doc.org/en/master/",
       "src": "https://raw.githubusercontent.com/sphinx-doc/sphinx/master/doc/_themes/sphinx13/static/sphinx-logo.svg",

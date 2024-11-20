@@ -110,5 +110,9 @@
   {
     "name": "Gnuplot",
     "src": "https://sourceforge.net/projects/gnuplot/"
+  },
+  {
+    "name": "WebGL",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/25/WebGL_Logo.svg"
   }
 ]
