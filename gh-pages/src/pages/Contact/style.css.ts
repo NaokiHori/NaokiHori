@@ -7,11 +7,15 @@ export const container = style({
   justifyContent: "center",
   alignContent: "flex-start",
   alignItems: "center",
-  columnGap: "24px",
+  columnGap: "1rem",
 });
 
 export const element = style({
-  flexGrow: "0",
-  flexShrink: "0",
-  flexBasis: "auto",
+  selectors: {
+    [`${container} > &`]: {
+      flexGrow: "0",
+      flexShrink: "0",
+      flexBasis: "auto",
+    },
+  },
 });

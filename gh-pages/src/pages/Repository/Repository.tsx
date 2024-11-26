@@ -96,7 +96,7 @@ export function Repository(): JSX.Element {
     <>
       <CoverImage src={coverImageSrc} />
       <Heading1>GitHub Repository</Heading1>
-      <div className={style.wideContainer}>
+      <div className={style.container.wide}>
         <div className={style.titleListContainer}>
           {categories.map((category: Category, index: number) => (
             <Title
@@ -110,7 +110,7 @@ export function Repository(): JSX.Element {
         </div>
         <CardList displaySize="Wide" categories={categories} />
       </div>
-      <div className={style.narrowContainer}>
+      <div className={style.container.narrow}>
         <div className={style.titleListContainer}>
           {categories.map((category: Category, index: number) => (
             <Title

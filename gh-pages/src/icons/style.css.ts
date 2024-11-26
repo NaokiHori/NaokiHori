@@ -3,7 +3,7 @@ import { themeColors } from "../styles/theme.css";
 
 export const line = style({
   stroke: themeColors.foreground,
-  strokeWidth: "2px",
+  strokeWidth: "0.1rem",
   strokeLinecap: "round",
   fill: "none",
 });

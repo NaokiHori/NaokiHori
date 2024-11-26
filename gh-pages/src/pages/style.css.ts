@@ -9,7 +9,7 @@ export const app = style({
       width: "80%",
     },
     [NarrowScreen]: {
-      width: "100%",
+      width: "95%",
     },
   },
 });

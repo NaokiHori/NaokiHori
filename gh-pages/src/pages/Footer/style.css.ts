@@ -3,21 +3,30 @@ import { themeColors } from "../../styles/theme.css";
 
 export const container = style({
   fontSize: "small",
-  height: "2em",
+  height: "2rem",
 });
 
 export const main = style({
-  position: "fixed",
-  left: "0",
-  right: "0",
-  bottom: "0",
-  paddingBottom: "0.5em",
-  width: "100%",
-  margin: "auto",
-  backgroundColor: themeColors.background,
-  textAlign: "center",
+  selectors: {
+    [`${container} > &`]: {
+      position: "fixed",
+      left: "0",
+      right: "0",
+      bottom: "0",
+      paddingBottom: "0.25rem",
+      paddingTop: "0.25rem",
+      width: "100%",
+      margin: "auto",
+      backgroundColor: themeColors.foreground,
+      textAlign: "center",
+    },
+  },
 });
 
 export const text = style({
-  color: themeColors.foreground,
+  selectors: {
+    [`${main} > &`]: {
+      color: themeColors.background,
+    },
+  },
 });

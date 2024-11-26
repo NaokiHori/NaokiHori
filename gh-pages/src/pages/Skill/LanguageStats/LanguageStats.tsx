@@ -1,13 +1,29 @@
 import { JSX } from "react";
 import { getDateString } from "../../../utils/getDateString";
+import { DisplaySize } from "../../../styles/responsive";
 import { LanguageInfo } from "./models";
 import { useLanguageInfo } from "./hooks";
 import { Labels } from "./Labels";
-import { BarChart, PieChart } from "./Charts";
+import { BarChart } from "./BarChart";
+import { PieChart } from "./PieChart";
 import * as style from "./style.css";
 
-function Update({ date }: { date: Date }): JSX.Element {
-  return <div className={style.update}>Last update: {getDateString(date)}</div>;
+function Update({
+  displaySize,
+  date,
+}: {
+  displaySize: DisplaySize;
+  date: Date;
+}): JSX.Element {
+  return (
+    <div
+      className={
+        displaySize === "Wide" ? style.update.wide : style.update.narrow
+      }
+    >
+      Last update: {getDateString(date)}
+    </div>
+  );
 }
 
 export function LanguageStats(): JSX.Element {
@@ -24,16 +40,16 @@ export function LanguageStats(): JSX.Element {
   return (
     <>
       {/* for wider screen */}
-      <div className={style.wide}>
-        <Labels languageInfo={original} />
+      <div className={style.wideDisplayLanguageStats}>
+        <Labels displaySize="Wide" languageInfo={original} />
         <BarChart languageInfo={original} />
-        <Update date={date} />
+        <Update displaySize="Wide" date={date} />
       </div>
       {/* for narrower screen */}
-      <div className={style.narrow}>
-        <Labels languageInfo={squashed} />
+      <div className={style.narrowDisplayLanguageStats}>
+        <Labels displaySize="Narrow" languageInfo={squashed} />
         <PieChart languageInfo={squashed} />
-        <Update date={date} />
+        <Update displaySize="Narrow" date={date} />
       </div>
     </>
   );

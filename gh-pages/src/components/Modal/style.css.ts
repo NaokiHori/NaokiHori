@@ -12,18 +12,15 @@ const fadein = keyframes({
 
 export const modal = style({
   width: "90%",
-  maxHeight: "75vh",
+  maxHeight: "95dvh",
   position: "relative",
   backgroundColor: themeColors.background,
   color: themeColors.foreground,
-  borderColor: themeColors.background,
-  borderWidth: "2px",
-  borderStyle: "solid",
-  paddingLeft: "10px",
-  paddingRight: "10px",
-  paddingBottom: "0px",
-  paddingTop: "0px",
-  transition: "all 1s",
+  border: "none",
+  paddingLeft: "1rem",
+  paddingRight: "1rem",
+  paddingBottom: "0.5rem",
+  paddingTop: "0.5rem",
   "::backdrop": {
     backgroundColor: "#88888888",
   },
@@ -34,18 +31,22 @@ export const modal = style({
   },
 });
 
-export const closeButtonContainer = style({
-  position: "absolute",
-  top: 0,
-  right: 0,
-  cursor: "pointer",
-  width: "24px",
-  height: "24px",
-  marginTop: "24px",
-  marginRight: "24px",
-  stroke: "#888888",
-  ":hover": {
-    stroke: themeColors.foreground,
+export const closeButton = style({
+  selectors: {
+    [`${modal} > &`]: {
+      position: "absolute",
+      top: 0,
+      right: 0,
+      cursor: "pointer",
+      width: "1.5rem",
+      height: "1.5rem",
+      marginTop: "1.75rem",
+      marginRight: "1.75rem",
+      stroke: "#888888",
+    },
+    [`${modal} > &:hover`]: {
+      stroke: themeColors.foreground,
+    },
   },
 });
 

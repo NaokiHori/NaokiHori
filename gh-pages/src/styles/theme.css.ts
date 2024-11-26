@@ -17,9 +17,9 @@ globalStyle(":root", {
     // colors for light theme
     "(prefers-color-scheme: light)": {
       vars: {
-        [themeColors.focusedText]: "#000000",
-        [themeColors.background]: "#ffffff",
-        [themeColors.foreground]: "#000000",
+        [themeColors.focusedText]: "#ffff00",
+        [themeColors.background]: "#242424",
+        [themeColors.foreground]: "#ffffff",
       },
     },
     // colors for dark theme

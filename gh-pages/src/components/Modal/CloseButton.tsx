@@ -11,7 +11,7 @@ export function CloseButton({ onClick }: { onClick: () => void }): JSX.Element {
   const edges: [number, number] = [-0.5 * size, 0.5 * size];
   return (
     <div
-      className={style.closeButtonContainer}
+      className={style.closeButton}
       onClick={() => {
         onClick();
       }}

@@ -2,7 +2,8 @@ import { JSX } from "react";
 import { Svg, SvgProps } from "../../../components/Svg";
 import { Info, LanguageInfo } from "./models";
 import { themeColors } from "../../../styles/theme.css";
-import * as style from "./labels.css";
+import { DisplaySize } from "../../../styles/responsive";
+import * as style from "./style.css";
 
 function Circle({
   radius,
@@ -33,12 +34,18 @@ function Label({ info }: { info: Info }): JSX.Element {
 }
 
 export function Labels({
+  displaySize,
   languageInfo,
 }: {
+  displaySize: DisplaySize;
   languageInfo: LanguageInfo;
 }): JSX.Element {
   return (
-    <div className={style.labels}>
+    <div
+      className={
+        displaySize === "Wide" ? style.labels.wide : style.labels.narrow
+      }
+    >
       {languageInfo.infoList.map((info: Info, index: number) => (
         <Label key={index} info={info} />
       ))}

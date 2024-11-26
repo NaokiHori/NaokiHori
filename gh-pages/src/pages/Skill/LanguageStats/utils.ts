@@ -1,5 +1,6 @@
-import { THRESHOLD_SIZE_RATE } from "./constants";
 import { Info } from "./models";
+
+const THRESHOLD_SIZE_RATE = 0.01;
 
 export function getRate(value: number, sum: number): string {
   return `${((100 * value) / sum).toFixed(2)}%`;

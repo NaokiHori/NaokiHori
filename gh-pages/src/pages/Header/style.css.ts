@@ -9,17 +9,24 @@ export const container = style({
 });
 
 export const element = style({
-  padding: "10px",
-  color: themeColors.unfocusedText,
-  flexGrow: "1",
-  flexShrink: "1",
-  flexBasis: "auto",
-  textAlign: "center",
-  fontSize: "20px",
-  cursor: "default",
-  transition: "color 0.2s",
-  ":hover": {
-    color: themeColors.focusedText,
-    cursor: "pointer",
+  selectors: {
+    [`${container} > &`]: {
+      paddingLeft: "1rem",
+      paddingRight: "1rem",
+      paddingBottom: "0.5rem",
+      paddingTop: "0.5rem",
+      color: themeColors.unfocusedText,
+      flexGrow: "1",
+      flexShrink: "1",
+      flexBasis: "auto",
+      textAlign: "center",
+      fontSize: "1.5rem",
+      cursor: "default",
+      transition: "color 0.2s",
+    },
+    [`${container} > &:hover`]: {
+      color: themeColors.focusedText,
+      cursor: "pointer",
+    },
   },
 });

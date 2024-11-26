@@ -14,7 +14,7 @@ export const main = style({
       justifyContent: "center",
       alignContent: "flex-start",
       alignItems: "flex-start",
-      columnGap: "20px",
+      columnGap: "1rem",
     },
     [NarrowScreen]: {
       display: "flex",
@@ -29,78 +29,100 @@ export const main = style({
 });
 
 export const educationOrExperience = style({
-  "@media": {
-    [WideScreen]: {
-      flexGrow: "1",
-      flexShrink: "1",
-      flexBasis: "50%",
-    },
-    [NarrowScreen]: {
-      flexGrow: "0",
-      flexShrink: "0",
-      flexBasis: "auto",
-      width: "100%",
+  selectors: {
+    [`${main} > &`]: {
+      "@media": {
+        [WideScreen]: {
+          flexGrow: "1",
+          flexShrink: "1",
+          flexBasis: "50%",
+        },
+        [NarrowScreen]: {
+          flexGrow: "0",
+          flexShrink: "0",
+          flexBasis: "auto",
+          width: "100%",
+        },
+      },
+      display: "flex",
+      flexDirection: "column",
+      flexWrap: "nowrap",
+      justifyContent: "flex-start",
+      alignContent: "flex-start",
+      alignItems: "stretch",
     },
   },
-  display: "flex",
-  flexDirection: "column",
-  flexWrap: "nowrap",
-  justifyContent: "flex-start",
-  alignContent: "flex-start",
-  alignItems: "stretch",
 });
 
 export const container = style({
-  display: "flex",
-  flexDirection: "column",
-  flexWrap: "nowrap",
-  justifyContent: "flex-start",
-  alignContent: "flex-start",
-  alignItems: "stretch",
-  rowGap: "10px",
+  selectors: {
+    [`${educationOrExperience} > &`]: {
+      display: "flex",
+      flexDirection: "column",
+      flexWrap: "nowrap",
+      justifyContent: "flex-start",
+      alignContent: "flex-start",
+      alignItems: "stretch",
+      rowGap: "1rem",
+    },
+  },
 });
 
 export const card = style({
-  paddingLeft: "10px",
-  paddingRight: "10px",
-  paddingTop: "5px",
-  paddingBottom: "5px",
-  borderStyle: "solid",
-  borderColor: themeColors.foreground,
-  borderWidth: "2px",
-  borderRadius: "4px",
-});
-
-export const element = style({
-  display: "flex",
-  flexDirection: "row",
-  flexWrap: "nowrap",
-  justifyContent: "flex-start",
-  alignContent: "flex-start",
-  alignItems: "stretch",
-  columnGap: "10px",
-  paddingTop: "5px",
-  paddingBottom: "5px",
-  whiteSpace: "wrap",
-});
-
-export const iconWrapper = style({
-  flexGrow: "0",
-  flexShrink: "0",
-  flexBasis: "20",
-  display: "flex",
-  flexDirection: "column",
-  flexWrap: "nowrap",
-  justifyContent: "center",
-  alignContent: "center",
-  alignItems: "center",
+  selectors: {
+    [`${container} > &`]: {
+      paddingLeft: "0.5rem",
+      paddingRight: "0.5rem",
+      borderStyle: "solid",
+      borderColor: themeColors.foreground,
+      borderWidth: "0.2rem",
+      borderRadius: "0.2rem",
+    },
+  },
 });
 
 export const title = style({
-  flexGrow: "1",
-  flexShrink: "1",
-  flexBasis: "auto",
-  fontSize: "x-large",
-  color: themeColors.foreground,
-  textAlign: "left",
+  selectors: {
+    [`${card} > &`]: {
+      flexGrow: "1",
+      flexShrink: "1",
+      fontSize: "x-large",
+      paddingTop: "0.5rem",
+      paddingBottom: "0.5rem",
+      color: themeColors.foreground,
+      textAlign: "left",
+    },
+  },
+});
+
+export const element = style({
+  selectors: {
+    [`${card} > &`]: {
+      display: "flex",
+      flexDirection: "row",
+      flexWrap: "nowrap",
+      justifyContent: "flex-start",
+      alignContent: "flex-start",
+      alignItems: "stretch",
+      columnGap: "1rem",
+      paddingTop: "0.5rem",
+      paddingBottom: "0.5rem",
+      whiteSpace: "wrap",
+    },
+  },
+});
+
+export const iconWrapper = style({
+  selectors: {
+    [`${element} > &`]: {
+      flexGrow: "0",
+      flexShrink: "0",
+      display: "flex",
+      flexDirection: "column",
+      flexWrap: "nowrap",
+      justifyContent: "center",
+      alignContent: "center",
+      alignItems: "center",
+    },
+  },
 });
