@@ -4,6 +4,7 @@ import { WideScreen, NarrowScreen } from "../styles/responsive";
 export const app = style({
   margin: "auto",
   position: "relative",
+  height: "100%",
   "@media": {
     [WideScreen]: {
       width: "80%",
