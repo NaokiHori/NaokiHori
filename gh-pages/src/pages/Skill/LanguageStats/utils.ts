@@ -1,4 +1,4 @@
-import { Info } from "./models";
+import { Info } from "./hooks";
 
 const THRESHOLD_SIZE_RATE = 0.01;
 

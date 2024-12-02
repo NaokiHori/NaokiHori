@@ -1,7 +1,22 @@
 import React from "react";
 import { fetchAndParseJson } from "../../../utils/fetchAndParseJson";
-import { Info, GlobalStats, LanguageInfo } from "./models";
 import { getSum, getMax, squashMinorStats } from "./utils";
+
+export interface Info {
+  name: string;
+  size: number;
+  color: string;
+}
+
+export interface GlobalStats {
+  sumOfSizes: number;
+  maxOfSizes: number;
+}
+
+export interface LanguageInfo {
+  infoList: Info[];
+  globalStats: GlobalStats;
+}
 
 // original data type of json
 interface RawData {

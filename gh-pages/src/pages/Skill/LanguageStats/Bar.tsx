@@ -1,9 +1,9 @@
 import { JSX } from "react";
-import { Info, GlobalStats, LanguageInfo } from "./models";
+import { Info, GlobalStats } from "./hooks";
 import { getRate } from "./utils";
-import * as style from "./style.css";
+import * as style from "./bar.css";
 
-function Bar({
+export function Bar({
   info,
   globalStats,
 }: {
@@ -22,22 +22,6 @@ function Bar({
       }}
     >
       <div className={style.barText}>{rateForText}</div>
-    </div>
-  );
-}
-
-export function BarChart({
-  languageInfo,
-}: {
-  languageInfo: LanguageInfo;
-}): JSX.Element {
-  const infoList: Info[] = languageInfo.infoList;
-  const globalStats: GlobalStats = languageInfo.globalStats;
-  return (
-    <div className={style.barChart}>
-      {infoList.map((info: Info, index: number) => (
-        <Bar key={index} info={info} globalStats={globalStats} />
-      ))}
     </div>
   );
 }

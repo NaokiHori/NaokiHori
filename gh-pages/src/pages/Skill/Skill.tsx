@@ -35,9 +35,8 @@ export function Skill(): JSX.Element {
     <>
       <CoverImage src={coverImageSrc} />
       <Heading1>Skill</Heading1>
-      <Heading2>Languages, libraries, frameworks</Heading2>
+      <Heading2>Experience</Heading2>
       <LogoListContainer infoList={skillInfo.languages} />
-      <Heading2>Tools, Platforms</Heading2>
       <LogoListContainer infoList={skillInfo.tools} />
       <Heading2>GitHub Language Statistics</Heading2>
       <LanguageStats />

@@ -1,12 +1,11 @@
-import { JSX } from "react";
+import React, { JSX } from "react";
 import { getDateString } from "../../../utils/getDateString";
 import { DisplaySize } from "../../../styles/responsive";
-import { LanguageInfo } from "./models";
-import { useLanguageInfo } from "./hooks";
-import { Labels } from "./Labels";
-import { BarChart } from "./BarChart";
+import { Info, LanguageInfo, useLanguageInfo } from "./hooks";
+import { Label } from "./Label";
+import { Bar } from "./Bar";
 import { PieChart } from "./PieChart";
-import * as style from "./style.css";
+import * as style from "./languageStats.css";
 
 function Update({
   displaySize,
@@ -41,13 +40,23 @@ export function LanguageStats(): JSX.Element {
     <>
       {/* for wider screen */}
       <div className={style.wideDisplayLanguageStats}>
-        <Labels displaySize="Wide" languageInfo={original} />
-        <BarChart languageInfo={original} />
+        {original.infoList.map((info: Info, index: number) => {
+          return (
+            <React.Fragment key={index}>
+              <Label info={info} />
+              <Bar info={info} globalStats={original.globalStats} />
+            </React.Fragment>
+          );
+        })}
         <Update displaySize="Wide" date={date} />
       </div>
       {/* for narrower screen */}
       <div className={style.narrowDisplayLanguageStats}>
-        <Labels displaySize="Narrow" languageInfo={squashed} />
+        <div className={style.narrowDisplayLabelsContainer}>
+          {squashed.infoList.map((info: Info, index: number) => (
+            <Label key={index} info={info} />
+          ))}
+        </div>
         <PieChart languageInfo={squashed} />
         <Update displaySize="Narrow" date={date} />
       </div>

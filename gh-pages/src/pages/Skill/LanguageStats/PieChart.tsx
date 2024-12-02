@@ -1,6 +1,6 @@
 import { JSX } from "react";
-import { Info, GlobalStats, LanguageInfo } from "./models";
-import * as style from "./style.css";
+import { Info, GlobalStats, LanguageInfo } from "./hooks";
+import * as style from "./pieChart.css";
 
 function createPieChart({
   infoList,
