@@ -19,7 +19,7 @@ export function useEducationInfoList(): EducationInfo[] {
   const educationInfoList = [
     {
       index: 0,
-      role: "PhD in Applied Science",
+      role: "PhD in Applied Physics",
       duration: "May 2020 - Sep. 2024",
       group: "Physics of Fluids group",
       university: "University of Twente",
