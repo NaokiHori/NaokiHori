@@ -1,5 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import { themeColors } from "../styles/theme.css";
+import { themeColors } from "../global.css";
 
 export const line = style({
   stroke: themeColors.foreground,

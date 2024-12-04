@@ -2,13 +2,17 @@ import React, { JSX } from "react";
 import { CloseButton } from "./CloseButton";
 import * as style from "./style.css";
 
-export interface ModalState {
+export interface ModalHandler {
   ref: React.RefObject<HTMLDialogElement> | null;
-  openModal: () => void;
-  closeModal: () => void;
+  open: () => void;
+  close: () => void;
 }
 
-export function useModal(handleClose: () => void): ModalState {
+export function useModal({
+  handleClose,
+}: {
+  handleClose: () => void;
+}): ModalHandler {
   const ref: React.RefObject<HTMLDialogElement> | null =
     React.useRef<HTMLDialogElement>(null);
   const open = (): void => {
@@ -20,24 +24,24 @@ export function useModal(handleClose: () => void): ModalState {
   };
   return {
     ref,
-    openModal: open,
-    closeModal: close,
+    open: open,
+    close: close,
   };
 }
 
 export function Modal({
-  modalState,
+  modalHandler,
   children,
 }: {
-  modalState: ModalState;
+  modalHandler: ModalHandler;
   children: React.ReactNode;
 }): JSX.Element {
-  const ref: React.RefObject<HTMLDialogElement> | null = modalState.ref;
+  const ref: React.RefObject<HTMLDialogElement> | null = modalHandler.ref;
   return (
     <dialog className={style.modal} ref={ref}>
       <CloseButton
-        onClick={() => {
-          modalState.closeModal();
+        handleClick={() => {
+          modalHandler.close();
         }}
       />
       {children}

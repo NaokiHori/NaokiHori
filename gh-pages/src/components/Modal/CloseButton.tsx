@@ -2,7 +2,11 @@ import { JSX } from "react";
 import { Svg, SvgProps } from "../Svg";
 import * as style from "./style.css";
 
-export function CloseButton({ onClick }: { onClick: () => void }): JSX.Element {
+export function CloseButton({
+  handleClick,
+}: {
+  handleClick: () => void;
+}): JSX.Element {
   const size = 24;
   const svgProps: SvgProps = {
     width: size,
@@ -13,7 +17,7 @@ export function CloseButton({ onClick }: { onClick: () => void }): JSX.Element {
     <div
       className={style.closeButton}
       onClick={() => {
-        onClick();
+        handleClick();
       }}
     >
       <Svg svgProps={svgProps}>

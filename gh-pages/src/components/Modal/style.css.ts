@@ -1,5 +1,5 @@
 import { style, keyframes } from "@vanilla-extract/css";
-import { themeColors } from "../../styles/theme.css";
+import { themeColors } from "../../global.css";
 
 const fadein = keyframes({
   "0%": {
@@ -12,7 +12,7 @@ const fadein = keyframes({
 
 export const modal = style({
   width: "90%",
-  maxHeight: "95dvh",
+  maxHeight: "90dvh",
   position: "relative",
   backgroundColor: themeColors.background,
   color: themeColors.foreground,
@@ -42,10 +42,10 @@ export const closeButton = style({
       height: "1.5rem",
       marginTop: "1.75rem",
       marginRight: "1.75rem",
-      stroke: "#888888",
+      stroke: themeColors.unfocused,
     },
     [`${modal} > &:hover`]: {
-      stroke: themeColors.foreground,
+      stroke: themeColors.focused,
     },
   },
 });
