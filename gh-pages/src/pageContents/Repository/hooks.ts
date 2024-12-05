@@ -16,6 +16,41 @@ interface RawData {
   items: string[];
 }
 
+const validator = (dataList: unknown): dataList is RawData[] => {
+  if (null === dataList) {
+    console.error("dataList is null");
+    return false;
+  }
+  if (typeof dataList !== "object") {
+    console.error("dataList is not object");
+    return false;
+  }
+  if (
+    !Array.isArray(dataList) ||
+    !dataList.every((data: unknown) => {
+      if (typeof data !== "object") {
+        return false;
+      }
+      if (!data || !("title" in data) || typeof data.title !== "string") {
+        console.error("invalid member: title");
+        return false;
+      }
+      if (
+        !("items" in data) ||
+        !Array.isArray(data.items) ||
+        !data.items.every((item: unknown) => typeof item === "string")
+      ) {
+        console.error("invalid member: items");
+        return false;
+      }
+      return true;
+    })
+  ) {
+    return false;
+  }
+  return true;
+};
+
 export function useRepositoryInfo(): {
   repositoryInfo: RepositoryInfo;
 } {
@@ -26,7 +61,7 @@ export function useRepositoryInfo(): {
     categories: defaultCategories,
   });
   React.useEffect(() => {
-    fetchAndParseJson<RawData[]>(configSrc).then(
+    fetchAndParseJson<RawData[]>(configSrc, validator).then(
       (rawDataList: RawData[]): void => {
         // reshape json data (RawData) to data type of use (Category)
         const categories: Category[] = rawDataList.map(

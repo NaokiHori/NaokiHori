@@ -28,6 +28,37 @@ interface RawData {
   }[];
 }
 
+const validator = (data: unknown): data is RawData => {
+  if (null === data || typeof data !== "object") {
+    return false;
+  }
+  if (!("date" in data) || typeof data.date !== "number") {
+    return false;
+  }
+  if (
+    !("languages" in data) ||
+    !Array.isArray(data.languages) ||
+    !data.languages.every((language: unknown) => {
+      if (null === language || typeof language !== "object") {
+        return false;
+      }
+      if (!("name" in language) || typeof language.name !== "string") {
+        return false;
+      }
+      if (!("size" in language) || typeof language.size !== "number") {
+        return false;
+      }
+      if (!("color" in language) || typeof language.color !== "string") {
+        return false;
+      }
+      return true;
+    })
+  ) {
+    return false;
+  }
+  return true;
+};
+
 export function useLanguageInfo(): {
   date: Date;
   original: LanguageInfo;
@@ -49,7 +80,7 @@ export function useLanguageInfo(): {
   const [squashedInfo, setSquashedInfo] =
     React.useState<LanguageInfo>(defaultLanguageInfo);
   React.useEffect(() => {
-    fetchAndParseJson<RawData>(configSrc).then(
+    fetchAndParseJson<RawData>(configSrc, validator).then(
       (rawData: RawData): void => {
         // from UNIX milli second to Date
         setDate(new Date(rawData.date));

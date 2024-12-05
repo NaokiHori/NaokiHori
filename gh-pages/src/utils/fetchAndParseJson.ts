@@ -1,4 +1,7 @@
-export async function fetchAndParseJson<T>(url: string): Promise<T> {
+export async function fetchAndParseJson<T>(
+  url: string,
+  validator: (data: unknown) => data is T,
+): Promise<T> {
   const composeMessage = (message: string): string => {
     return `${url}: ${message}`;
   };
@@ -14,7 +17,10 @@ export async function fetchAndParseJson<T>(url: string): Promise<T> {
       if (!response.ok) {
         throw new Error(composeMessage(response.statusText));
       }
-      const data = response.json() as Promise<T>;
-      return await data;
+      const data: unknown = await response.json();
+      if (!validator(data)) {
+        throw new Error(`json validation failed: invalid data type`);
+      }
+      return data as Promise<T>;
     });
 }
