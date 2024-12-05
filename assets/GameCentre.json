@@ -1,0 +1,41 @@
+{
+  "name": "GameCentre",
+  "descr": "Series of web applications I developed for fun",
+  "topics": [
+    "mandelbrot",
+    "maze-generator",
+    "sudoku",
+    "typescript",
+    "webapp",
+    "webassembly"
+  ],
+  "langs": [
+    {
+      "name": "TypeScript",
+      "size": 35295,
+      "color": "#3178c6"
+    },
+    {
+      "name": "Rust",
+      "size": 25625,
+      "color": "#dea584"
+    },
+    {
+      "name": "CSS",
+      "size": 6673,
+      "color": "#563d7c"
+    },
+    {
+      "name": "HTML",
+      "size": 2690,
+      "color": "#e34c26"
+    },
+    {
+      "name": "JavaScript",
+      "size": 650,
+      "color": "#f1e05a"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1728807549000
+}

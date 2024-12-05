@@ -1,0 +1,33 @@
+{
+  "name": "WebNSSolver",
+  "descr": "Navier-Stokes solver in Browsers",
+  "topics": [
+    "navier-stokes",
+    "webapp",
+    "webassembly"
+  ],
+  "langs": [
+    {
+      "name": "Rust",
+      "size": 65212,
+      "color": "#dea584"
+    },
+    {
+      "name": "TypeScript",
+      "size": 1612,
+      "color": "#3178c6"
+    },
+    {
+      "name": "HTML",
+      "size": 1110,
+      "color": "#e34c26"
+    },
+    {
+      "name": "CSS",
+      "size": 833,
+      "color": "#563d7c"
+    }
+  ],
+  "nStars": 1,
+  "lastUpdate": 1707581040000
+}
