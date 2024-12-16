@@ -29,20 +29,16 @@
   {
     "title": "Utility libraries",
     "items": [
-      "SimpleNpyIO"
-    ]
-  },
-  {
-    "title": "Sandboxes",
-    "items": [
-      "C-Misc",
-      "WebGLSandbox"
+      "SimpleNpyIO",
+      "rust_npy_io"
     ]
   },
   {
     "title": "Others",
     "items": [
       "NaokiHori",
+      "C-Misc",
+      "WebGLSandbox",
       "GameCentre"
     ]
   }
