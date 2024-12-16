@@ -1,0 +1,33 @@
+{
+  "name": "SimpleNpyIO",
+  "descr": "Simple, C99-compatible, well-tested, well-documented, library-independent, and single-source NPY file reader / writer",
+  "topics": [
+    "fileio",
+    "npy-files",
+    "numpy"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 43601,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 2835,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Shell",
+      "size": 1965,
+      "color": "#89e051"
+    },
+    {
+      "name": "Makefile",
+      "size": 1072,
+      "color": "#427819"
+    }
+  ],
+  "nStars": 2,
+  "lastUpdate": 1733134657000
+}

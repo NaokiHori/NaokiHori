@@ -1,0 +1,43 @@
+{
+  "name": "WebGLSandbox",
+  "descr": "Various simple scenarios utilizing WebGL",
+  "topics": [
+    "shaders",
+    "webapp",
+    "webgl"
+  ],
+  "langs": [
+    {
+      "name": "TypeScript",
+      "size": 47918,
+      "color": "#3178c6"
+    },
+    {
+      "name": "GLSL",
+      "size": 8290,
+      "color": "#5686a5"
+    },
+    {
+      "name": "HTML",
+      "size": 3539,
+      "color": "#e34c26"
+    },
+    {
+      "name": "CSS",
+      "size": 2352,
+      "color": "#563d7c"
+    },
+    {
+      "name": "JavaScript",
+      "size": 1207,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "Shell",
+      "size": 675,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1734285184000
+}

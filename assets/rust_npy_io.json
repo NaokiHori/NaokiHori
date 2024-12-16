@@ -1,0 +1,15 @@
+{
+  "name": "rust_npy_io",
+  "descr": "NPY file reader and writer in Rust",
+  "topics": [
+  ],
+  "langs": [
+    {
+      "name": "Rust",
+      "size": 27255,
+      "color": "#dea584"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1734278363000
+}
