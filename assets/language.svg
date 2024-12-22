@@ -81,7 +81,7 @@
         x="143.25199999999998"
         y="72"
       >
-        74.11%
+        73.67%
       </text>
       <rect
         class="graph"
@@ -104,32 +104,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#dea584"
+        stroke="#3178c6"
       />
       <text
         class="descr"
         x="26.708"
         y="104"
       >
-        Rust
+        TypeScript
       </text>
       <text
         class="descr"
         x="152.964"
         y="104"
       >
-        9.27%
+        9.36%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="92.8"
-        width="34.308462394986776"
+        width="34.82434177812591"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#dea584"
-        stroke="#dea584"
+        fill="#3178c6"
+        stroke="#3178c6"
       />
     </g>
     <g id="lang-">
@@ -141,32 +141,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#3178c6"
+        stroke="#dea584"
       />
       <text
         class="descr"
         x="26.708"
         y="136"
       >
-        TypeScript
+        Rust
       </text>
       <text
         class="descr"
         x="152.964"
         y="136"
       >
-        7.93%
+        8.13%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="124.8"
-        width="29.33881091354156"
+        width="30.26049393322236"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#3178c6"
-        stroke="#3178c6"
+        fill="#dea584"
+        stroke="#dea584"
       />
     </g>
     <g id="lang-">
@@ -192,7 +192,7 @@
         x="152.964"
         y="168"
       >
-        3.58%
+        3.56%
       </text>
       <rect
         class="graph"
@@ -229,7 +229,7 @@
         x="152.964"
         y="200"
       >
-        1.50%
+        1.49%
       </text>
       <rect
         class="graph"
@@ -266,7 +266,7 @@
         x="152.964"
         y="232"
       >
-        1.02%
+        1.01%
       </text>
       <rect
         class="graph"
@@ -303,7 +303,7 @@
         x="152.964"
         y="264"
       >
-        0.71%
+        0.70%
       </text>
       <rect
         class="graph"
@@ -340,13 +340,13 @@
         x="152.964"
         y="296"
       >
-        0.51%
+        0.55%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="284.8"
-        width="1.886322428277685"
+        width="2.054926254773328"
         height="22.4"
         rx="4"
         ry="4"
@@ -377,13 +377,13 @@
         x="152.964"
         y="328"
       >
-        0.51%
+        0.54%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="316.8"
-        width="1.8708849760109663"
+        width="2.015191595025947"
         height="22.4"
         rx="4"
         ry="4"
@@ -414,13 +414,13 @@
         x="152.964"
         y="360"
       >
-        0.37%
+        0.47%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="348.8"
-        width="1.3746044453147948"
+        width="1.752754906491726"
         height="22.4"
         rx="4"
         ry="4"
@@ -488,13 +488,13 @@
         x="152.964"
         y="424"
       >
-        0.15%
+        0.17%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="412.8"
-        width="0.5523923137178105"
+        width="0.6286399040438656"
         height="22.4"
         rx="4"
         ry="4"
@@ -584,7 +584,7 @@
       x="21.852"
       y="528"
     >
-      Last Update: 16 December 2024
+      Last Update: 22 December 2024
     </text>
   </g>
 

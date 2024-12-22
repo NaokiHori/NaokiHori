@@ -11,28 +11,33 @@
   "langs": [
     {
       "name": "Rust",
-      "size": 42410,
+      "size": 42508,
       "color": "#dea584"
     },
     {
       "name": "TypeScript",
-      "size": 5265,
+      "size": 15065,
       "color": "#3178c6"
     },
     {
+      "name": "GLSL",
+      "size": 1042,
+      "color": "#5686a5"
+    },
+    {
       "name": "HTML",
-      "size": 519,
+      "size": 513,
       "color": "#e34c26"
+    },
+    {
+      "name": "CSS",
+      "size": 456,
+      "color": "#563d7c"
     },
     {
       "name": "JavaScript",
       "size": 452,
       "color": "#f1e05a"
-    },
-    {
-      "name": "CSS",
-      "size": 446,
-      "color": "#563d7c"
     },
     {
       "name": "Shell",
@@ -41,5 +46,5 @@
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1731455655000
+  "lastUpdate": 1734625300000
 }

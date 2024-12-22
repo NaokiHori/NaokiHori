@@ -9,27 +9,27 @@
   "langs": [
     {
       "name": "TypeScript",
-      "size": 47918,
+      "size": 69026,
       "color": "#3178c6"
     },
     {
       "name": "GLSL",
-      "size": 8290,
+      "size": 8780,
       "color": "#5686a5"
     },
     {
       "name": "HTML",
-      "size": 3539,
+      "size": 4598,
       "color": "#e34c26"
     },
     {
       "name": "CSS",
-      "size": 2352,
+      "size": 3406,
       "color": "#563d7c"
     },
     {
       "name": "JavaScript",
-      "size": 1207,
+      "size": 1323,
       "color": "#f1e05a"
     },
     {
@@ -39,5 +39,5 @@
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1734285184000
+  "lastUpdate": 1734674488000
 }

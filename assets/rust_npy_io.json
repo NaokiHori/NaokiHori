@@ -2,14 +2,16 @@
   "name": "rust_npy_io",
   "descr": "NPY file reader and writer in Rust",
   "topics": [
+    "fileio",
+    "npy-files"
   ],
   "langs": [
     {
       "name": "Rust",
-      "size": 27255,
+      "size": 28101,
       "color": "#dea584"
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1734278363000
+  "lastUpdate": 1734503135000
 }

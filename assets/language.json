@@ -6,14 +6,14 @@
       "color": "#555555"
     },
   {
-      "name": "Rust",
-      "size": 255578,
-      "color": "#dea584"
+      "name": "TypeScript",
+      "size": 259421,
+      "color": "#3178c6"
     },
   {
-      "name": "TypeScript",
-      "size": 218557,
-      "color": "#3178c6"
+      "name": "Rust",
+      "size": 225423,
+      "color": "#dea584"
     },
   {
       "name": "Python",
@@ -37,17 +37,17 @@
     },
   {
       "name": "HTML",
-      "size": 14052,
+      "size": 15308,
       "color": "#e34c26"
     },
   {
       "name": "CSS",
-      "size": 13937,
+      "size": 15012,
       "color": "#563d7c"
     },
   {
       "name": "GLSL",
-      "size": 10240,
+      "size": 13057,
       "color": "#5686a5"
     },
   {
@@ -57,7 +57,7 @@
     },
   {
       "name": "JavaScript",
-      "size": 4115,
+      "size": 4683,
       "color": "#f1e05a"
     },
   {
@@ -71,5 +71,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1734314527686
+  "date": 1734839128877
 }

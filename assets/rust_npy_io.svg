@@ -79,6 +79,40 @@
   </g>
 
   <g id="topics">
+    <rect
+      class="topic"
+      x="18.21"
+      y="78.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="90"
+    >
+      fileio
+    </text>
+    <rect
+      class="topic"
+      x="95.906"
+      y="78.8"
+      width="97.12"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="100.762"
+      y="90"
+    >
+      npy-files
+    </text>
   </g>
 
   <g id="langs">
@@ -129,7 +163,7 @@
       x="86.49000000000001"
       y="154"
     >
-      15 December 2024
+      18 December 2024
     </text>
   </g>
 
