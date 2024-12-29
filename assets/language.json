@@ -2,17 +2,17 @@
   "languages": [
   {
       "name": "C",
-      "size": 2042600,
+      "size": 2048049,
       "color": "#555555"
     },
   {
       "name": "TypeScript",
-      "size": 259421,
+      "size": 306367,
       "color": "#3178c6"
     },
   {
       "name": "Rust",
-      "size": 225423,
+      "size": 225435,
       "color": "#dea584"
     },
   {
@@ -22,7 +22,7 @@
     },
   {
       "name": "Makefile",
-      "size": 41423,
+      "size": 42137,
       "color": "#427819"
     },
   {
@@ -37,27 +37,27 @@
     },
   {
       "name": "HTML",
-      "size": 15308,
+      "size": 18431,
       "color": "#e34c26"
     },
   {
       "name": "CSS",
-      "size": 15012,
+      "size": 17789,
       "color": "#563d7c"
     },
   {
       "name": "GLSL",
-      "size": 13057,
+      "size": 15998,
       "color": "#5686a5"
     },
   {
       "name": "Gnuplot",
-      "size": 5717,
+      "size": 5994,
       "color": "#f0a9f0"
     },
   {
       "name": "JavaScript",
-      "size": 4683,
+      "size": 5248,
       "color": "#f1e05a"
     },
   {
@@ -71,5 +71,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1734839128877
+  "date": 1735443984248
 }

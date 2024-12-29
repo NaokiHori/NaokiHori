@@ -208,6 +208,23 @@
     >
       Python
     </text>
+    <rect
+      class="lang"
+      x="222.162"
+      y="172.8"
+      width="77.696"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#f0a9f0"
+    />
+    <text
+      class="descr"
+      x="227.018"
+      y="184"
+    >
+      Gnuplot
+    </text>
   </g>
 
   <g id="star">
@@ -238,7 +255,7 @@
       x="86.49000000000001"
       y="216"
     >
-      3 December 2024
+      24 December 2024
     </text>
   </g>
 
