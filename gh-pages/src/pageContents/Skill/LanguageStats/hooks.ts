@@ -117,8 +117,11 @@ export function useLanguageInfo(): {
           globalStats: squashedGlobalStats,
         });
       },
-      (error: Error): never => {
-        throw new Error(error.message);
+      (error: unknown): never => {
+        if (error instanceof Error) {
+          console.error(error.message);
+        }
+        throw error;
       },
     );
     return () => {

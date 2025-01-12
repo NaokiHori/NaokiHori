@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import { SkillInfo } from "./hooks";
 import * as style from "./logos.css";
 

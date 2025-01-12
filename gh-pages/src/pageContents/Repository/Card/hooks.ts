@@ -111,8 +111,11 @@ export function useCardInfo(repositoryName: string): {
         );
         setIsCardInfoLoaded(true);
       },
-      (error: Error): never => {
-        throw new Error(error.message);
+      (error: unknown): never => {
+        if (error instanceof Error) {
+          console.error(error.message);
+        }
+        throw error;
       },
     );
     return () => {
