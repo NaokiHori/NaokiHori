@@ -1,0 +1,75 @@
+{
+  "languages": [
+  {
+      "name": "C",
+      "size": 2085028,
+      "color": "#555555"
+    },
+  {
+      "name": "TypeScript",
+      "size": 411324,
+      "color": "#3178c6"
+    },
+  {
+      "name": "Rust",
+      "size": 165325,
+      "color": "#dea584"
+    },
+  {
+      "name": "Python",
+      "size": 98771,
+      "color": "#3572A5"
+    },
+  {
+      "name": "Makefile",
+      "size": 44368,
+      "color": "#427819"
+    },
+  {
+      "name": "GLSL",
+      "size": 40864,
+      "color": "#5686a5"
+    },
+  {
+      "name": "Go",
+      "size": 28117,
+      "color": "#00ADD8"
+    },
+  {
+      "name": "Shell",
+      "size": 20316,
+      "color": "#89e051"
+    },
+  {
+      "name": "CSS",
+      "size": 19877,
+      "color": "#563d7c"
+    },
+  {
+      "name": "HTML",
+      "size": 19167,
+      "color": "#e34c26"
+    },
+  {
+      "name": "JavaScript",
+      "size": 6020,
+      "color": "#f1e05a"
+    },
+  {
+      "name": "Gnuplot",
+      "size": 5994,
+      "color": "#f0a9f0"
+    },
+  {
+      "name": "Vim Script",
+      "size": 3225,
+      "color": "#199f4b"
+    },
+  {
+      "name": "Dockerfile",
+      "size": 311,
+      "color": "#384d54"
+    }
+  ],
+  "date": 1737009801971
+}

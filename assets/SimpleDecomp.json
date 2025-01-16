@@ -1,0 +1,29 @@
+{
+  "name": "SimpleDecomp",
+  "descr": "Decompose 2D/3D structured meshes between multiple MPI processes in a pencil-like manner",
+  "topics": [
+    "domain-decomposition",
+    "hpc",
+    "matrix-transpose",
+    "mpi"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 90415,
+      "color": "#555555"
+    },
+    {
+      "name": "Makefile",
+      "size": 2664,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 2355,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 3,
+  "lastUpdate": 1713191544000
+}
