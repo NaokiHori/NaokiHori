@@ -14,8 +14,7 @@
     "title": "High performance computing",
     "items": [
       "SimpleDecomp",
-      "Contour3D",
-      "WebGL-NS-Solver"
+      "Contour3D"
     ]
   },
   {
@@ -23,7 +22,7 @@
     "items": [
       "Collision",
       "Pendulum",
-      "WebNSSolver",
+      "WebGL-NS-Solver",
       "Wave"
     ]
   },
