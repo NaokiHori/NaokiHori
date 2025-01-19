@@ -7,12 +7,12 @@
     },
   {
       "name": "TypeScript",
-      "size": 411324,
+      "size": 429258,
       "color": "#3178c6"
     },
   {
       "name": "Rust",
-      "size": 165325,
+      "size": 163981,
       "color": "#dea584"
     },
   {
@@ -27,7 +27,7 @@
     },
   {
       "name": "GLSL",
-      "size": 40864,
+      "size": 39139,
       "color": "#5686a5"
     },
   {
@@ -42,23 +42,23 @@
     },
   {
       "name": "CSS",
-      "size": 19877,
+      "size": 19138,
       "color": "#563d7c"
     },
   {
       "name": "HTML",
-      "size": 19167,
+      "size": 17464,
       "color": "#e34c26"
-    },
-  {
-      "name": "JavaScript",
-      "size": 6020,
-      "color": "#f1e05a"
     },
   {
       "name": "Gnuplot",
       "size": 5994,
       "color": "#f0a9f0"
+    },
+  {
+      "name": "JavaScript",
+      "size": 5587,
+      "color": "#f1e05a"
     },
   {
       "name": "Vim Script",
@@ -71,5 +71,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1737009801971
+  "date": 1737258154568
 }

@@ -11,17 +11,17 @@
   "langs": [
     {
       "name": "Rust",
-      "size": 42508,
+      "size": 41164,
       "color": "#dea584"
     },
     {
       "name": "TypeScript",
-      "size": 15065,
+      "size": 38644,
       "color": "#3178c6"
     },
     {
       "name": "GLSL",
-      "size": 1042,
+      "size": 634,
       "color": "#5686a5"
     },
     {
@@ -46,5 +46,5 @@
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1734625300000
+  "lastUpdate": 1737209857000
 }

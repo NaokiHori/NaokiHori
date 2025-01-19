@@ -81,7 +81,7 @@
         x="143.25199999999998"
         y="72"
       >
-        70.71%
+        70.42%
       </text>
       <rect
         class="graph"
@@ -118,13 +118,13 @@
         x="143.25199999999998"
         y="104"
       >
-        13.95%
+        14.50%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="92.8"
-        width="54.09202922166992"
+        width="56.45047767607917"
         height="22.4"
         rx="4"
         ry="4"
@@ -155,13 +155,13 @@
         x="152.964"
         y="136"
       >
-        5.61%
+        5.54%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="124.8"
-        width="21.741412441463613"
+        width="21.56466688984512"
         height="22.4"
         rx="4"
         ry="4"
@@ -192,7 +192,7 @@
         x="152.964"
         y="168"
       >
-        3.35%
+        3.34%
       </text>
       <rect
         class="graph"
@@ -266,13 +266,13 @@
         x="152.964"
         y="232"
       >
-        1.39%
+        1.32%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="220.8"
-        width="5.373906414686037"
+        width="5.147056655354268"
         height="22.4"
         rx="4"
         ry="4"
@@ -377,13 +377,13 @@
         x="152.964"
         y="328"
       >
-        0.67%
+        0.65%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="316.8"
-        width="2.6139667630362755"
+        width="2.516783011067477"
         height="22.4"
         rx="4"
         ry="4"
@@ -414,13 +414,13 @@
         x="152.964"
         y="360"
       >
-        0.65%
+        0.59%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="348.8"
-        width="2.520596717166388"
+        width="2.2966401141855166"
         height="22.4"
         rx="4"
         ry="4"
@@ -437,14 +437,14 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#f1e05a"
+        stroke="#f0a9f0"
       />
       <text
         class="descr"
         x="26.708"
         y="392"
       >
-        JavaScript
+        Gnuplot
       </text>
       <text
         class="descr"
@@ -457,12 +457,12 @@
         class="graph"
         x="206.38"
         y="380.8"
-        width="0.7916727832911596"
+        width="0.7882535985128256"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#f1e05a"
-        stroke="#f1e05a"
+        fill="#f0a9f0"
+        stroke="#f0a9f0"
       />
     </g>
     <g id="lang-">
@@ -474,32 +474,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#f0a9f0"
+        stroke="#f1e05a"
       />
       <text
         class="descr"
         x="26.708"
         y="424"
       >
-        Gnuplot
+        JavaScript
       </text>
       <text
         class="descr"
         x="152.964"
         y="424"
       >
-        0.20%
+        0.19%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="412.8"
-        width="0.7882535985128256"
+        width="0.7347302060212141"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#f0a9f0"
-        stroke="#f0a9f0"
+        fill="#f1e05a"
+        stroke="#f1e05a"
       />
     </g>
     <g id="lang-">
@@ -584,7 +584,7 @@
       x="21.852"
       y="528"
     >
-      Last Update: 16 January 2025
+      Last Update: 19 January 2025
     </text>
   </g>
 
