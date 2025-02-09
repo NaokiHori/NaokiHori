@@ -1,18 +1,20 @@
 {
   "name": "SimpleVOFSolver",
-  "descr": "Massively-parallelised Navier-Stokes solver with a volume-of-fluid method for droplet-laden flows",
+  "descr": "Massively-parallelized Navier-Stokes solver with a volume-of-fluid method for droplet-laden flows",
   "topics": [
     "cfd",
     "finite-volume",
     "fluid-dynamics",
     "hpc",
+    "multiphase-flow",
     "navier-stokes",
-    "turbulence"
+    "turbulence",
+    "volume-of-fluid"
   ],
   "langs": [
     {
       "name": "C",
-      "size": 217943,
+      "size": 219201,
       "color": "#555555"
     },
     {
@@ -32,5 +34,5 @@
     }
   ],
   "nStars": 8,
-  "lastUpdate": 1703518249000
+  "lastUpdate": 1738627746000
 }
