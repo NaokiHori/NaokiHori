@@ -29,8 +29,7 @@
   {
     "title": "Utility libraries",
     "items": [
-      "SimpleNpyIO",
-      "rust_npy_io"
+      "SimpleNpyIO"
     ]
   },
   {
