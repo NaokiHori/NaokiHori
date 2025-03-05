@@ -1,0 +1,34 @@
+{
+  "name": "C-Misc",
+  "descr": "Minimal yet standalone implementations of various things in C99",
+  "topics": [
+    "algorithms",
+    "data-structures",
+    "linear-algebra",
+    "numerical-methods"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 489744,
+      "color": "#555555"
+    },
+    {
+      "name": "Makefile",
+      "size": 30029,
+      "color": "#427819"
+    },
+    {
+      "name": "Python",
+      "size": 2417,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Gnuplot",
+      "size": 1917,
+      "color": "#f0a9f0"
+    }
+  ],
+  "nStars": 1,
+  "lastUpdate": 1740626823000
+}

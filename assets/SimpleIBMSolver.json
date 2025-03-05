@@ -1,0 +1,37 @@
+{
+  "name": "SimpleIBMSolver",
+  "descr": "Massively-parallelised Navier-Stokes solver with an immersed boundary method for moving bodies",
+  "topics": [
+    "cfd",
+    "fluid-dynamics",
+    "hpc",
+    "immersed-boundary-method",
+    "multiphase-flow",
+    "navier-stokes",
+    "turbulence"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 207203,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 11518,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Makefile",
+      "size": 1484,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 1151,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 12,
+  "lastUpdate": 1738587069000
+}
