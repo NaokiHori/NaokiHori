@@ -1,6 +1,6 @@
 {
   "name": "Contour3D",
-  "descr": "Library-independent streamlined 3D contouring for massively-parallelised CFD simulations",
+  "descr": "Library-independent streamlined 3D contouring for massively-parallelized CFD simulations",
   "topics": [
     "computer-graphics",
     "hpc",
@@ -41,5 +41,5 @@
     }
   ],
   "nStars": 5,
-  "lastUpdate": 1727780724000
+  "lastUpdate": 1741141995000
 }
