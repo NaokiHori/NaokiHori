@@ -31,6 +31,12 @@
       "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/TypeScript.svg"
     },
     {
+      "name": "PHP",
+      "href": "https://webassembly.org",
+      "src": "https://www.php.net/images/logos/new-php-logo.svg",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/PHP.svg"
+    },
+    {
       "name": "WebAssembly",
       "href": "https://webassembly.org",
       "src": "https://en.wikipedia.org/wiki/File:WebAssembly_Logo.svg",
