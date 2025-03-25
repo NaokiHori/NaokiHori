@@ -1,0 +1,45 @@
+{
+  "name": "Contour3D",
+  "descr": "Library-independent streamlined 3D contouring for massively-parallelized CFD simulations",
+  "topics": [
+    "computer-graphics",
+    "hpc",
+    "isosurface",
+    "marching-tetrahedra",
+    "visualization"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 77480,
+      "color": "#555555"
+    },
+    {
+      "name": "TypeScript",
+      "size": 31719,
+      "color": "#3178c6"
+    },
+    {
+      "name": "HTML",
+      "size": 3555,
+      "color": "#e34c26"
+    },
+    {
+      "name": "CSS",
+      "size": 2167,
+      "color": "#563d7c"
+    },
+    {
+      "name": "Makefile",
+      "size": 740,
+      "color": "#427819"
+    },
+    {
+      "name": "JavaScript",
+      "size": 452,
+      "color": "#f1e05a"
+    }
+  ],
+  "nStars": 5,
+  "lastUpdate": 1741141995000
+}

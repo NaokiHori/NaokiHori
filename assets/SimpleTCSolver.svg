@@ -1,0 +1,296 @@
+<svg
+  version="1.1"
+  width="500"
+  height="246"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  role="img"
+>
+
+  <style>
+    * {
+      font-family: "Courier New";
+    }
+    <!-- stroke-width is not give here since it is used to decide svg size -->
+    rect.border {
+      stroke: #888888;
+      fill: #ffffff;
+    }
+    rect.topic {
+      stroke-width: 2.5;
+      fill: #444444;
+    }
+    rect.lang {
+      stroke-width: 2.5;
+      fill: #ffffff;
+    }
+    text {
+      dominant-baseline: middle;
+      font-size: medium;
+      font-weight: normal;
+    }
+    text.title {
+      font-size: large;
+      font-weight: bold;
+      fill: #2f80ed;
+    }
+    text.descr {
+      fill: #000000;
+    }
+    text.topic {
+      fill: #ffffff;
+    }
+    path.star {
+      stroke: #000000;
+      stroke-width: 2;
+      fill: #ffff00;
+    }
+  </style>
+
+  <rect
+    class="border"
+    x="1"
+    y="1"
+    width="498"
+    height="244"
+    rx="10"
+    ry="10"
+    stroke-width="2"
+  />
+
+  <g id="title">
+    <text
+      class="title"
+      x="18.21"
+      y="30"
+    >
+      SimpleTCSolver
+    </text>
+  </g>
+
+  <g id="description">
+    <text
+      class="descr"
+      x="18.21"
+      y="60"
+    >
+      Massively-parallelized Navier-Stokes solver for 
+    </text>
+    <text
+      class="descr"
+      x="18.21"
+      y="90"
+    >
+      Taylor-Couette flows
+    </text>
+  </g>
+
+  <g id="topics">
+    <rect
+      class="topic"
+      x="18.21"
+      y="108.8"
+      width="38.848"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="120"
+    >
+      cfd
+    </text>
+    <rect
+      class="topic"
+      x="66.77000000000001"
+      y="108.8"
+      width="145.68"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="71.626"
+      y="120"
+    >
+      fluid-dynamics
+    </text>
+    <rect
+      class="topic"
+      x="222.162"
+      y="108.8"
+      width="38.848"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="227.018"
+      y="120"
+    >
+      hpc
+    </text>
+    <rect
+      class="topic"
+      x="270.722"
+      y="108.8"
+      width="135.968"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="275.578"
+      y="120"
+    >
+      navier-stokes
+    </text>
+    <rect
+      class="topic"
+      x="18.21"
+      y="140.8"
+      width="145.68"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="152"
+    >
+      taylor-couette
+    </text>
+    <rect
+      class="topic"
+      x="173.602"
+      y="140.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="178.458"
+      y="152"
+    >
+      turbulence
+    </text>
+  </g>
+
+  <g id="langs">
+    <rect
+      class="lang"
+      x="18.21"
+      y="172.8"
+      width="19.424"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#555555"
+    />
+    <text
+      class="descr"
+      x="23.066000000000003"
+      y="184"
+    >
+      C
+    </text>
+    <rect
+      class="lang"
+      x="47.346"
+      y="172.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#3572A5"
+    />
+    <text
+      class="descr"
+      x="52.202"
+      y="184"
+    >
+      Python
+    </text>
+    <rect
+      class="lang"
+      x="125.042"
+      y="172.8"
+      width="87.408"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#427819"
+    />
+    <text
+      class="descr"
+      x="129.898"
+      y="184"
+    >
+      Makefile
+    </text>
+    <rect
+      class="lang"
+      x="222.162"
+      y="172.8"
+      width="58.272"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#89e051"
+    />
+    <text
+      class="descr"
+      x="227.018"
+      y="184"
+    >
+      Shell
+    </text>
+  </g>
+
+  <g id="star">
+    <path class="star" d="M 25.818452130361230 208.000000000000000  L 28.169593139531123 212.763932022500200  L 33.426904260722459 213.527864045000427  L 29.622678195541845 217.236067977499800  L 30.520734148701017 222.472135954999573  L 25.818452130361230 220.000000000000000  L 21.116170112021447 222.472135954999573  L 22.014226065180615 217.236067977499800  L 18.210000000000001 213.527864045000427  L 23.467311121191337 212.763932022500200 Z"/>
+    <text
+      class="descr"
+      x="38.21"
+      y="216"
+    >
+      9
+    </text>
+  </g>
+
+  <g id="clock" stroke="#000000">
+    <g id="outer">
+      <path class="circle" d="M76.890000 216.000000 A6.400000 6.400000 0.000000 1 1 75.016273 211.475307" stroke-width="2.000000"/>
+      <polygon class="triangle" points="72.752742 213.737258 77.278225 213.737258 77.278225 209.211775" fill="#000000"/>
+    </g>
+    <g id="inner">
+      <line class="big" x1="70.49000000000001" y1="216.8" x2="70.49000000000001" y2="211.2" stroke-width="1.6"/>
+      <line class="small" x1="69.69000000000001" y1="216" x2="73.69000000000001" y2="216" stroke-width="1.6"/>
+    </g>
+  </g>
+
+  <g id="updated">
+    <text
+      class="descr"
+      x="86.49000000000001"
+      y="216"
+    >
+      21 February 2025
+    </text>
+  </g>
+
+</svg>

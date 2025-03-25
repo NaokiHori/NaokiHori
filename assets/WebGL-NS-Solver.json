@@ -1,0 +1,43 @@
+{
+  "name": "WebGL-NS-Solver",
+  "descr": "A toy Navier-Stokes solver on GPU",
+  "topics": [
+    "fluid-simulation",
+    "gpgpu-physics",
+    "webgl2"
+  ],
+  "langs": [
+    {
+      "name": "TypeScript",
+      "size": 76078,
+      "color": "#3178c6"
+    },
+    {
+      "name": "GLSL",
+      "size": 22136,
+      "color": "#5686a5"
+    },
+    {
+      "name": "Shell",
+      "size": 675,
+      "color": "#89e051"
+    },
+    {
+      "name": "JavaScript",
+      "size": 450,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "CSS",
+      "size": 422,
+      "color": "#563d7c"
+    },
+    {
+      "name": "HTML",
+      "size": 388,
+      "color": "#e34c26"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1741076524000
+}
