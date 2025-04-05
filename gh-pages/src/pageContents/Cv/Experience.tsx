@@ -17,6 +17,13 @@ export interface ExperienceInfo {
 export function useExperienceInfoList(): ExperienceInfo[] {
   const experienceInfoList: ExperienceInfo[] = [
     {
+      role: "Software engineer (server)",
+      duration: "Apr. 2025 -",
+      company: "Yumemi Inc.",
+      country: "JAPAN",
+      skillList: [],
+    },
+    {
       role: "Software engineer (front / server)",
       duration: "Mar. 2024 - Apr. 2024",
       company: "Polyfit Ltd.",
@@ -40,10 +47,12 @@ export function Experience({ info }: { info: ExperienceInfo }): JSX.Element {
       <div className={style.title}>{info.role}</div>
       <IconAndDescription Icon={CompanyIcon} description={info.company} />
       <IconAndDescription Icon={WorldIcon} description={info.country} />
-      <IconAndDescription
-        Icon={ProgrammingIcon}
-        description={info.skillList.join(", ")}
-      />
+      {0 < info.skillList.length && (
+        <IconAndDescription
+          Icon={ProgrammingIcon}
+          description={info.skillList.join(", ")}
+        />
+      )}
       <IconAndDescription Icon={ClockIcon} description={info.duration} />
     </div>
   );

@@ -32,6 +32,7 @@ export const contactInfo = style({
       borderColor: themeColors.background,
       borderWidth: "0.125rem",
       borderStyle: "solid",
+      transition: "border-color 0.4s",
     },
     [`${contactInfoList} > &:hover`]: {
       borderColor: themeColors.focused,
