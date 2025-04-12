@@ -1,0 +1,36 @@
+{
+  "name": "SimpleTCSolver",
+  "descr": "Massively-parallelized Navier-Stokes solver for Taylor-Couette flows",
+  "topics": [
+    "cfd",
+    "fluid-dynamics",
+    "hpc",
+    "navier-stokes",
+    "taylor-couette",
+    "turbulence"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 257390,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 12143,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Makefile",
+      "size": 1484,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 1256,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 9,
+  "lastUpdate": 1740119555000
+}
