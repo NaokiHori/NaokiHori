@@ -1,2 +1,3 @@
-cd gh-pages
+#!/bin/sh
+
 npx lint-staged
