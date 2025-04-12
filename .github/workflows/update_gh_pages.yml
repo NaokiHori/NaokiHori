@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - dev
-    paths:
-      - gh-pages/**
 
 jobs:
   build:
@@ -33,21 +31,17 @@ jobs:
           node-version: 'latest'
       - name: Install dependencies
         run: |
-          cd gh-pages
           npm install
-          cd ..
       - name: Build
         run: |
-          cd gh-pages
           tree src
           npx tsc && npx vite build --base=/NaokiHori/
-          cd ..
       - name: Setup GitHub Pages
         uses: actions/configure-pages@main
       - name: Upload HTML
         uses: actions/upload-pages-artifact@main
         with:
-          path: gh-pages/dist
+          path: dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@main
