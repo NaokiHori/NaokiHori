@@ -268,25 +268,25 @@
       x="38.21"
       y="216"
     >
-      9
+      10
     </text>
   </g>
 
   <g id="clock" stroke="#000000">
     <g id="outer">
-      <path class="circle" d="M76.890000 216.000000 A6.400000 6.400000 0.000000 1 1 75.016273 211.475307" stroke-width="2.000000"/>
-      <polygon class="triangle" points="72.752742 213.737258 77.278225 213.737258 77.278225 209.211775" fill="#000000"/>
+      <path class="circle" d="M86.602000 216.000000 A6.400000 6.400000 0.000000 1 1 84.728273 211.475307" stroke-width="2.000000"/>
+      <polygon class="triangle" points="82.464742 213.737258 86.990225 213.737258 86.990225 209.211775" fill="#000000"/>
     </g>
     <g id="inner">
-      <line class="big" x1="70.49000000000001" y1="216.8" x2="70.49000000000001" y2="211.2" stroke-width="1.6"/>
-      <line class="small" x1="69.69000000000001" y1="216" x2="73.69000000000001" y2="216" stroke-width="1.6"/>
+      <line class="big" x1="80.202" y1="216.8" x2="80.202" y2="211.2" stroke-width="1.6"/>
+      <line class="small" x1="79.402" y1="216" x2="83.402" y2="216" stroke-width="1.6"/>
     </g>
   </g>
 
   <g id="updated">
     <text
       class="descr"
-      x="86.49000000000001"
+      x="96.202"
       y="216"
     >
       21 February 2025
