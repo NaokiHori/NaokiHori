@@ -21,7 +21,7 @@ export function useExperienceInfoList(): ExperienceInfo[] {
       duration: "Apr. 2025 -",
       company: "Yumemi Inc.",
       country: "JAPAN",
-      skillList: [],
+      skillList: ["Laravel", "AWS"],
     },
     {
       role: "Software engineer (front / server)",
