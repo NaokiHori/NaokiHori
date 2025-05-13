@@ -55,4 +55,3 @@ jobs:
           git add assets
           git commit -m "Update assets" -a || true
           git push -f origin main
-

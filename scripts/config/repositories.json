@@ -14,33 +14,18 @@
   },
   {
     "title": "High performance computing",
-    "items": [
-      "SimpleDecomp",
-      "Contour3D"
-    ]
+    "items": ["SimpleDecomp", "Contour3D"]
   },
   {
     "title": "Physics simulators",
-    "items": [
-      "Collision",
-      "Pendulum",
-      "WebGL-NS-Solver",
-      "Wave"
-    ]
+    "items": ["Collision", "Pendulum", "WebGL-NS-Solver", "Wave"]
   },
   {
     "title": "Utility libraries",
-    "items": [
-      "SimpleNpyIO"
-    ]
+    "items": ["SimpleNpyIO"]
   },
   {
     "title": "Others",
-    "items": [
-      "NaokiHori",
-      "C-Misc",
-      "WebGLSandbox",
-      "Trash"
-    ]
+    "items": ["NaokiHori", "C-Misc", "WebGLSandbox", "Trash"]
   }
 ]

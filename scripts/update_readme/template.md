@@ -64,6 +64,7 @@
 </h2>
 
 {{- range .RepositoryTypes }}
+
 <h3>
   {{ .Title }}
 </h3>
