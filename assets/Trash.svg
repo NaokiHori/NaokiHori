@@ -226,14 +226,14 @@
       height="22.4"
       rx="4"
       ry="4"
-      stroke="#5686a5"
+      stroke="#e34c26"
     />
     <text
       class="descr"
       x="188.17000000000002"
       y="154"
     >
-      GLSL
+      HTML
     </text>
     <rect
       class="lang"
@@ -243,14 +243,14 @@
       height="22.4"
       rx="4"
       ry="4"
-      stroke="#e34c26"
+      stroke="#5686a5"
     />
     <text
       class="descr"
       x="246.442"
       y="154"
     >
-      HTML
+      GLSL
     </text>
     <rect
       class="lang"
@@ -299,7 +299,7 @@
       x="86.49000000000001"
       y="186"
     >
-      11 May 2025
+      17 May 2025
     </text>
   </g>
 
