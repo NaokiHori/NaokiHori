@@ -1,0 +1,47 @@
+{
+  "name": "NaokiHori",
+  "descr": "My GitHub profile",
+  "topics": [
+    "github-profile",
+    "github-profile-readme"
+  ],
+  "langs": [
+    {
+      "name": "TypeScript",
+      "size": 75135,
+      "color": "#3178c6"
+    },
+    {
+      "name": "Go",
+      "size": 28117,
+      "color": "#00ADD8"
+    },
+    {
+      "name": "Python",
+      "size": 3073,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Gnuplot",
+      "size": 1053,
+      "color": "#f0a9f0"
+    },
+    {
+      "name": "JavaScript",
+      "size": 578,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "HTML",
+      "size": 387,
+      "color": "#e34c26"
+    },
+    {
+      "name": "Shell",
+      "size": 71,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 2,
+  "lastUpdate": 1751875967000
+}

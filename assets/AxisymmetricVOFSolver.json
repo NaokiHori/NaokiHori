@@ -1,0 +1,26 @@
+{
+  "name": "AxisymmetricVOFSolver",
+  "descr": "A Navier-Stokes solver for interfacial two-phase flows under axisymmetric conditions",
+  "topics": [
+    "axisymmetry",
+    "direct-numerical-simulation",
+    "multiphase-flow",
+    "navier-stokes",
+    "physics-simulation",
+    "volume-of-fluid"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 196224,
+      "color": "#555555"
+    },
+    {
+      "name": "Makefile",
+      "size": 1167,
+      "color": "#427819"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1742545245000
+}

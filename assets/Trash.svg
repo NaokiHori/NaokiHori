@@ -1,0 +1,306 @@
+<svg
+  version="1.1"
+  width="500"
+  height="216"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  role="img"
+>
+
+  <style>
+    * {
+      font-family: "Courier New";
+    }
+    <!-- stroke-width is not give here since it is used to decide svg size -->
+    rect.border {
+      stroke: #888888;
+      fill: #ffffff;
+    }
+    rect.topic {
+      stroke-width: 2.5;
+      fill: #444444;
+    }
+    rect.lang {
+      stroke-width: 2.5;
+      fill: #ffffff;
+    }
+    text {
+      dominant-baseline: middle;
+      font-size: medium;
+      font-weight: normal;
+    }
+    text.title {
+      font-size: large;
+      font-weight: bold;
+      fill: #2f80ed;
+    }
+    text.descr {
+      fill: #000000;
+    }
+    text.topic {
+      fill: #ffffff;
+    }
+    path.star {
+      stroke: #000000;
+      stroke-width: 2;
+      fill: #ffff00;
+    }
+  </style>
+
+  <rect
+    class="border"
+    x="1"
+    y="1"
+    width="498"
+    height="214"
+    rx="10"
+    ry="10"
+    stroke-width="2"
+  />
+
+  <g id="title">
+    <text
+      class="title"
+      x="18.21"
+      y="30"
+    >
+      Trash
+    </text>
+  </g>
+
+  <g id="description">
+    <text
+      class="descr"
+      x="18.21"
+      y="60"
+    >
+      Web applications I developed for fun
+    </text>
+  </g>
+
+  <g id="topics">
+    <rect
+      class="topic"
+      x="18.21"
+      y="78.8"
+      width="97.12"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="90"
+    >
+      colormaps
+    </text>
+    <rect
+      class="topic"
+      x="125.042"
+      y="78.8"
+      width="77.696"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="129.898"
+      y="90"
+    >
+      fractal
+    </text>
+    <rect
+      class="topic"
+      x="212.45"
+      y="78.8"
+      width="145.68"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="217.30599999999998"
+      y="90"
+    >
+      maze-generator
+    </text>
+    <rect
+      class="topic"
+      x="367.842"
+      y="78.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="372.698"
+      y="90"
+    >
+      sudoku
+    </text>
+    <rect
+      class="topic"
+      x="18.21"
+      y="110.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="122"
+    >
+      typescript
+    </text>
+    <rect
+      class="topic"
+      x="134.75400000000002"
+      y="110.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="139.61"
+      y="122"
+    >
+      webapp
+    </text>
+  </g>
+
+  <g id="langs">
+    <rect
+      class="lang"
+      x="18.21"
+      y="142.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#3178c6"
+    />
+    <text
+      class="descr"
+      x="23.066000000000003"
+      y="154"
+    >
+      TypeScript
+    </text>
+    <rect
+      class="lang"
+      x="134.75400000000002"
+      y="142.8"
+      width="38.848"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#563d7c"
+    />
+    <text
+      class="descr"
+      x="139.61"
+      y="154"
+    >
+      CSS
+    </text>
+    <rect
+      class="lang"
+      x="183.31400000000002"
+      y="142.8"
+      width="48.56"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#e34c26"
+    />
+    <text
+      class="descr"
+      x="188.17000000000002"
+      y="154"
+    >
+      HTML
+    </text>
+    <rect
+      class="lang"
+      x="241.586"
+      y="142.8"
+      width="48.56"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#5686a5"
+    />
+    <text
+      class="descr"
+      x="246.442"
+      y="154"
+    >
+      GLSL
+    </text>
+    <rect
+      class="lang"
+      x="299.858"
+      y="142.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#f1e05a"
+    />
+    <text
+      class="descr"
+      x="304.714"
+      y="154"
+    >
+      JavaScript
+    </text>
+  </g>
+
+  <g id="star">
+    <path class="star" d="M 25.818452130361230 178.000000000000000  L 28.169593139531123 182.763932022500200  L 33.426904260722459 183.527864045000427  L 29.622678195541845 187.236067977499800  L 30.520734148701017 192.472135954999573  L 25.818452130361230 190.000000000000000  L 21.116170112021447 192.472135954999573  L 22.014226065180615 187.236067977499800  L 18.210000000000001 183.527864045000427  L 23.467311121191337 182.763932022500200 Z"/>
+    <text
+      class="descr"
+      x="38.21"
+      y="186"
+    >
+      0
+    </text>
+  </g>
+
+  <g id="clock" stroke="#000000">
+    <g id="outer">
+      <path class="circle" d="M76.890000 186.000000 A6.400000 6.400000 0.000000 1 1 75.016273 181.475307" stroke-width="2.000000"/>
+      <polygon class="triangle" points="72.752742 183.737258 77.278225 183.737258 77.278225 179.211775" fill="#000000"/>
+    </g>
+    <g id="inner">
+      <line class="big" x1="70.49000000000001" y1="186.8" x2="70.49000000000001" y2="181.2" stroke-width="1.6"/>
+      <line class="small" x1="69.69000000000001" y1="186" x2="73.69000000000001" y2="186" stroke-width="1.6"/>
+    </g>
+  </g>
+
+  <g id="updated">
+    <text
+      class="descr"
+      x="86.49000000000001"
+      y="186"
+    >
+      1 July 2025
+    </text>
+  </g>
+
+</svg>
