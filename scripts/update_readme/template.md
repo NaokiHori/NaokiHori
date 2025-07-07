@@ -39,7 +39,7 @@
   <div style="flex: 0 0 auto; padding: 2px 2px">
     {{- range .Skills.Languages }}
     <a href="{{ .Href }}">
-      <img src="{{ .Src }}" alt="{{ .Name }}" height="50"/>
+      <img src="{{ .Src }}" alt="{{ .Name }}" style="height: 50px"/>
     </a>
     {{- end }}
   </div>
@@ -49,7 +49,7 @@
   <div style="flex: 0 0 auto; padding: 2px 2px">
     {{- range .Skills.Tools }}
     <a href="{{ .Href }}">
-      <img src="{{ .Src }}" alt="{{ .Name }}" height="50"/>
+      <img src="{{ .Src }}" alt="{{ .Name }}" style="height: 50px"/>
     </a>
     {{- end }}
   </div>
