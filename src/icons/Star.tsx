@@ -14,7 +14,7 @@ export const Star: React.NamedExoticComponent<object> = React.memo(
         const y: number = radius * Math.sin(theta);
         const prefix: string = index === 0 ? "M" : "L";
         const suffix: string = index === nVertices - 1 ? "Z" : " ";
-        return `${prefix.toString()} ${x.toString()} ${y.toString()} ${suffix.toString()}`;
+        return `${prefix} ${x.toString()} ${y.toString()} ${suffix}`;
       },
     );
     const path: string = pathElements.join("");
