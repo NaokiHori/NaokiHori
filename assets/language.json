@@ -7,7 +7,7 @@
     },
   {
       "name": "TypeScript",
-      "size": 540490,
+      "size": 545278,
       "color": "#3178c6"
     },
   {
@@ -37,18 +37,18 @@
     },
   {
       "name": "CSS",
-      "size": 24136,
+      "size": 25048,
       "color": "#563d7c"
+    },
+  {
+      "name": "HTML",
+      "size": 20484,
+      "color": "#e34c26"
     },
   {
       "name": "Shell",
       "size": 20425,
       "color": "#89e051"
-    },
-  {
-      "name": "HTML",
-      "size": 19967,
-      "color": "#e34c26"
     },
   {
       "name": "Gnuplot",
@@ -71,5 +71,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1759139463127
+  "date": 1759636188647
 }

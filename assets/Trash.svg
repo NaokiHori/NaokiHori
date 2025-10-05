@@ -132,26 +132,9 @@
     </text>
     <rect
       class="topic"
-      x="367.842"
-      y="78.8"
-      width="67.984"
-      height="22.4"
-      rx="4"
-      ry="4"
-    />
-    <text
-      class="topic"
-      fill="#ffffff"
-      x="372.698"
-      y="90"
-    >
-      sudoku
-    </text>
-    <rect
-      class="topic"
       x="18.21"
       y="110.8"
-      width="106.832"
+      width="87.408"
       height="22.4"
       rx="4"
       ry="4"
@@ -162,11 +145,11 @@
       x="23.066000000000003"
       y="122"
     >
-      typescript
+      roulette
     </text>
     <rect
       class="topic"
-      x="134.75400000000002"
+      x="115.33000000000001"
       y="110.8"
       width="67.984"
       height="22.4"
@@ -176,7 +159,41 @@
     <text
       class="topic"
       fill="#ffffff"
-      x="139.61"
+      x="120.186"
+      y="122"
+    >
+      sudoku
+    </text>
+    <rect
+      class="topic"
+      x="193.026"
+      y="110.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="197.882"
+      y="122"
+    >
+      typescript
+    </text>
+    <rect
+      class="topic"
+      x="309.57"
+      y="110.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="314.426"
       y="122"
     >
       webapp
@@ -299,7 +316,7 @@
       x="86.49000000000001"
       y="186"
     >
-      10 September 2025
+      3 October 2025
     </text>
   </g>
 
