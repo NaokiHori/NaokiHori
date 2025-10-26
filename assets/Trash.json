@@ -1,0 +1,42 @@
+{
+  "name": "Trash",
+  "descr": "Web applications I developed for fun",
+  "topics": [
+    "colormaps",
+    "fractal",
+    "maze-generator",
+    "roulette",
+    "sudoku",
+    "typescript",
+    "webapp"
+  ],
+  "langs": [
+    {
+      "name": "TypeScript",
+      "size": 166555,
+      "color": "#3178c6"
+    },
+    {
+      "name": "CSS",
+      "size": 14512,
+      "color": "#563d7c"
+    },
+    {
+      "name": "HTML",
+      "size": 5697,
+      "color": "#e34c26"
+    },
+    {
+      "name": "GLSL",
+      "size": 4219,
+      "color": "#5686a5"
+    },
+    {
+      "name": "JavaScript",
+      "size": 650,
+      "color": "#f1e05a"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1761017031000
+}

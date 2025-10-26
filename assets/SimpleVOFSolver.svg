@@ -1,0 +1,337 @@
+<svg
+  version="1.1"
+  width="500"
+  height="308"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  role="img"
+>
+
+  <style>
+    * {
+      font-family: "Courier New";
+    }
+    <!-- stroke-width is not give here since it is used to decide svg size -->
+    rect.border {
+      stroke: #888888;
+      fill: #ffffff;
+    }
+    rect.topic {
+      stroke-width: 2.5;
+      fill: #444444;
+    }
+    rect.lang {
+      stroke-width: 2.5;
+      fill: #ffffff;
+    }
+    text {
+      dominant-baseline: middle;
+      font-size: medium;
+      font-weight: normal;
+    }
+    text.title {
+      font-size: large;
+      font-weight: bold;
+      fill: #2f80ed;
+    }
+    text.descr {
+      fill: #000000;
+    }
+    text.topic {
+      fill: #ffffff;
+    }
+    path.star {
+      stroke: #000000;
+      stroke-width: 2;
+      fill: #ffff00;
+    }
+  </style>
+
+  <rect
+    class="border"
+    x="1"
+    y="1"
+    width="498"
+    height="306"
+    rx="10"
+    ry="10"
+    stroke-width="2"
+  />
+
+  <g id="title">
+    <text
+      class="title"
+      x="18.21"
+      y="30"
+    >
+      SimpleVOFSolver
+    </text>
+  </g>
+
+  <g id="description">
+    <text
+      class="descr"
+      x="18.21"
+      y="60"
+    >
+      Massively-parallelized Navier-Stokes solver with
+    </text>
+    <text
+      class="descr"
+      x="18.21"
+      y="90"
+    >
+       a volume-of-fluid method for droplet-laden flow
+    </text>
+    <text
+      class="descr"
+      x="18.21"
+      y="120"
+    >
+      s
+    </text>
+  </g>
+
+  <g id="topics">
+    <rect
+      class="topic"
+      x="18.21"
+      y="138.8"
+      width="38.848"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="150"
+    >
+      cfd
+    </text>
+    <rect
+      class="topic"
+      x="66.77000000000001"
+      y="138.8"
+      width="135.968"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="71.626"
+      y="150"
+    >
+      finite-volume
+    </text>
+    <rect
+      class="topic"
+      x="212.45000000000002"
+      y="138.8"
+      width="145.68"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="217.306"
+      y="150"
+    >
+      fluid-dynamics
+    </text>
+    <rect
+      class="topic"
+      x="367.842"
+      y="138.8"
+      width="38.848"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="372.698"
+      y="150"
+    >
+      hpc
+    </text>
+    <rect
+      class="topic"
+      x="18.21"
+      y="170.8"
+      width="155.392"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="182"
+    >
+      multiphase-flow
+    </text>
+    <rect
+      class="topic"
+      x="183.314"
+      y="170.8"
+      width="135.968"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="188.17"
+      y="182"
+    >
+      navier-stokes
+    </text>
+    <rect
+      class="topic"
+      x="328.994"
+      y="170.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="333.85"
+      y="182"
+    >
+      turbulence
+    </text>
+    <rect
+      class="topic"
+      x="18.21"
+      y="202.8"
+      width="155.392"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="214"
+    >
+      volume-of-fluid
+    </text>
+  </g>
+
+  <g id="langs">
+    <rect
+      class="lang"
+      x="18.21"
+      y="234.8"
+      width="19.424"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#555555"
+    />
+    <text
+      class="descr"
+      x="23.066000000000003"
+      y="246"
+    >
+      C
+    </text>
+    <rect
+      class="lang"
+      x="47.346"
+      y="234.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#3572A5"
+    />
+    <text
+      class="descr"
+      x="52.202"
+      y="246"
+    >
+      Python
+    </text>
+    <rect
+      class="lang"
+      x="125.042"
+      y="234.8"
+      width="87.408"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#427819"
+    />
+    <text
+      class="descr"
+      x="129.898"
+      y="246"
+    >
+      Makefile
+    </text>
+    <rect
+      class="lang"
+      x="222.162"
+      y="234.8"
+      width="58.272"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#89e051"
+    />
+    <text
+      class="descr"
+      x="227.018"
+      y="246"
+    >
+      Shell
+    </text>
+  </g>
+
+  <g id="star">
+    <path class="star" d="M 25.818452130361230 270.000000000000000  L 28.169593139531123 274.763932022500228  L 33.426904260722459 275.527864045000399  L 29.622678195541845 279.236067977499772  L 30.520734148701017 284.472135954999601  L 25.818452130361230 282.000000000000000  L 21.116170112021447 284.472135954999601  L 22.014226065180615 279.236067977499772  L 18.210000000000001 275.527864045000399  L 23.467311121191337 274.763932022500228 Z"/>
+    <text
+      class="descr"
+      x="38.21"
+      y="278"
+    >
+      12
+    </text>
+  </g>
+
+  <g id="clock" stroke="#000000">
+    <g id="outer">
+      <path class="circle" d="M86.602000 278.000000 A6.400000 6.400000 0.000000 1 1 84.728273 273.475307" stroke-width="2.000000"/>
+      <polygon class="triangle" points="82.464742 275.737258 86.990225 275.737258 86.990225 271.211775" fill="#000000"/>
+    </g>
+    <g id="inner">
+      <line class="big" x1="80.202" y1="278.8" x2="80.202" y2="273.2" stroke-width="1.6"/>
+      <line class="small" x1="79.402" y1="278" x2="83.402" y2="278" stroke-width="1.6"/>
+    </g>
+  </g>
+
+  <g id="updated">
+    <text
+      class="descr"
+      x="96.202"
+      y="278"
+    >
+      4 February 2025
+    </text>
+  </g>
+
+</svg>
