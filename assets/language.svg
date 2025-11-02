@@ -81,7 +81,7 @@
         x="143.25199999999998"
         y="72"
       >
-        72.15%
+        72.11%
       </text>
       <rect
         class="graph"
@@ -266,7 +266,7 @@
         x="152.964"
         y="232"
       >
-        1.22%
+        1.21%
       </text>
       <rect
         class="graph"
@@ -363,32 +363,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#e34c26"
+        stroke="#89e051"
       />
       <text
         class="descr"
         x="26.708"
         y="328"
       >
-        HTML
+        Shell
       </text>
       <text
         class="descr"
         x="152.964"
         y="328"
       >
-        0.57%
+        0.62%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="316.8"
-        width="2.1819310344827585"
+        width="2.3545980041613634"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#e34c26"
-        stroke="#e34c26"
+        fill="#89e051"
+        stroke="#89e051"
       />
     </g>
     <g id="lang-">
@@ -400,14 +400,14 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#89e051"
+        stroke="#e34c26"
       />
       <text
         class="descr"
         x="26.708"
         y="360"
       >
-        Shell
+        HTML
       </text>
       <text
         class="descr"
@@ -420,12 +420,12 @@
         class="graph"
         x="206.38"
         y="348.8"
-        width="2.1756464254691634"
+        width="2.1819310344827585"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#89e051"
-        stroke="#89e051"
+        fill="#e34c26"
+        stroke="#e34c26"
       />
     </g>
     <g id="lang-">
@@ -525,13 +525,13 @@
         x="152.964"
         y="456"
       >
-        0.09%
+        0.10%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="444.8"
-        width="0.3435231198109205"
+        width="0.36322909722643065"
         height="22.4"
         rx="4"
         ry="4"
@@ -584,7 +584,7 @@
       x="21.852"
       y="528"
     >
-      Last Update: 26 October 2025
+      Last Update: 2 November 2025
     </text>
   </g>
 

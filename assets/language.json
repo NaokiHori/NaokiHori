@@ -41,14 +41,14 @@
       "color": "#563d7c"
     },
   {
+      "name": "Shell",
+      "size": 22105,
+      "color": "#89e051"
+    },
+  {
       "name": "HTML",
       "size": 20484,
       "color": "#e34c26"
-    },
-  {
-      "name": "Shell",
-      "size": 20425,
-      "color": "#89e051"
     },
   {
       "name": "Gnuplot",
@@ -62,7 +62,7 @@
     },
   {
       "name": "Vim Script",
-      "size": 3225,
+      "size": 3410,
       "color": "#199f4b"
     },
   {
@@ -71,5 +71,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1761463129943
+  "date": 1762055891171
 }
