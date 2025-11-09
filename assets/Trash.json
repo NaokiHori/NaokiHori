@@ -2,34 +2,36 @@
   "name": "Trash",
   "descr": "Web applications I developed for fun",
   "topics": [
+    "cellular-automaton",
     "colormaps",
     "fractal",
     "maze-generator",
     "roulette",
     "sudoku",
     "typescript",
-    "webapp"
+    "webapp",
+    "webgl"
   ],
   "langs": [
     {
       "name": "TypeScript",
-      "size": 166555,
+      "size": 189115,
       "color": "#3178c6"
     },
     {
       "name": "CSS",
-      "size": 14512,
+      "size": 15023,
       "color": "#563d7c"
     },
     {
-      "name": "HTML",
-      "size": 5697,
-      "color": "#e34c26"
+      "name": "GLSL",
+      "size": 7448,
+      "color": "#5686a5"
     },
     {
-      "name": "GLSL",
-      "size": 4219,
-      "color": "#5686a5"
+      "name": "HTML",
+      "size": 6208,
+      "color": "#e34c26"
     },
     {
       "name": "JavaScript",
@@ -38,5 +40,5 @@
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1761017031000
+  "lastUpdate": 1762256742000
 }
