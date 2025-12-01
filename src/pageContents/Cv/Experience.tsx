@@ -18,7 +18,14 @@ export function useExperienceInfoList(): ExperienceInfo[] {
   const experienceInfoList: ExperienceInfo[] = [
     {
       role: "Software engineer (server)",
-      duration: "Apr. 2025 -",
+      duration: "Dec. 2025 -",
+      company: "Accenture Japan Ltd.",
+      country: "JAPAN",
+      skillList: ["Laravel", "AWS"],
+    },
+    {
+      role: "Software engineer (server)",
+      duration: "Apr. 2025 - Nov. 2025",
       company: "Yumemi Inc.",
       country: "JAPAN",
       skillList: ["Laravel", "AWS"],
