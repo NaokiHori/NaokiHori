@@ -1,0 +1,50 @@
+{
+  "name": "Collision",
+  "descr": "Event-driven simulator of many colliding particles",
+  "topics": [
+    "collision-simulation",
+    "granular-mechanics",
+    "physics-simulation",
+    "webapp",
+    "webassembly"
+  ],
+  "langs": [
+    {
+      "name": "Rust",
+      "size": 77407,
+      "color": "#dea584"
+    },
+    {
+      "name": "TypeScript",
+      "size": 14891,
+      "color": "#3178c6"
+    },
+    {
+      "name": "GLSL",
+      "size": 1950,
+      "color": "#5686a5"
+    },
+    {
+      "name": "HTML",
+      "size": 1152,
+      "color": "#e34c26"
+    },
+    {
+      "name": "Shell",
+      "size": 675,
+      "color": "#89e051"
+    },
+    {
+      "name": "CSS",
+      "size": 674,
+      "color": "#563d7c"
+    },
+    {
+      "name": "JavaScript",
+      "size": 450,
+      "color": "#f1e05a"
+    }
+  ],
+  "nStars": 6,
+  "lastUpdate": 1761021870000
+}
