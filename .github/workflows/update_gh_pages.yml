@@ -25,17 +25,20 @@ jobs:
         with:
           repository: "NaokiHori/NaokiHori"
           ref: dev
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "latest"
-      - name: Install dependencies
+      - name: Build Docker image
+        run: docker compose build
+      - name: Run type-check
         run: |
-          npm install
+          docker compose run --rm app npx tsc
+      - name: Check code format
+        run: |
+          docker compose run --rm app npx prettier . --check
+      - name: Run linter
+        run: |
+          docker compose run --rm app npx eslint .
       - name: Build
         run: |
-          tree src
-          npx tsc && npx vite build --base=/NaokiHori/
+          docker compose run --rm app npx vite build --base=/NaokiHori/
       - name: Setup GitHub Pages
         uses: actions/configure-pages@main
       - name: Upload HTML
