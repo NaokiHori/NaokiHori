@@ -1,0 +1,52 @@
+{
+  "name": "NaokiHori",
+  "descr": "My GitHub profile",
+  "topics": [
+    "github-profile",
+    "github-profile-readme"
+  ],
+  "langs": [
+    {
+      "name": "TypeScript",
+      "size": 75407,
+      "color": "#3178c6"
+    },
+    {
+      "name": "Go",
+      "size": 28117,
+      "color": "#00ADD8"
+    },
+    {
+      "name": "Python",
+      "size": 3073,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Gnuplot",
+      "size": 1053,
+      "color": "#f0a9f0"
+    },
+    {
+      "name": "JavaScript",
+      "size": 508,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "HTML",
+      "size": 443,
+      "color": "#e34c26"
+    },
+    {
+      "name": "Makefile",
+      "size": 418,
+      "color": "#427819"
+    },
+    {
+      "name": "Dockerfile",
+      "size": 359,
+      "color": "#384d54"
+    }
+  ],
+  "nStars": 3,
+  "lastUpdate": 1770538976000
+}
