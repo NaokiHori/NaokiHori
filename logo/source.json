@@ -40,6 +40,10 @@
     "src": "https://www.open-mpi.org/images/open-mpi-logo.png"
   },
   {
+    "name": "Laravel",
+    "src": "https://raw.githubusercontent.com/laravel/art/refs/heads/master/laravel-logo.svg"
+  },
+  {
     "name": "React",
     "src": "https://react.dev"
   },

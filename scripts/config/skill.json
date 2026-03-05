@@ -67,6 +67,12 @@
       "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/OpenMPI.png"
     },
     {
+      "name": "Laravel",
+      "href": "https://laravel.com/",
+      "src": "https://raw.githubusercontent.com/laravel/art/refs/heads/master/laravel-logo.svg",
+      "image": "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Laravel.svg"
+    },
+    {
       "name": "React",
       "href": "https://react.dev",
       "src": "https://react.dev",
