@@ -5,7 +5,7 @@ RUN npm init -y --init-type=module
 RUN npm install --save-dev \
   prettier \
   typescript \
-  typescript-eslint \
+  typescript-eslint@8.54.0 \
   vite \
   @vanilla-extract/vite-plugin \
   @types/react \
