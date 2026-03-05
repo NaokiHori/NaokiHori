@@ -1,0 +1,29 @@
+{
+  "name": "SwimmingParticle",
+  "descr": "A finite-difference-based numerical simulator for diffusophoretic, self-propelling particles",
+  "topics": [
+    "fluid-dynamics",
+    "multiphase-flow",
+    "physics-simulation",
+    "stokes-flow"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 80029,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 1197,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Makefile",
+      "size": 961,
+      "color": "#427819"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1746963196000
+}

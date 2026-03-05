@@ -1,0 +1,27 @@
+{
+  "name": "SimpleLBSolver",
+  "descr": "A simple CFD solver by means of the Lattice Boltzmann method",
+  "topics": [
+    "fluid-dynamics",
+    "lattice-boltzmann"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 58424,
+      "color": "#555555"
+    },
+    {
+      "name": "Makefile",
+      "size": 861,
+      "color": "#427819"
+    },
+    {
+      "name": "Python",
+      "size": 829,
+      "color": "#3572A5"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1765676152000
+}

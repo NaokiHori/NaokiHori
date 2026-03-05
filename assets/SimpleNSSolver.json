@@ -1,0 +1,35 @@
+{
+  "name": "SimpleNSSolver",
+  "descr": "Well-documented, validated, and massively-parallelized Navier-Stokes solver",
+  "topics": [
+    "cfd",
+    "fluid-dynamics",
+    "hpc",
+    "navier-stokes",
+    "turbulence"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 174014,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 10789,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Makefile",
+      "size": 1484,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 1091,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 36,
+  "lastUpdate": 1740119843000
+}

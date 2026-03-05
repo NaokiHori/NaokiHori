@@ -1,0 +1,37 @@
+{
+  "name": "SimpleBubblyFlowSolver",
+  "descr": "Massively-parallelised Navier-Stokes solver with a volume-of-fluid method for bubbly flows",
+  "topics": [
+    "cfd",
+    "finite-volume",
+    "fluid-dynamics",
+    "hpc",
+    "multiphase-flow",
+    "navier-stokes",
+    "turbulence"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 189442,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 10476,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Makefile",
+      "size": 1492,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 1218,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 11,
+  "lastUpdate": 1757760071000
+}
