@@ -9,7 +9,8 @@
       "SimpleBubblyFlowSolver",
       "SpectralNSSolver1",
       "AxisymmetricVOFSolver",
-      "SwimmingParticle"
+      "SwimmingParticle",
+      "SimpleLBSolver"
     ]
   },
   {
