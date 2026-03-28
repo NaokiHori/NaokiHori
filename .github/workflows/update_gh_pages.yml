@@ -5,46 +5,42 @@ on:
     branches:
       - dev
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     name: Build and deploy GH pages
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     permissions:
       contents: read
       pages: write
       id-token: write
-    concurrency:
-      group: "pages"
-      cancel-in-progress: true
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
-          repository: "NaokiHori/NaokiHori"
           ref: dev
       - name: Build Docker image
         run: docker compose build
-      - name: Run type-check
+      - name: Quality Checks (Lint/Type/Format)
         run: |
           docker compose run --rm app npx tsc
-      - name: Check code format
-        run: |
           docker compose run --rm app npx prettier . --check
-      - name: Run linter
-        run: |
           docker compose run --rm app npx eslint .
-      - name: Build
+      - name: Build Production Assets
         run: |
           docker compose run --rm app npx vite build --base=/NaokiHori/
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@main
+        uses: actions/configure-pages@v4
       - name: Upload HTML
-        uses: actions/upload-pages-artifact@main
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v4

@@ -1,57 +1,55 @@
 name: UpdateAssets
 
-# when pushed, trigger this workflow after update_readme to avoid push conflict
-
 on:
   workflow_run:
-    workflows: [UpdateReadme]
+    workflows:
+      - UpdateReadme
     types:
       - completed
   schedule:
     - cron: "34 3 * * 0"
 
+permissions:
+  contents: write
+
 jobs:
   update-and-push:
-    name: Update json files, repoository / language cards, and push them
+    name: Update assets and push
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'schedule' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
-          repository: "NaokiHori/NaokiHori"
-          ref: dev
+          ref: main
           fetch-depth: 0
       - name: Setup Go
-        uses: actions/setup-go@main
+        uses: actions/setup-go@v5
         with:
-          go-version: 1.21.5
-      - name: Check all branches
+          go-version: "1.21.5"
+          cache: true
+      - name: Prepare and Generate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git branch
-      - name: Prepare place for artifacts
-        run: |
-          if [ ! -e newassets ]; then
-            mkdir newassets
-          fi
-      - name: Generate all
-        run: |
+          mkdir -p newassets
           cd scripts/update_assets
-          go build .
+          go build -o update_assets_bin .
           cd ../..
-          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-            ./scripts/update_assets/update_assets \
+          ./scripts/update_assets/update_assets_bin \
             --config-dir=scripts/config \
             --out-dir=newassets \
             --template-dir=scripts/update_assets/view
-      - name: Commit changes
+      - name: Commit and Push
         run: |
-          git switch main
           git config --local user.email "36466440+NaokiHori@users.noreply.github.com"
           git config --local user.name "NaokiHori"
-          if [ ! -e assets ]; then
-            mkdir assets
-          fi
+          mkdir -p assets
           mv newassets/* assets/
           git add assets
-          git commit -m "Update assets" -a || true
-          git push -f origin main
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update assets"
+            git push -f origin main
+          fi

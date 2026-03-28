@@ -5,35 +5,43 @@ on:
     branches:
       - dev
 
+permissions:
+  contents: write
+
 jobs:
   update-readme:
     name: Update README.md
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
-          repository: "NaokiHori/NaokiHori"
+          fetch-depth: 0
           ref: dev
       - name: Setup Go
-        uses: actions/setup-go@main
+        uses: actions/setup-go@v5
         with:
-          go-version: 1.21.5
+          go-version: "1.21.5"
+          cache: true
       - name: Generate README.md
         run: |
           cd scripts/update_readme
-          go build .
+          go build -o readme_gen_bin .
           cd ../..
-          ./scripts/update_readme/update_readme \
+          ./scripts/update_readme/readme_gen_bin \
             --config-dir=scripts/config \
             --template-file=scripts/update_readme/template.md
-          cat README.md
-      - name: Commit changes
+      - name: Deploy to main
         run: |
-          git switch -c main
           git config --local user.email "36466440+NaokiHori@users.noreply.github.com"
           git config --local user.name "NaokiHori"
-          # also synchronise workflows
-          git add README.md .github/workflows
-          git commit -m "Update README.md" -a || true
-          git push -f origin main
+          mv README.md /tmp/README.md
+          git checkout main
+          mv /tmp/README.md README.md
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes detected. Skipping push."
+          else
+            git commit -m "Update README"
+            git push origin main
+          fi
