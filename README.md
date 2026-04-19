@@ -126,6 +126,9 @@
     <a href="https://vitejs.dev">
       <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Vite.svg" alt="Vite" style="height: 50px"/>
     </a>
+    <a href="https://claude.com/product/claude-code">
+      <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Claude.svg" alt="Claude" style="height: 50px"/>
+    </a>
   </div>
 </div>
 
