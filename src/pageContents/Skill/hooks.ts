@@ -52,7 +52,7 @@ export function useSkillInfo(): {
   toolSkillInfoList: SkillInfo[];
 } {
   const configSrc =
-    "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/scripts/config/skill.json";
+    "https://raw.githubusercontent.com/NaokiHori/NaokiHori/dev/scripts/config/skill.json";
   const [languageSkillInfoList, setLanguageSkillInfoList] = React.useState<
     SkillInfo[]
   >([]);

@@ -36,12 +36,12 @@ jobs:
           git config --local user.email "36466440+NaokiHori@users.noreply.github.com"
           git config --local user.name "NaokiHori"
           mv README.md /tmp/README.md
-          git checkout main
+          git switch main
           mv /tmp/README.md README.md
           git add README.md
           if git diff --cached --quiet; then
             echo "No changes detected. Skipping push."
           else
             git commit -m "Update README"
-            git push origin main
+            git push -f origin main
           fi

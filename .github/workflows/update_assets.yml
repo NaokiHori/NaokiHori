@@ -21,7 +21,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: dev
           fetch-depth: 0
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -46,6 +46,7 @@ jobs:
           git config --local user.name "NaokiHori"
           mkdir -p assets
           mv newassets/* assets/
+          git switch main
           git add assets
           if git diff --cached --quiet; then
             echo "No changes to commit"

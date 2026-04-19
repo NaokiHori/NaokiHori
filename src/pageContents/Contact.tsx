@@ -35,27 +35,27 @@ export function Contact(): JSX.Element {
     {
       href: "https://github.com/NaokiHori",
       label: "GitHub",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitHub.svg",
+      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/dev/logo/GitHub.svg",
     },
     {
       href: "https://gitlab.com/NaokiHori",
       label: "GitLab",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitLab.svg",
+      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/dev/logo/GitLab.svg",
     },
     {
       href: "https://www.youtube.com/@NaokiHori",
       label: "YouTube",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/YouTube.svg",
+      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/dev/logo/YouTube.svg",
     },
     {
       href: "https://www.linkedin.com/in/naoki-hori-b559032a1/",
       label: "Linkedin",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/LinkedIn.png",
+      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/dev/logo/LinkedIn.png",
     },
     {
       href: "https://qiita.com/NaokiHori",
       label: "Qiita",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Qiita.png",
+      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/dev/logo/Qiita.png",
     },
   ];
   return (

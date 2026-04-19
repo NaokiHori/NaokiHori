@@ -55,7 +55,7 @@ export function useRepositoryInfo(): {
   repositoryInfo: RepositoryInfo;
 } {
   const configSrc =
-    "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/scripts/config/repositories.json";
+    "https://raw.githubusercontent.com/NaokiHori/NaokiHori/dev/scripts/config/repositories.json";
   const defaultCategories = new Array<Category>();
   const [repositoryInfo, setRepositoryInfo] = React.useState<RepositoryInfo>({
     categories: defaultCategories,
