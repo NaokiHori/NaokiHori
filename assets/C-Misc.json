@@ -10,12 +10,12 @@
   "langs": [
     {
       "name": "C",
-      "size": 561582,
+      "size": 568719,
       "color": "#555555"
     },
     {
       "name": "Makefile",
-      "size": 41562,
+      "size": 42276,
       "color": "#427819"
     },
     {
@@ -35,5 +35,5 @@
     }
   ],
   "nStars": 2,
-  "lastUpdate": 1774266491000
+  "lastUpdate": 1778846458000
 }
