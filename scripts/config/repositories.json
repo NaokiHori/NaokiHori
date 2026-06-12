@@ -8,9 +8,7 @@
       "SimpleTCSolver",
       "SimpleBubblyFlowSolver",
       "SpectralNSSolver1",
-      "AxisymmetricVOFSolver",
-      "SwimmingParticle",
-      "SimpleLBSolver"
+      "CfdToolbox"
     ]
   },
   {
