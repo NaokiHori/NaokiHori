@@ -1,0 +1,35 @@
+{
+  "name": "SpectralNSSolver1",
+  "descr": "Fourier-Galerkin-based massively-parallelised Navier-Stokes solver",
+  "topics": [
+    "cfd",
+    "fluid-dynamics",
+    "galerkin-method",
+    "navier-stokes",
+    "spectral-methods"
+  ],
+  "langs": [
+    {
+      "name": "C",
+      "size": 63603,
+      "color": "#555555"
+    },
+    {
+      "name": "Python",
+      "size": 10513,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Makefile",
+      "size": 1138,
+      "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 535,
+      "color": "#89e051"
+    }
+  ],
+  "nStars": 8,
+  "lastUpdate": 1738590067000
+}

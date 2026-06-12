@@ -1,0 +1,330 @@
+<svg
+  version="1.1"
+  width="500"
+  height="310"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  role="img"
+>
+
+  <style>
+    * {
+      font-family: "Courier New";
+    }
+    <!-- stroke-width is not give here since it is used to decide svg size -->
+    rect.border {
+      stroke: #888888;
+      fill: #ffffff;
+    }
+    rect.topic {
+      stroke-width: 2.5;
+      fill: #444444;
+    }
+    rect.lang {
+      stroke-width: 2.5;
+      fill: #ffffff;
+    }
+    text {
+      dominant-baseline: middle;
+      font-size: medium;
+      font-weight: normal;
+    }
+    text.title {
+      font-size: large;
+      font-weight: bold;
+      fill: #2f80ed;
+    }
+    text.descr {
+      fill: #000000;
+    }
+    text.topic {
+      fill: #ffffff;
+    }
+    path.star {
+      stroke: #000000;
+      stroke-width: 2;
+      fill: #ffff00;
+    }
+  </style>
+
+  <rect
+    class="border"
+    x="1"
+    y="1"
+    width="498"
+    height="308"
+    rx="10"
+    ry="10"
+    stroke-width="2"
+  />
+
+  <g id="title">
+    <text
+      class="title"
+      x="18.21"
+      y="30"
+    >
+      Wave
+    </text>
+  </g>
+
+  <g id="description">
+    <text
+      class="descr"
+      x="18.21"
+      y="60"
+    >
+      A minimalistic simulator for solving scalar wave
+    </text>
+    <text
+      class="descr"
+      x="18.21"
+      y="90"
+    >
+       equations using the Fourier-Galerkin method
+    </text>
+  </g>
+
+  <g id="topics">
+    <rect
+      class="topic"
+      x="18.21"
+      y="108.8"
+      width="174.816"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="120"
+    >
+      fourier-transform
+    </text>
+    <rect
+      class="topic"
+      x="202.738"
+      y="108.8"
+      width="155.392"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="207.594"
+      y="120"
+    >
+      galerkin-method
+    </text>
+    <rect
+      class="topic"
+      x="18.21"
+      y="140.8"
+      width="184.528"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="152"
+    >
+      physics-simulation
+    </text>
+    <rect
+      class="topic"
+      x="212.45000000000002"
+      y="140.8"
+      width="174.816"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="217.306"
+      y="152"
+    >
+      sound-propagation
+    </text>
+    <rect
+      class="topic"
+      x="18.21"
+      y="172.8"
+      width="135.968"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="184"
+    >
+      wave-equation
+    </text>
+  </g>
+
+  <g id="langs">
+    <rect
+      class="lang"
+      x="18.21"
+      y="204.8"
+      width="48.56"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#dea584"
+    />
+    <text
+      class="descr"
+      x="23.066000000000003"
+      y="216"
+    >
+      Rust
+    </text>
+    <rect
+      class="lang"
+      x="76.482"
+      y="204.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#3178c6"
+    />
+    <text
+      class="descr"
+      x="81.338"
+      y="216"
+    >
+      TypeScript
+    </text>
+    <rect
+      class="lang"
+      x="193.026"
+      y="204.8"
+      width="48.56"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#5686a5"
+    />
+    <text
+      class="descr"
+      x="197.882"
+      y="216"
+    >
+      GLSL
+    </text>
+    <rect
+      class="lang"
+      x="251.298"
+      y="204.8"
+      width="48.56"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#e34c26"
+    />
+    <text
+      class="descr"
+      x="256.154"
+      y="216"
+    >
+      HTML
+    </text>
+    <rect
+      class="lang"
+      x="309.57"
+      y="204.8"
+      width="38.848"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#563d7c"
+    />
+    <text
+      class="descr"
+      x="314.426"
+      y="216"
+    >
+      CSS
+    </text>
+    <rect
+      class="lang"
+      x="18.21"
+      y="236.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#f1e05a"
+    />
+    <text
+      class="descr"
+      x="23.066000000000003"
+      y="248"
+    >
+      JavaScript
+    </text>
+    <rect
+      class="lang"
+      x="134.75400000000002"
+      y="236.8"
+      width="58.272"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#89e051"
+    />
+    <text
+      class="descr"
+      x="139.61"
+      y="248"
+    >
+      Shell
+    </text>
+  </g>
+
+  <g id="star">
+    <path class="star" d="M 25.818452130361230 272.000000000000000  L 28.169593139531123 276.763932022500228  L 33.426904260722459 277.527864045000399  L 29.622678195541845 281.236067977499772  L 30.520734148701017 286.472135954999601  L 25.818452130361230 284.000000000000000  L 21.116170112021447 286.472135954999601  L 22.014226065180615 281.236067977499772  L 18.210000000000001 277.527864045000399  L 23.467311121191337 276.763932022500228 Z"/>
+    <text
+      class="descr"
+      x="38.21"
+      y="280"
+    >
+      0
+    </text>
+  </g>
+
+  <g id="clock" stroke="#000000">
+    <g id="outer">
+      <path class="circle" d="M76.890000 280.000000 A6.400000 6.400000 0.000000 1 1 75.016273 275.475307" stroke-width="2.000000"/>
+      <polygon class="triangle" points="72.752742 277.737258 77.278225 277.737258 77.278225 273.211775" fill="#000000"/>
+    </g>
+    <g id="inner">
+      <line class="big" x1="70.49000000000001" y1="280.8" x2="70.49000000000001" y2="275.2" stroke-width="1.6"/>
+      <line class="small" x1="69.69000000000001" y1="280" x2="73.69000000000001" y2="280" stroke-width="1.6"/>
+    </g>
+  </g>
+
+  <g id="updated">
+    <text
+      class="descr"
+      x="86.49000000000001"
+      y="280"
+    >
+      25 March 2025
+    </text>
+  </g>
+
+</svg>

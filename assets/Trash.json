@@ -1,0 +1,54 @@
+{
+  "name": "Trash",
+  "descr": "Web applications I developed for fun",
+  "topics": [
+    "cellular-automaton",
+    "colormaps",
+    "fractal",
+    "maze-generator",
+    "roulette",
+    "sudoku",
+    "typescript",
+    "webapp",
+    "webgl"
+  ],
+  "langs": [
+    {
+      "name": "TypeScript",
+      "size": 212783,
+      "color": "#3178c6"
+    },
+    {
+      "name": "CSS",
+      "size": 15534,
+      "color": "#563d7c"
+    },
+    {
+      "name": "GLSL",
+      "size": 11001,
+      "color": "#5686a5"
+    },
+    {
+      "name": "HTML",
+      "size": 6748,
+      "color": "#e34c26"
+    },
+    {
+      "name": "JavaScript",
+      "size": 605,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "Makefile",
+      "size": 418,
+      "color": "#427819"
+    },
+    {
+      "name": "Dockerfile",
+      "size": 238,
+      "color": "#384d54"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1780913250000
+}
