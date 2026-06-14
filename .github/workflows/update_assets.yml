@@ -32,21 +32,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p newassets
+          mkdir /tmp/assets
           cd scripts/update_assets
           go build -o update_assets_bin .
           cd ../..
           ./scripts/update_assets/update_assets_bin \
             --config-dir=scripts/config \
-            --out-dir=newassets \
+            --out-dir=/tmp/assets \
             --template-dir=scripts/update_assets/view
       - name: Commit and Push
         run: |
           git config --local user.email "36466440+NaokiHori@users.noreply.github.com"
           git config --local user.name "NaokiHori"
-          mkdir -p assets
-          mv newassets/* assets/
           git switch main
+          git rm -r assets
+          mv /tmp/assets assets
           git add assets
           if git diff --cached --quiet; then
             echo "No changes to commit"
