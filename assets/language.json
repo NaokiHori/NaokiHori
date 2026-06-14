@@ -2,7 +2,7 @@
   "languages": [
   {
       "name": "C",
-      "size": 2642818,
+      "size": 2790048,
       "color": "#555555"
     },
   {
@@ -22,7 +22,7 @@
     },
   {
       "name": "Makefile",
-      "size": 65794,
+      "size": 68121,
       "color": "#427819"
     },
   {
@@ -41,14 +41,14 @@
       "color": "#563d7c"
     },
   {
+      "name": "Shell",
+      "size": 22671,
+      "color": "#89e051"
+    },
+  {
       "name": "HTML",
       "size": 21647,
       "color": "#e34c26"
-    },
-  {
-      "name": "Shell",
-      "size": 21315,
-      "color": "#89e051"
     },
   {
       "name": "Gnuplot",
@@ -71,5 +71,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1781254853616
+  "date": 1781433816862
 }

@@ -6,7 +6,7 @@
   "langs": [
     {
       "name": "C",
-      "size": 334677,
+      "size": 482392,
       "color": "#555555"
     },
     {
@@ -16,8 +16,13 @@
     },
     {
       "name": "Makefile",
-      "size": 2989,
+      "size": 5305,
       "color": "#427819"
+    },
+    {
+      "name": "Shell",
+      "size": 1356,
+      "color": "#89e051"
     },
     {
       "name": "CSS",
@@ -26,5 +31,5 @@
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1781252615000
+  "lastUpdate": 1781396721000
 }
