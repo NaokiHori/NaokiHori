@@ -6,7 +6,7 @@
   "langs": [
     {
       "name": "C",
-      "size": 482392,
+      "size": 587178,
       "color": "#555555"
     },
     {
@@ -16,7 +16,7 @@
     },
     {
       "name": "Makefile",
-      "size": 5305,
+      "size": 6832,
       "color": "#427819"
     },
     {
@@ -30,6 +30,6 @@
       "color": "#563d7c"
     }
   ],
-  "nStars": 0,
-  "lastUpdate": 1781396721000
+  "nStars": 1,
+  "lastUpdate": 1782621715000
 }
