@@ -7,7 +7,7 @@
     },
   {
       "name": "TypeScript",
-      "size": 592506,
+      "size": 592631,
       "color": "#3178c6"
     },
   {
@@ -17,7 +17,7 @@
     },
   {
       "name": "Python",
-      "size": 109467,
+      "size": 106348,
       "color": "#3572A5"
     },
   {
@@ -37,7 +37,7 @@
     },
   {
       "name": "CSS",
-      "size": 26212,
+      "size": 26151,
       "color": "#563d7c"
     },
   {
@@ -47,7 +47,7 @@
     },
   {
       "name": "HTML",
-      "size": 21647,
+      "size": 21703,
       "color": "#e34c26"
     },
   {
@@ -57,7 +57,7 @@
     },
   {
       "name": "JavaScript",
-      "size": 5301,
+      "size": 5454,
       "color": "#f1e05a"
     },
   {
@@ -67,9 +67,9 @@
     },
   {
       "name": "Dockerfile",
-      "size": 1164,
+      "size": 1402,
       "color": "#384d54"
     }
   ],
-  "date": 1782632316613
+  "date": 1783234533246
 }

@@ -276,6 +276,23 @@
     >
       JavaScript
     </text>
+    <rect
+      class="lang"
+      x="134.75400000000002"
+      y="204.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#384d54"
+    />
+    <text
+      class="descr"
+      x="139.61"
+      y="216"
+    >
+      Dockerfile
+    </text>
   </g>
 
   <g id="star">
@@ -306,7 +323,7 @@
       x="86.49000000000001"
       y="248"
     >
-      25 March 2025
+      4 July 2026
     </text>
   </g>
 
