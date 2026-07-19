@@ -1,0 +1,16 @@
+{
+  "name": "MiniMockServer",
+  "descr": "A minimal and stand-alone OpenAPI stub server written in Rust",
+  "topics": [
+    "openapi"
+  ],
+  "langs": [
+    {
+      "name": "Rust",
+      "size": 289476,
+      "color": "#dea584"
+    }
+  ],
+  "nStars": 0,
+  "lastUpdate": 1784503795000
+}
