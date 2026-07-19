@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: container_naokihori
-    image: naokihori
+    image: naokihori/naokihori
     ports:
       - "5173:5173"
     volumes:
