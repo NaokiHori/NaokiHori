@@ -6,7 +6,7 @@
   "langs": [
     {
       "name": "C",
-      "size": 740903,
+      "size": 741229,
       "color": "#555555"
     },
     {
@@ -15,8 +15,13 @@
       "color": "#3572A5"
     },
     {
+      "name": "Rust",
+      "size": 11081,
+      "color": "#dea584"
+    },
+    {
       "name": "Makefile",
-      "size": 9148,
+      "size": 9632,
       "color": "#427819"
     },
     {
@@ -25,11 +30,16 @@
       "color": "#89e051"
     },
     {
+      "name": "Dockerfile",
+      "size": 368,
+      "color": "#384d54"
+    },
+    {
       "name": "CSS",
       "size": 75,
       "color": "#563d7c"
     }
   ],
   "nStars": 1,
-  "lastUpdate": 1785651467000
+  "lastUpdate": 1785847793000
 }
