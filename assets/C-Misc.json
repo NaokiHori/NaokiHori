@@ -10,23 +10,23 @@
   "langs": [
     {
       "name": "C",
-      "size": 570731,
+      "size": 547605,
       "color": "#555555"
     },
     {
       "name": "Makefile",
-      "size": 43475,
+      "size": 44897,
       "color": "#427819"
-    },
-    {
-      "name": "Python",
-      "size": 3157,
-      "color": "#3572A5"
     },
     {
       "name": "Gnuplot",
       "size": 2281,
       "color": "#f0a9f0"
+    },
+    {
+      "name": "Python",
+      "size": 1907,
+      "color": "#3572A5"
     },
     {
       "name": "Shell",
@@ -35,5 +35,5 @@
     }
   ],
   "nStars": 2,
-  "lastUpdate": 1786250845000
+  "lastUpdate": 1786538559000
 }

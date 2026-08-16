@@ -6,22 +6,22 @@
   "langs": [
     {
       "name": "C",
-      "size": 741229,
+      "size": 844230,
       "color": "#555555"
     },
     {
-      "name": "Python",
-      "size": 11693,
-      "color": "#3572A5"
-    },
-    {
       "name": "Rust",
-      "size": 11081,
+      "size": 27754,
       "color": "#dea584"
     },
     {
+      "name": "Python",
+      "size": 15763,
+      "color": "#3572A5"
+    },
+    {
       "name": "Makefile",
-      "size": 9632,
+      "size": 12002,
       "color": "#427819"
     },
     {
@@ -31,7 +31,7 @@
     },
     {
       "name": "Dockerfile",
-      "size": 368,
+      "size": 736,
       "color": "#384d54"
     },
     {
@@ -41,5 +41,5 @@
     }
   ],
   "nStars": 1,
-  "lastUpdate": 1785847793000
+  "lastUpdate": 1786804586000
 }

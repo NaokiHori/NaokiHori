@@ -110,23 +110,6 @@
       class="lang"
       x="47.346"
       y="140.8"
-      width="67.984"
-      height="22.4"
-      rx="4"
-      ry="4"
-      stroke="#3572A5"
-    />
-    <text
-      class="descr"
-      x="52.202"
-      y="152"
-    >
-      Python
-    </text>
-    <rect
-      class="lang"
-      x="125.042"
-      y="140.8"
       width="48.56"
       height="22.4"
       rx="4"
@@ -135,10 +118,27 @@
     />
     <text
       class="descr"
-      x="129.898"
+      x="52.202"
       y="152"
     >
       Rust
+    </text>
+    <rect
+      class="lang"
+      x="105.618"
+      y="140.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#3572A5"
+    />
+    <text
+      class="descr"
+      x="110.47399999999999"
+      y="152"
+    >
+      Python
     </text>
     <rect
       class="lang"
@@ -238,7 +238,7 @@
       x="86.49000000000001"
       y="216"
     >
-      4 August 2026
+      15 August 2026
     </text>
   </g>
 

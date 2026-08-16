@@ -195,23 +195,6 @@
       class="lang"
       x="144.466"
       y="172.8"
-      width="67.984"
-      height="22.4"
-      rx="4"
-      ry="4"
-      stroke="#3572A5"
-    />
-    <text
-      class="descr"
-      x="149.322"
-      y="184"
-    >
-      Python
-    </text>
-    <rect
-      class="lang"
-      x="222.162"
-      y="172.8"
       width="77.696"
       height="22.4"
       rx="4"
@@ -220,14 +203,31 @@
     />
     <text
       class="descr"
-      x="227.018"
+      x="149.322"
       y="184"
     >
       Gnuplot
     </text>
     <rect
       class="lang"
-      x="309.57"
+      x="231.87400000000002"
+      y="172.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#3572A5"
+    />
+    <text
+      class="descr"
+      x="236.73000000000002"
+      y="184"
+    >
+      Python
+    </text>
+    <rect
+      class="lang"
+      x="309.57000000000005"
       y="172.8"
       width="58.272"
       height="22.4"
@@ -237,7 +237,7 @@
     />
     <text
       class="descr"
-      x="314.426"
+      x="314.42600000000004"
       y="184"
     >
       Shell
@@ -272,7 +272,7 @@
       x="86.49000000000001"
       y="216"
     >
-      9 August 2026
+      12 August 2026
     </text>
   </g>
 
