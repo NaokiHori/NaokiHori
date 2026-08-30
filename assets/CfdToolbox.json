@@ -6,23 +6,23 @@
   "langs": [
     {
       "name": "C",
-      "size": 844230,
+      "size": 973540,
       "color": "#555555"
     },
     {
       "name": "Rust",
-      "size": 27754,
+      "size": 27753,
       "color": "#dea584"
     },
     {
-      "name": "Python",
-      "size": 15763,
-      "color": "#3572A5"
+      "name": "Makefile",
+      "size": 13888,
+      "color": "#427819"
     },
     {
-      "name": "Makefile",
-      "size": 12002,
-      "color": "#427819"
+      "name": "Python",
+      "size": 11693,
+      "color": "#3572A5"
     },
     {
       "name": "Shell",
@@ -41,5 +41,5 @@
     }
   ],
   "nStars": 1,
-  "lastUpdate": 1786804586000
+  "lastUpdate": 1788070873000
 }

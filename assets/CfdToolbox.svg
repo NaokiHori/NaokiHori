@@ -127,23 +127,6 @@
       class="lang"
       x="105.618"
       y="140.8"
-      width="67.984"
-      height="22.4"
-      rx="4"
-      ry="4"
-      stroke="#3572A5"
-    />
-    <text
-      class="descr"
-      x="110.47399999999999"
-      y="152"
-    >
-      Python
-    </text>
-    <rect
-      class="lang"
-      x="183.314"
-      y="140.8"
       width="87.408"
       height="22.4"
       rx="4"
@@ -152,10 +135,27 @@
     />
     <text
       class="descr"
-      x="188.17"
+      x="110.47399999999999"
       y="152"
     >
       Makefile
+    </text>
+    <rect
+      class="lang"
+      x="202.738"
+      y="140.8"
+      width="67.984"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#3572A5"
+    />
+    <text
+      class="descr"
+      x="207.594"
+      y="152"
+    >
+      Python
     </text>
     <rect
       class="lang"
@@ -238,7 +238,7 @@
       x="86.49000000000001"
       y="216"
     >
-      15 August 2026
+      30 August 2026
     </text>
   </g>
 
