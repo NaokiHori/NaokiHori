@@ -2,17 +2,17 @@
   "languages": [
   {
       "name": "C",
-      "size": 3308427,
+      "size": 3209055,
       "color": "#555555"
     },
   {
       "name": "TypeScript",
-      "size": 592631,
+      "size": 590242,
       "color": "#3178c6"
     },
   {
       "name": "Rust",
-      "size": 453109,
+      "size": 453317,
       "color": "#dea584"
     },
   {
@@ -22,7 +22,7 @@
     },
   {
       "name": "Makefile",
-      "size": 83806,
+      "size": 81948,
       "color": "#427819"
     },
   {
@@ -37,7 +37,7 @@
     },
   {
       "name": "CSS",
-      "size": 26151,
+      "size": 26423,
       "color": "#563d7c"
     },
   {
@@ -47,7 +47,7 @@
     },
   {
       "name": "HTML",
-      "size": 21703,
+      "size": 21541,
       "color": "#e34c26"
     },
   {
@@ -57,7 +57,7 @@
     },
   {
       "name": "JavaScript",
-      "size": 5454,
+      "size": 4849,
       "color": "#f1e05a"
     },
   {
@@ -67,9 +67,9 @@
     },
   {
       "name": "Dockerfile",
-      "size": 2138,
+      "size": 2124,
       "color": "#384d54"
     }
   ],
-  "date": 1788082007221
+  "date": 1788681937455
 }

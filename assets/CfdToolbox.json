@@ -6,17 +6,17 @@
   "langs": [
     {
       "name": "C",
-      "size": 973540,
+      "size": 871949,
       "color": "#555555"
     },
     {
       "name": "Rust",
-      "size": 27753,
+      "size": 27961,
       "color": "#dea584"
     },
     {
       "name": "Makefile",
-      "size": 13888,
+      "size": 12002,
       "color": "#427819"
     },
     {
@@ -41,5 +41,5 @@
     }
   ],
   "nStars": 1,
-  "lastUpdate": 1788070873000
+  "lastUpdate": 1788562318000
 }

@@ -307,23 +307,6 @@
       class="lang"
       x="299.858"
       y="174.8"
-      width="106.832"
-      height="22.4"
-      rx="4"
-      ry="4"
-      stroke="#f1e05a"
-    />
-    <text
-      class="descr"
-      x="304.714"
-      y="186"
-    >
-      JavaScript
-    </text>
-    <rect
-      class="lang"
-      x="18.21"
-      y="206.8"
       width="87.408"
       height="22.4"
       rx="4"
@@ -332,14 +315,14 @@
     />
     <text
       class="descr"
-      x="23.066000000000003"
-      y="218"
+      x="304.714"
+      y="186"
     >
       Makefile
     </text>
     <rect
       class="lang"
-      x="115.33000000000001"
+      x="18.21"
       y="206.8"
       width="106.832"
       height="22.4"
@@ -349,7 +332,7 @@
     />
     <text
       class="descr"
-      x="120.186"
+      x="23.066000000000003"
       y="218"
     >
       Dockerfile
@@ -384,7 +367,7 @@
       x="86.49000000000001"
       y="250"
     >
-      8 June 2026
+      3 September 2026
     </text>
   </g>
 
