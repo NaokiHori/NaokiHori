@@ -2,12 +2,12 @@
   "languages": [
   {
       "name": "C",
-      "size": 3209055,
+      "size": 3212721,
       "color": "#555555"
     },
   {
       "name": "TypeScript",
-      "size": 590242,
+      "size": 609299,
       "color": "#3178c6"
     },
   {
@@ -22,7 +22,7 @@
     },
   {
       "name": "Makefile",
-      "size": 81948,
+      "size": 81970,
       "color": "#427819"
     },
   {
@@ -37,18 +37,18 @@
     },
   {
       "name": "CSS",
-      "size": 26423,
+      "size": 27970,
       "color": "#563d7c"
     },
   {
-      "name": "Shell",
-      "size": 24027,
-      "color": "#89e051"
+      "name": "HTML",
+      "size": 23314,
+      "color": "#e34c26"
     },
   {
-      "name": "HTML",
-      "size": 21541,
-      "color": "#e34c26"
+      "name": "Shell",
+      "size": 22062,
+      "color": "#89e051"
     },
   {
       "name": "Gnuplot",
@@ -67,9 +67,9 @@
     },
   {
       "name": "Dockerfile",
-      "size": 2124,
+      "size": 2167,
       "color": "#384d54"
     }
   ],
-  "date": 1788681937455
+  "date": 1789288268090
 }

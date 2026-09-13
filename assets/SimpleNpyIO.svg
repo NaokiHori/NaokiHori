@@ -185,23 +185,6 @@
       class="lang"
       x="125.042"
       y="170.8"
-      width="58.272"
-      height="22.4"
-      rx="4"
-      ry="4"
-      stroke="#89e051"
-    />
-    <text
-      class="descr"
-      x="129.898"
-      y="182"
-    >
-      Shell
-    </text>
-    <rect
-      class="lang"
-      x="193.026"
-      y="170.8"
       width="87.408"
       height="22.4"
       rx="4"
@@ -210,7 +193,7 @@
     />
     <text
       class="descr"
-      x="197.882"
+      x="129.898"
       y="182"
     >
       Makefile
@@ -245,7 +228,7 @@
       x="86.49000000000001"
       y="214"
     >
-      2 December 2024
+      9 September 2026
     </text>
   </g>
 
