@@ -1,11 +1,7 @@
 import React, { JSX } from "react";
 import { Modal, useModal, ModalHandler } from "../components/Modal/Modal";
 import { DisplaySize } from "../global.css";
-import {
-  Category,
-  RepositoryInfo,
-  useRepositoryInfo,
-} from "./Repository/hooks";
+import { Category, RepositoryInfo, useRepositoryInfo } from "./Repository/hooks";
 import { Card } from "./Repository/Card";
 import * as style from "./repository.css";
 
@@ -20,9 +16,7 @@ function CategoryName({
 }): JSX.Element {
   return (
     <button
-      className={
-        isSelected ? style.categoryName.selected : style.categoryName.unselected
-      }
+      className={isSelected ? style.categoryName.selected : style.categoryName.unselected}
       onClick={() => {
         handleClick();
       }}
@@ -47,9 +41,7 @@ function CardList({
   const showHeader: boolean = displaySize === "Narrow";
   return (
     <div className={style.cardList}>
-      {showHeader && (
-        <div className={style.categoryNameInCardList}>{categoryName}</div>
-      )}
+      {showHeader && <div className={style.categoryNameInCardList}>{categoryName}</div>}
       <div className={style.cards}>
         {repositoryNames.map((repositoryName: string, key: number) => (
           <Card key={key} repositoryName={repositoryName} />
@@ -60,20 +52,15 @@ function CardList({
 }
 
 export function Repository(): JSX.Element {
-  const { repositoryInfo }: { repositoryInfo: RepositoryInfo } =
-    useRepositoryInfo();
+  const { repositoryInfo }: { repositoryInfo: RepositoryInfo } = useRepositoryInfo();
   const categories: Category[] = repositoryInfo.categories;
-  const [selectedCategory, setSelectedCategory] =
-    React.useState<Category | null>(null);
+  const [selectedCategory, setSelectedCategory] = React.useState<Category | null>(null);
   const modalHandler: ModalHandler = useModal({
     handleClose: () => {
       setSelectedCategory(null);
     },
   });
-  const handleClickCategory = (
-    displaySize: DisplaySize,
-    category: Category,
-  ): void => {
+  const handleClickCategory = (displaySize: DisplaySize, category: Category): void => {
     switch (displaySize) {
       case "Wide": {
         setSelectedCategory(category);
@@ -96,8 +83,7 @@ export function Repository(): JSX.Element {
           <div className={style.categoryNames}>
             {categories.map((category: Category, key: number) => {
               const isSelected: boolean =
-                selectedCategory !== null &&
-                category.name === selectedCategory.name;
+                selectedCategory !== null && category.name === selectedCategory.name;
               return (
                 <CategoryName
                   key={key}
@@ -118,8 +104,7 @@ export function Repository(): JSX.Element {
           <div className={style.categoryNames}>
             {categories.map((category: Category, key: number) => {
               const isSelected: boolean =
-                selectedCategory !== null &&
-                category.name === selectedCategory.name;
+                selectedCategory !== null && category.name === selectedCategory.name;
               return (
                 <CategoryName
                   key={key}

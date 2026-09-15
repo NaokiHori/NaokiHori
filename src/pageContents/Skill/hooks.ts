@@ -53,12 +53,8 @@ export function useSkillInfo(): {
 } {
   const configSrc =
     "https://raw.githubusercontent.com/NaokiHori/NaokiHori/dev/scripts/config/skill.json";
-  const [languageSkillInfoList, setLanguageSkillInfoList] = React.useState<
-    SkillInfo[]
-  >([]);
-  const [toolSkillInfoList, setToolSkillInfoList] = React.useState<SkillInfo[]>(
-    [],
-  );
+  const [languageSkillInfoList, setLanguageSkillInfoList] = React.useState<SkillInfo[]>([]);
+  const [toolSkillInfoList, setToolSkillInfoList] = React.useState<SkillInfo[]>([]);
   React.useEffect(() => {
     fetchAndParseJson<RawData>(configSrc, validator).then(
       (rawData: RawData): void => {

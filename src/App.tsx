@@ -69,16 +69,9 @@ function App(): JSX.Element {
   const [selectedPage, setSelectedPage] = React.useState<Page>(pages[0]);
   return (
     <div className={style.app}>
-      <Header
-        pages={pages}
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}
-      />
+      <Header pages={pages} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div className={style.page}>
-        <CoverImage
-          src={selectedPage.coverImage}
-          href={selectedPage.coverImageHRef}
-        />
+        <CoverImage src={selectedPage.coverImage} href={selectedPage.coverImageHRef} />
         <PageHeading>{selectedPage.heading}</PageHeading>
         {selectedPage.pageContents()}
       </div>

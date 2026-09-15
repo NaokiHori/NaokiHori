@@ -92,8 +92,7 @@ export function useCardInfo(repositoryName: string): {
   } satisfies CardInfo;
   const configSrc = `https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/${repositoryName}.json`;
   const [cardInfo, setCardInfo] = React.useState<CardInfo>(defaultCardInfo);
-  const [isCardInfoLoaded, setIsCardInfoLoaded] =
-    React.useState<boolean>(false);
+  const [isCardInfoLoaded, setIsCardInfoLoaded] = React.useState<boolean>(false);
   React.useEffect(() => {
     fetchAndParseJson<RawData>(configSrc, validator).then(
       (rawData: RawData): void => {

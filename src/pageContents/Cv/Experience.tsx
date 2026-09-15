@@ -55,10 +55,7 @@ export function Experience({ info }: { info: ExperienceInfo }): JSX.Element {
       <IconAndDescription Icon={CompanyIcon} description={info.company} />
       <IconAndDescription Icon={WorldIcon} description={info.country} />
       {0 < info.skillList.length && (
-        <IconAndDescription
-          Icon={ProgrammingIcon}
-          description={info.skillList.join(", ")}
-        />
+        <IconAndDescription Icon={ProgrammingIcon} description={info.skillList.join(", ")} />
       )}
       <IconAndDescription Icon={ClockIcon} description={info.duration} />
     </div>

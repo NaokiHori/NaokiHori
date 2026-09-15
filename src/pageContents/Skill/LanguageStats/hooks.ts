@@ -75,10 +75,8 @@ export function useLanguageInfo(): {
     },
   };
   const [date, setDate] = React.useState<Date>(new Date());
-  const [originalInfo, setOriginalInfo] =
-    React.useState<LanguageInfo>(defaultLanguageInfo);
-  const [squashedInfo, setSquashedInfo] =
-    React.useState<LanguageInfo>(defaultLanguageInfo);
+  const [originalInfo, setOriginalInfo] = React.useState<LanguageInfo>(defaultLanguageInfo);
+  const [squashedInfo, setSquashedInfo] = React.useState<LanguageInfo>(defaultLanguageInfo);
   React.useEffect(() => {
     fetchAndParseJson<RawData>(configSrc, validator).then(
       (rawData: RawData): void => {

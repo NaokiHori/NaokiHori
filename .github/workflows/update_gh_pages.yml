@@ -30,8 +30,8 @@ jobs:
       - name: Quality Checks (Lint/Type/Format)
         run: |
           docker compose run --rm app npx tsc
-          docker compose run --rm app npx prettier . --check
-          docker compose run --rm app npx eslint .
+          docker compose run --rm app npx oxfmt --check
+          docker compose run --rm app npx oxlint
       - name: Build Production Assets
         run: |
           docker compose run --rm app npx vite build --base=/NaokiHori/

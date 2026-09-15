@@ -19,9 +19,7 @@ export function Header({
         <button
           key={key}
           className={
-            page.title === selectedPage.title
-              ? style.button.selected
-              : style.button.unselected
+            page.title === selectedPage.title ? style.button.selected : style.button.unselected
           }
           onClick={() => {
             setSelectedPage(page);

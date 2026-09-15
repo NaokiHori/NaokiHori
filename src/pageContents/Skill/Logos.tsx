@@ -15,11 +15,7 @@ function Logo({ skillInfo }: { skillInfo: SkillInfo }): JSX.Element {
   );
 }
 
-export function Logos({
-  skillInfoList,
-}: {
-  skillInfoList: SkillInfo[];
-}): JSX.Element {
+export function Logos({ skillInfoList }: { skillInfoList: SkillInfo[] }): JSX.Element {
   return (
     <div className={style.logos}>
       {skillInfoList.map((skillInfo: SkillInfo, key: number) => (

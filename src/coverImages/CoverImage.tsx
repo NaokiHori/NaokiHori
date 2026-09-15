@@ -1,13 +1,7 @@
 import React, { JSX } from "react";
 import * as style from "./style.css";
 
-export function CoverImage({
-  src,
-  href,
-}: {
-  src: string;
-  href: string;
-}): JSX.Element {
+export function CoverImage({ src, href }: { src: string; href: string }): JSX.Element {
   const [loading, setLoading] = React.useState<boolean>(true);
   React.useEffect(() => {
     const image = new Image();

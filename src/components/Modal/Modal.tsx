@@ -8,13 +8,8 @@ export interface ModalHandler {
   close: () => void;
 }
 
-export function useModal({
-  handleClose,
-}: {
-  handleClose: () => void;
-}): ModalHandler {
-  const ref: React.RefObject<HTMLDialogElement | null> =
-    React.useRef<HTMLDialogElement>(null);
+export function useModal({ handleClose }: { handleClose: () => void }): ModalHandler {
+  const ref: React.RefObject<HTMLDialogElement | null> = React.useRef<HTMLDialogElement>(null);
   const open = (): void => {
     ref.current?.showModal();
   };

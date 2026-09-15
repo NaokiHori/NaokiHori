@@ -9,8 +9,7 @@ export function Skill(): JSX.Element {
   const {
     languageSkillInfoList,
     toolSkillInfoList,
-  }: { languageSkillInfoList: SkillInfo[]; toolSkillInfoList: SkillInfo[] } =
-    useSkillInfo();
+  }: { languageSkillInfoList: SkillInfo[]; toolSkillInfoList: SkillInfo[] } = useSkillInfo();
   return (
     <div className={style.skill}>
       <Heading2>Experience</Heading2>

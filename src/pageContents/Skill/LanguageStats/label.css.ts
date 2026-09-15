@@ -1,9 +1,6 @@
 import { style } from "@vanilla-extract/css";
 import { themeColors } from "../../../global.css";
-import {
-  wideDisplayLanguageStats,
-  narrowDisplayLabelsContainer,
-} from "../languageStats.css";
+import { wideDisplayLanguageStats, narrowDisplayLabelsContainer } from "../languageStats.css";
 
 export const label = style({
   selectors: {

@@ -1,9 +1,5 @@
 import { style } from "@vanilla-extract/css";
-import {
-  cardItem as cardItemStyle,
-  WideScreen,
-  NarrowScreen,
-} from "../global.css";
+import { cardItem as cardItemStyle, WideScreen, NarrowScreen } from "../global.css";
 import { page } from "../app.css";
 
 // three highlight cards: side-by-side on wide screens, stacked on narrow screens

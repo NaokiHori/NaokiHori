@@ -21,13 +21,7 @@ export function Svg({
   const viewBox = `${x} ${y} ${width.toString()} ${height.toString()}`;
   const xmlNameSpace = "http://www.w3.org/2000/svg";
   return (
-    <svg
-      width={width}
-      height={height}
-      viewBox={viewBox}
-      fill="none"
-      xmlns={xmlNameSpace}
-    >
+    <svg width={width} height={height} viewBox={viewBox} fill="none" xmlns={xmlNameSpace}>
       {children}
     </svg>
   );

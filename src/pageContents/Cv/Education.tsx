@@ -60,9 +60,7 @@ export function Education({ info }: { info: EducationInfo }): JSX.Element {
       <div className={style.title}>{info.role}</div>
       <IconAndDescription Icon={SchoolIcon} description={affiliation} />
       <IconAndDescription Icon={WorldIcon} description={info.country} />
-      {info.misc !== "" && (
-        <IconAndDescription Icon={AwardIcon} description={info.misc} />
-      )}
+      {info.misc !== "" && <IconAndDescription Icon={AwardIcon} description={info.misc} />}
       <IconAndDescription Icon={ClockIcon} description={info.duration} />
     </div>
   );
