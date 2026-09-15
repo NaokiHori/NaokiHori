@@ -34,7 +34,7 @@ function App(): JSX.Element {
       coverImage: coverImageKarman,
       coverImageHRef: "https://github.com/NaokiHori/WebNSSolver",
       title: "About",
-      heading: "Naoki HORI, Ph.D.",
+      heading: "Naoki HORI",
       pageContents: () => <About />,
     },
     {

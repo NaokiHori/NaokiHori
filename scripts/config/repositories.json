@@ -21,7 +21,7 @@
   },
   {
     "title": "Utility libraries",
-    "items": ["SimpleNpyIO"]
+    "items": ["SimpleNpyIO", "MiniMockServer"]
   },
   {
     "title": "Others",
