@@ -7,7 +7,7 @@
     },
   {
       "name": "TypeScript",
-      "size": 609685,
+      "size": 620054,
       "color": "#3178c6"
     },
   {
@@ -22,7 +22,7 @@
     },
   {
       "name": "Makefile",
-      "size": 82688,
+      "size": 82627,
       "color": "#427819"
     },
   {
@@ -31,18 +31,18 @@
       "color": "#5686a5"
     },
   {
+      "name": "CSS",
+      "size": 29143,
+      "color": "#563d7c"
+    },
+  {
       "name": "Go",
       "size": 28117,
       "color": "#00ADD8"
     },
   {
-      "name": "CSS",
-      "size": 27981,
-      "color": "#563d7c"
-    },
-  {
       "name": "HTML",
-      "size": 23315,
+      "size": 24952,
       "color": "#e34c26"
     },
   {
@@ -71,5 +71,5 @@
       "color": "#384d54"
     }
   ],
-  "date": 1789469555592
+  "date": 1789894062287
 }

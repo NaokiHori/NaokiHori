@@ -81,7 +81,7 @@
         x="143.25199999999998"
         y="72"
       >
-        69.44%
+        69.24%
       </text>
       <rect
         class="graph"
@@ -118,13 +118,13 @@
         x="143.25199999999998"
         y="104"
       >
-        13.11%
+        13.29%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="92.8"
-        width="51.755908305524"
+        width="52.63612844087255"
         height="22.4"
         rx="4"
         ry="4"
@@ -155,7 +155,7 @@
         x="152.964"
         y="136"
       >
-        9.75%
+        9.72%
       </text>
       <rect
         class="graph"
@@ -192,7 +192,7 @@
         x="152.964"
         y="168"
       >
-        2.26%
+        2.25%
       </text>
       <rect
         class="graph"
@@ -229,13 +229,13 @@
         x="152.964"
         y="200"
       >
-        1.78%
+        1.77%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="188.8"
-        width="7.0193502316231635"
+        width="7.014171966770597"
         height="22.4"
         rx="4"
         ry="4"
@@ -266,7 +266,7 @@
         x="152.964"
         y="232"
       >
-        1.08%
+        1.07%
       </text>
       <rect
         class="graph"
@@ -289,32 +289,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#00ADD8"
+        stroke="#563d7c"
       />
       <text
         class="descr"
         x="26.708"
         y="264"
       >
-        Go
+        CSS
       </text>
       <text
         class="descr"
         x="152.964"
         y="264"
       >
-        0.60%
+        0.62%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="252.8"
-        width="2.386840538682136"
+        width="2.4739372557105486"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#00ADD8"
-        stroke="#00ADD8"
+        fill="#563d7c"
+        stroke="#563d7c"
       />
     </g>
     <g id="lang-">
@@ -326,14 +326,14 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#563d7c"
+        stroke="#00ADD8"
       />
       <text
         class="descr"
         x="26.708"
         y="296"
       >
-        CSS
+        Go
       </text>
       <text
         class="descr"
@@ -346,12 +346,12 @@
         class="graph"
         x="206.38"
         y="284.8"
-        width="2.3752955547485457"
+        width="2.386840538682136"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#563d7c"
-        stroke="#563d7c"
+        fill="#00ADD8"
+        stroke="#00ADD8"
       />
     </g>
     <g id="lang-">
@@ -377,13 +377,13 @@
         x="152.964"
         y="328"
       >
-        0.50%
+        0.53%
       </text>
       <rect
         class="graph"
         x="206.38"
         y="316.8"
-        width="1.979200738321087"
+        width="2.1181649934629108"
         height="22.4"
         rx="4"
         ry="4"
@@ -584,7 +584,7 @@
       x="21.852"
       y="528"
     >
-      Last Update: 15 September 2026
+      Last Update: 20 September 2026
     </text>
   </g>
 
