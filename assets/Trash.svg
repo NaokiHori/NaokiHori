@@ -1,7 +1,7 @@
 <svg
   version="1.1"
   width="500"
-  height="280"
+  height="376"
   xmlns="http://www.w3.org/2000/svg"
   fill="none"
   role="img"
@@ -52,7 +52,7 @@
     x="1"
     y="1"
     width="498"
-    height="278"
+    height="374"
     rx="10"
     ry="10"
     stroke-width="2"
@@ -115,8 +115,59 @@
     </text>
     <rect
       class="topic"
-      x="319.28200000000004"
-      y="78.8"
+      x="18.21"
+      y="110.8"
+      width="194.24"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="122"
+    >
+      control-engineering
+    </text>
+    <rect
+      class="topic"
+      x="18.21"
+      y="142.8"
+      width="242.79999999999998"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="154"
+    >
+      finite-difference-method
+    </text>
+    <rect
+      class="topic"
+      x="18.21"
+      y="174.8"
+      width="213.664"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="23.066000000000003"
+      y="186"
+    >
+      finite-element-method
+    </text>
+    <rect
+      class="topic"
+      x="241.586"
+      y="174.8"
       width="77.696"
       height="22.4"
       rx="4"
@@ -125,15 +176,15 @@
     <text
       class="topic"
       fill="#ffffff"
-      x="324.13800000000003"
-      y="90"
+      x="246.442"
+      y="186"
     >
       fractal
     </text>
     <rect
       class="topic"
       x="18.21"
-      y="110.8"
+      y="206.8"
       width="145.68"
       height="22.4"
       rx="4"
@@ -143,15 +194,15 @@
       class="topic"
       fill="#ffffff"
       x="23.066000000000003"
-      y="122"
+      y="218"
     >
       maze-generator
     </text>
     <rect
       class="topic"
       x="173.602"
-      y="110.8"
-      width="87.408"
+      y="206.8"
+      width="174.816"
       height="22.4"
       rx="4"
       ry="4"
@@ -160,15 +211,15 @@
       class="topic"
       fill="#ffffff"
       x="178.458"
-      y="122"
+      y="218"
     >
-      roulette
+      numerical-methods
     </text>
     <rect
       class="topic"
-      x="270.722"
-      y="110.8"
-      width="67.984"
+      x="358.13"
+      y="206.8"
+      width="87.408"
       height="22.4"
       rx="4"
       ry="4"
@@ -176,16 +227,16 @@
     <text
       class="topic"
       fill="#ffffff"
-      x="275.578"
-      y="122"
+      x="362.986"
+      y="218"
     >
-      sudoku
+      roulette
     </text>
     <rect
       class="topic"
       x="18.21"
-      y="142.8"
-      width="106.832"
+      y="238.8"
+      width="67.984"
       height="22.4"
       rx="4"
       ry="4"
@@ -194,14 +245,31 @@
       class="topic"
       fill="#ffffff"
       x="23.066000000000003"
-      y="154"
+      y="250"
+    >
+      sudoku
+    </text>
+    <rect
+      class="topic"
+      x="95.906"
+      y="238.8"
+      width="106.832"
+      height="22.4"
+      rx="4"
+      ry="4"
+    />
+    <text
+      class="topic"
+      fill="#ffffff"
+      x="100.762"
+      y="250"
     >
       typescript
     </text>
     <rect
       class="topic"
-      x="134.75400000000002"
-      y="142.8"
+      x="212.45"
+      y="238.8"
       width="67.984"
       height="22.4"
       rx="4"
@@ -210,15 +278,15 @@
     <text
       class="topic"
       fill="#ffffff"
-      x="139.61"
-      y="154"
+      x="217.30599999999998"
+      y="250"
     >
       webapp
     </text>
     <rect
       class="topic"
-      x="212.45000000000002"
-      y="142.8"
+      x="290.14599999999996"
+      y="238.8"
       width="58.272"
       height="22.4"
       rx="4"
@@ -227,8 +295,8 @@
     <text
       class="topic"
       fill="#ffffff"
-      x="217.306"
-      y="154"
+      x="295.00199999999995"
+      y="250"
     >
       webgl
     </text>
@@ -238,7 +306,7 @@
     <rect
       class="lang"
       x="18.21"
-      y="174.8"
+      y="270.8"
       width="106.832"
       height="22.4"
       rx="4"
@@ -248,14 +316,14 @@
     <text
       class="descr"
       x="23.066000000000003"
-      y="186"
+      y="282"
     >
       TypeScript
     </text>
     <rect
       class="lang"
       x="134.75400000000002"
-      y="174.8"
+      y="270.8"
       width="38.848"
       height="22.4"
       rx="4"
@@ -265,31 +333,14 @@
     <text
       class="descr"
       x="139.61"
-      y="186"
+      y="282"
     >
       CSS
     </text>
     <rect
       class="lang"
       x="183.31400000000002"
-      y="174.8"
-      width="48.56"
-      height="22.4"
-      rx="4"
-      ry="4"
-      stroke="#5686a5"
-    />
-    <text
-      class="descr"
-      x="188.17000000000002"
-      y="186"
-    >
-      GLSL
-    </text>
-    <rect
-      class="lang"
-      x="241.586"
-      y="174.8"
+      y="270.8"
       width="48.56"
       height="22.4"
       rx="4"
@@ -298,15 +349,32 @@
     />
     <text
       class="descr"
-      x="246.442"
-      y="186"
+      x="188.17000000000002"
+      y="282"
     >
       HTML
     </text>
     <rect
       class="lang"
+      x="241.586"
+      y="270.8"
+      width="48.56"
+      height="22.4"
+      rx="4"
+      ry="4"
+      stroke="#5686a5"
+    />
+    <text
+      class="descr"
+      x="246.442"
+      y="282"
+    >
+      GLSL
+    </text>
+    <rect
+      class="lang"
       x="299.858"
-      y="174.8"
+      y="270.8"
       width="87.408"
       height="22.4"
       rx="4"
@@ -316,14 +384,14 @@
     <text
       class="descr"
       x="304.714"
-      y="186"
+      y="282"
     >
       Makefile
     </text>
     <rect
       class="lang"
       x="18.21"
-      y="206.8"
+      y="302.8"
       width="106.832"
       height="22.4"
       rx="4"
@@ -333,18 +401,18 @@
     <text
       class="descr"
       x="23.066000000000003"
-      y="218"
+      y="314"
     >
       Dockerfile
     </text>
   </g>
 
   <g id="star">
-    <path class="star" d="M 25.818452130361230 242.000000000000000  L 28.169593139531123 246.763932022500200  L 33.426904260722459 247.527864045000427  L 29.622678195541845 251.236067977499800  L 30.520734148701017 256.472135954999601  L 25.818452130361230 254.000000000000000  L 21.116170112021447 256.472135954999601  L 22.014226065180615 251.236067977499800  L 18.210000000000001 247.527864045000427  L 23.467311121191337 246.763932022500200 Z"/>
+    <path class="star" d="M 25.818452130361230 338.000000000000000  L 28.169593139531123 342.763932022500228  L 33.426904260722459 343.527864045000399  L 29.622678195541845 347.236067977499772  L 30.520734148701017 352.472135954999601  L 25.818452130361230 350.000000000000000  L 21.116170112021447 352.472135954999601  L 22.014226065180615 347.236067977499772  L 18.210000000000001 343.527864045000399  L 23.467311121191337 342.763932022500228 Z"/>
     <text
       class="descr"
       x="38.21"
-      y="250"
+      y="346"
     >
       0
     </text>
@@ -352,12 +420,12 @@
 
   <g id="clock" stroke="#000000">
     <g id="outer">
-      <path class="circle" d="M76.890000 250.000000 A6.400000 6.400000 0.000000 1 1 75.016273 245.475307" stroke-width="2.000000"/>
-      <polygon class="triangle" points="72.752742 247.737258 77.278225 247.737258 77.278225 243.211775" fill="#000000"/>
+      <path class="circle" d="M76.890000 346.000000 A6.400000 6.400000 0.000000 1 1 75.016273 341.475307" stroke-width="2.000000"/>
+      <polygon class="triangle" points="72.752742 343.737258 77.278225 343.737258 77.278225 339.211775" fill="#000000"/>
     </g>
     <g id="inner">
-      <line class="big" x1="70.49000000000001" y1="250.8" x2="70.49000000000001" y2="245.2" stroke-width="1.6"/>
-      <line class="small" x1="69.69000000000001" y1="250" x2="73.69000000000001" y2="250" stroke-width="1.6"/>
+      <line class="big" x1="70.49000000000001" y1="346.8" x2="70.49000000000001" y2="341.2" stroke-width="1.6"/>
+      <line class="small" x1="69.69000000000001" y1="346" x2="73.69000000000001" y2="346" stroke-width="1.6"/>
     </g>
   </g>
 
@@ -365,9 +433,9 @@
     <text
       class="descr"
       x="86.49000000000001"
-      y="250"
+      y="346"
     >
-      20 September 2026
+      26 September 2026
     </text>
   </g>
 

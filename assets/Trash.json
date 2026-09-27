@@ -4,8 +4,12 @@
   "topics": [
     "cellular-automaton",
     "colormaps",
+    "control-engineering",
+    "finite-difference-method",
+    "finite-element-method",
     "fractal",
     "maze-generator",
+    "numerical-methods",
     "roulette",
     "sudoku",
     "typescript",
@@ -15,13 +19,18 @@
   "langs": [
     {
       "name": "TypeScript",
-      "size": 240213,
+      "size": 264092,
       "color": "#3178c6"
     },
     {
       "name": "CSS",
-      "size": 18526,
+      "size": 20740,
       "color": "#563d7c"
+    },
+    {
+      "name": "HTML",
+      "size": 11718,
+      "color": "#e34c26"
     },
     {
       "name": "GLSL",
@@ -29,21 +38,16 @@
       "color": "#5686a5"
     },
     {
-      "name": "HTML",
-      "size": 9997,
-      "color": "#e34c26"
-    },
-    {
       "name": "Makefile",
-      "size": 385,
+      "size": 413,
       "color": "#427819"
     },
     {
       "name": "Dockerfile",
-      "size": 267,
+      "size": 287,
       "color": "#384d54"
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1789867757000
+  "lastUpdate": 1790384927000
 }
