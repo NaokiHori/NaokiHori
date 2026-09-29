@@ -7,7 +7,7 @@
     },
   {
       "name": "TypeScript",
-      "size": 643933,
+      "size": 647723,
       "color": "#3178c6"
     },
   {
@@ -22,7 +22,7 @@
     },
   {
       "name": "Makefile",
-      "size": 81937,
+      "size": 81905,
       "color": "#427819"
     },
   {
@@ -57,7 +57,7 @@
     },
   {
       "name": "JavaScript",
-      "size": 4849,
+      "size": 4341,
       "color": "#f1e05a"
     },
   {
@@ -67,9 +67,9 @@
     },
   {
       "name": "Dockerfile",
-      "size": 2187,
+      "size": 2166,
       "color": "#384d54"
     }
   ],
-  "date": 1790669719340
+  "date": 1790670124840
 }

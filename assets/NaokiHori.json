@@ -8,7 +8,7 @@
   "langs": [
     {
       "name": "TypeScript",
-      "size": 75393,
+      "size": 79183,
       "color": "#3178c6"
     },
     {
@@ -27,26 +27,21 @@
       "color": "#f0a9f0"
     },
     {
-      "name": "JavaScript",
-      "size": 508,
-      "color": "#f1e05a"
-    },
-    {
       "name": "HTML",
       "size": 443,
       "color": "#e34c26"
     },
     {
       "name": "Makefile",
-      "size": 418,
+      "size": 386,
       "color": "#427819"
     },
     {
       "name": "Dockerfile",
-      "size": 366,
+      "size": 345,
       "color": "#384d54"
     }
   ],
   "nStars": 3,
-  "lastUpdate": 1790669655000
+  "lastUpdate": 1790670047000
 }

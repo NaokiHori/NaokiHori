@@ -188,23 +188,6 @@
       class="lang"
       x="338.706"
       y="110.8"
-      width="106.832"
-      height="22.4"
-      rx="4"
-      ry="4"
-      stroke="#f1e05a"
-    />
-    <text
-      class="descr"
-      x="343.562"
-      y="122"
-    >
-      JavaScript
-    </text>
-    <rect
-      class="lang"
-      x="18.21"
-      y="142.8"
       width="48.56"
       height="22.4"
       rx="4"
@@ -213,14 +196,14 @@
     />
     <text
       class="descr"
-      x="23.066000000000003"
-      y="154"
+      x="343.562"
+      y="122"
     >
       HTML
     </text>
     <rect
       class="lang"
-      x="76.482"
+      x="18.21"
       y="142.8"
       width="87.408"
       height="22.4"
@@ -230,14 +213,14 @@
     />
     <text
       class="descr"
-      x="81.338"
+      x="23.066000000000003"
       y="154"
     >
       Makefile
     </text>
     <rect
       class="lang"
-      x="173.602"
+      x="115.33000000000001"
       y="142.8"
       width="106.832"
       height="22.4"
@@ -247,7 +230,7 @@
     />
     <text
       class="descr"
-      x="178.458"
+      x="120.186"
       y="154"
     >
       Dockerfile
