@@ -3,13 +3,7 @@ import { Info, GlobalStats } from "./hooks";
 import { getRate } from "./utils";
 import * as style from "./bar.css";
 
-export function Bar({
-  info,
-  globalStats,
-}: {
-  info: Info;
-  globalStats: GlobalStats;
-}): JSX.Element {
+export function Bar({ info, globalStats }: { info: Info; globalStats: GlobalStats }): JSX.Element {
   const rateForChart: string = getRate(info.size, globalStats.maxOfSizes);
   const rateForText: string = getRate(info.size, globalStats.sumOfSizes);
   return (

@@ -1,11 +1,7 @@
 import { JSX } from "react";
 import { Heading2 } from "../components/Heading/Heading";
 import { EducationInfo, Education, useEducationInfoList } from "./Cv/Education";
-import {
-  ExperienceInfo,
-  Experience,
-  useExperienceInfoList,
-} from "./Cv/Experience";
+import { ExperienceInfo, Experience, useExperienceInfoList } from "./Cv/Experience";
 import * as style from "./cv.css";
 
 export function Cv(): JSX.Element {

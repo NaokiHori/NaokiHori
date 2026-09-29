@@ -26,11 +26,7 @@ function createPieChart({
   return chart;
 }
 
-export function PieChart({
-  languageInfo,
-}: {
-  languageInfo: LanguageInfo;
-}): JSX.Element {
+export function PieChart({ languageInfo }: { languageInfo: LanguageInfo }): JSX.Element {
   const infoList: Info[] = languageInfo.infoList;
   const globalStats: GlobalStats = languageInfo.globalStats;
   // describe pie chart using conic-gradient

@@ -1,15 +1,15 @@
-FROM node:latest
+FROM node:alpine
 
 WORKDIR /project
 RUN npm init -y --init-type=module
 RUN npm install --save-dev \
-  prettier \
-  typescript \
-  typescript-eslint@8.54.0 \
-  vite \
-  @vanilla-extract/vite-plugin \
   @types/react \
-  @types/react-dom
+  @types/react-dom \
+  @vanilla-extract/vite-plugin \
+  oxfmt \
+  oxlint \
+  typescript \
+  vite
 
 RUN npm install \
   @vanilla-extract/css \

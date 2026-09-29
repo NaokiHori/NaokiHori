@@ -4,13 +4,7 @@ import { Info } from "./hooks";
 import { themeColors } from "../../../global.css";
 import * as style from "./label.css";
 
-function Circle({
-  radius,
-  color,
-}: {
-  radius: number;
-  color: string;
-}): JSX.Element {
+function Circle({ radius, color }: { radius: number; color: string }): JSX.Element {
   const svgProps: SvgProps = {
     width: 2 * radius,
     height: 2 * radius,

@@ -7,19 +7,9 @@ import { Bar } from "./LanguageStats/Bar";
 import { PieChart } from "./LanguageStats/PieChart";
 import * as style from "./languageStats.css";
 
-function Update({
-  displaySize,
-  date,
-}: {
-  displaySize: DisplaySize;
-  date: Date;
-}): JSX.Element {
+function Update({ displaySize, date }: { displaySize: DisplaySize; date: Date }): JSX.Element {
   return (
-    <div
-      className={
-        displaySize === "Wide" ? style.update.wide : style.update.narrow
-      }
-    >
+    <div className={displaySize === "Wide" ? style.update.wide : style.update.narrow}>
       Last update: {getDateString(date)}
     </div>
   );
@@ -30,8 +20,7 @@ export function LanguageStats(): JSX.Element {
     date,
     original,
     squashed,
-  }: { date: Date; original: LanguageInfo; squashed: LanguageInfo } =
-    useLanguageInfo();
+  }: { date: Date; original: LanguageInfo; squashed: LanguageInfo } = useLanguageInfo();
   // show nothing before json fetch is completed
   if (original.infoList.length === 0 || squashed.infoList.length === 0) {
     return <></>;

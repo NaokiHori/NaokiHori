@@ -7,24 +7,11 @@ interface ContactInfo {
   src: string;
 }
 
-function ContactInfo({
-  contactInfo,
-}: {
-  contactInfo: ContactInfo;
-}): JSX.Element {
+function ContactInfo({ contactInfo }: { contactInfo: ContactInfo }): JSX.Element {
   return (
     <div className={style.contactInfo}>
-      <a
-        className={style.anchor}
-        href={contactInfo.href}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img
-          className={style.image}
-          src={contactInfo.src}
-          alt={contactInfo.label}
-        />
+      <a className={style.anchor} href={contactInfo.href} target="_blank" rel="noreferrer">
+        <img className={style.image} src={contactInfo.src} alt={contactInfo.label} />
       </a>
     </div>
   );
