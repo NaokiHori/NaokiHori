@@ -43,7 +43,7 @@ export function About(): JSX.Element {
       Icon: MeshIcon,
       title: "CFD",
       sentence:
-        "Many of my personal projects are Navier-Stokes solvers with different extensions: single-phase, immersed boundary, volume-of-fluid, spectral, and so on. I like publishing them properly (documented, validated, and usually parallelized) as solid CFD (computational fluid dynamics) tools rather than leaving them as one-off scripts. At the same time I enjoy creating nice pictures and movies: CFD (colorful fluid dynamics).",
+        "Many of my personal projects are Navier-Stokes solvers with different extensions: single-phase, immersed boundary, volume-of-fluid, spectral, and so on. I like publishing them properly (documented, validated, and usually parallelized) as solid CFD (computational fluid dynamics) tools rather than leaving them as one-off scripts. At the same time I enjoy creating nice pictures and movies: CFD (colorful fluid drawings).",
     },
   ];
   return (
