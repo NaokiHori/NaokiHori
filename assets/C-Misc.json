@@ -10,17 +10,17 @@
   "langs": [
     {
       "name": "C",
-      "size": 594535,
+      "size": 609286,
       "color": "#555555"
     },
     {
       "name": "Makefile",
-      "size": 49145,
+      "size": 49863,
       "color": "#427819"
     },
     {
       "name": "Gnuplot",
-      "size": 2172,
+      "size": 2521,
       "color": "#f0a9f0"
     },
     {
@@ -35,5 +35,5 @@
     }
   ],
   "nStars": 2,
-  "lastUpdate": 1790664095000
+  "lastUpdate": 1791001428000
 }

@@ -12,6 +12,7 @@
     "numerical-methods",
     "roulette",
     "sudoku",
+    "support-vector-machine",
     "typescript",
     "webapp",
     "webgl"
@@ -19,17 +20,17 @@
   "langs": [
     {
       "name": "TypeScript",
-      "size": 264092,
+      "size": 268833,
       "color": "#3178c6"
     },
     {
       "name": "CSS",
-      "size": 20740,
+      "size": 21157,
       "color": "#563d7c"
     },
     {
       "name": "HTML",
-      "size": 11718,
+      "size": 11851,
       "color": "#e34c26"
     },
     {
@@ -49,5 +50,5 @@
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1790384927000
+  "lastUpdate": 1791014013000
 }
