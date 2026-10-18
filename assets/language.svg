@@ -53,7 +53,7 @@
       x="21.852"
       y="36"
     >
-      Language Stats (4.7MB)
+      Language Stats (4.8MB)
     </text>
   </g>
 
@@ -81,7 +81,7 @@
         x="152.96399999999997"
         y="72"
       >
-        67.01%
+        65.67%
       </text>
       <rect
         class="graph"
@@ -118,13 +118,13 @@
         x="152.96399999999997"
         y="104"
       >
-        13.60%
+        13.16%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="92.8"
-        width="53.66338640452569"
+        width="53.01685204213007"
         height="22.4"
         rx="4"
         ry="4"
@@ -155,13 +155,13 @@
         x="162.676"
         y="136"
       >
-        9.26%
+        8.97%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="124.8"
-        width="36.54810049645264"
+        width="36.10777042348408"
         height="22.4"
         rx="4"
         ry="4"
@@ -178,32 +178,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#3572A5"
+        stroke="#438eff"
       />
       <text
         class="descr"
         x="26.708"
         y="168"
       >
-        Python
+        Objective-C
       </text>
       <text
         class="descr"
         x="162.676"
         y="168"
       >
-        2.15%
+        3.48%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="156.8"
-        width="8.473391172129393"
+        width="14.00376166330219"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#3572A5"
-        stroke="#3572A5"
+        fill="#438eff"
+        stroke="#438eff"
       />
     </g>
     <g id="lang-">
@@ -215,32 +215,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#438eff"
+        stroke="#3572A5"
       />
       <text
         class="descr"
         x="26.708"
         y="200"
       >
-        Objective-C
+        Python
       </text>
       <text
         class="descr"
         x="162.676"
         y="200"
       >
-        1.84%
+        2.08%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="188.8"
-        width="7.247749460596242"
+        width="8.37130408956057"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#438eff"
-        stroke="#438eff"
+        fill="#3572A5"
+        stroke="#3572A5"
       />
     </g>
     <g id="lang-">
@@ -266,13 +266,13 @@
         x="162.676"
         y="232"
       >
-        1.71%
+        1.68%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="220.8"
-        width="6.7527198520701575"
+        width="6.762485653425303"
         height="22.4"
         rx="4"
         ry="4"
@@ -289,32 +289,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#5686a5"
+        stroke="#f34b7d"
       />
       <text
         class="descr"
         x="26.708"
         y="264"
       >
-        GLSL
+        C&#43;&#43;
       </text>
       <text
         class="descr"
         x="162.676"
         y="264"
       >
-        1.02%
+        1.31%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="252.8"
-        width="4.042473057247215"
+        width="5.284058136190591"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#5686a5"
-        stroke="#5686a5"
+        fill="#f34b7d"
+        stroke="#f34b7d"
       />
     </g>
     <g id="lang-">
@@ -326,32 +326,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#f34b7d"
+        stroke="#5686a5"
       />
       <text
         class="descr"
         x="26.708"
         y="296"
       >
-        C&#43;&#43;
+        GLSL
       </text>
       <text
         class="descr"
         x="162.676"
         y="296"
       >
-        0.73%
+        0.99%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="284.8"
-        width="2.900599385332729"
+        width="3.993769501327971"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#f34b7d"
-        stroke="#f34b7d"
+        fill="#5686a5"
+        stroke="#5686a5"
       />
     </g>
     <g id="lang-">
@@ -377,13 +377,13 @@
         x="162.676"
         y="328"
       >
-        0.65%
+        0.63%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="316.8"
-        width="2.5789913872202614"
+        width="2.5479198007275454"
         height="22.4"
         rx="4"
         ry="4"
@@ -414,13 +414,13 @@
         x="162.676"
         y="360"
       >
-        0.57%
+        0.56%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="348.8"
-        width="2.2668969874475455"
+        width="2.2395855019712516"
         height="22.4"
         rx="4"
         ry="4"
@@ -451,13 +451,13 @@
         x="162.676"
         y="392"
       >
-        0.55%
+        0.54%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="380.8"
-        width="2.181435849819264"
+        width="2.1551539967576967"
         height="22.4"
         rx="4"
         ry="4"
@@ -488,13 +488,13 @@
         x="162.676"
         y="424"
       >
-        0.45%
+        0.44%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="412.8"
-        width="1.778720394674672"
+        width="1.7572904415296706"
         height="22.4"
         rx="4"
         ry="4"
@@ -525,13 +525,13 @@
         x="162.676"
         y="456"
       >
-        0.17%
+        0.16%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="444.8"
-        width="0.6641781620582878"
+        width="0.6561761697634587"
         height="22.4"
         rx="4"
         ry="4"
@@ -548,32 +548,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#f1e05a"
+        stroke="#e16737"
       />
       <text
         class="descr"
         x="26.708"
         y="488"
       >
-        JavaScript
+        MATLAB
       </text>
       <text
         class="descr"
         x="162.676"
         y="488"
       >
-        0.09%
+        0.14%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="476.8"
-        width="0.34998754570223695"
+        width="0.5527077496951494"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#f1e05a"
-        stroke="#f1e05a"
+        fill="#e16737"
+        stroke="#e16737"
       />
     </g>
     <g id="lang-">
@@ -585,32 +585,32 @@
         height="22.4"
         rx="4"
         ry="4"
-        stroke="#e16737"
+        stroke="#f1e05a"
       />
       <text
         class="descr"
         x="26.708"
         y="520"
       >
-        MATLAB
+        JavaScript
       </text>
       <text
         class="descr"
         x="162.676"
         y="520"
       >
-        0.07%
+        0.09%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="508.8"
-        width="0.277909944721403"
+        width="0.34577090955853057"
         height="22.4"
         rx="4"
         ry="4"
-        fill="#e16737"
-        stroke="#e16737"
+        fill="#f1e05a"
+        stroke="#f1e05a"
       />
     </g>
     <g id="lang-">
@@ -642,7 +642,7 @@
         class="graph"
         x="216.09199999999998"
         y="540.8"
-        width="0.27492686727588755"
+        width="0.2716145592247383"
         height="22.4"
         rx="4"
         ry="4"
@@ -673,13 +673,13 @@
         x="162.676"
         y="584"
       >
-        0.05%
+        0.04%
       </text>
       <rect
         class="graph"
         x="216.09199999999998"
         y="572.8"
-        width="0.18124211074375227"
+        width="0.1790585129434639"
         height="22.4"
         rx="4"
         ry="4"

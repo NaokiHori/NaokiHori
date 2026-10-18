@@ -1,0 +1,39 @@
+{
+  "name": "GPU-Fluid",
+  "descr": "GPGPU Direct Numerical Simulator",
+  "topics": [
+    "cfd",
+    "finite-difference-method",
+    "gpgpu",
+    "high-performance-computing"
+  ],
+  "langs": [
+    {
+      "name": "Objective-C",
+      "size": 175811,
+      "color": "#438eff"
+    },
+    {
+      "name": "C",
+      "size": 89236,
+      "color": "#555555"
+    },
+    {
+      "name": "C++",
+      "size": 66339,
+      "color": "#f34b7d"
+    },
+    {
+      "name": "MATLAB",
+      "size": 6939,
+      "color": "#e16737"
+    },
+    {
+      "name": "Makefile",
+      "size": 2213,
+      "color": "#427819"
+    }
+  ],
+  "nStars": 1,
+  "lastUpdate": 1792324645000
+}
