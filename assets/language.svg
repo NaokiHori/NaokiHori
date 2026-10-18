@@ -1,7 +1,7 @@
 <svg
   version="1.1"
   width="500"
-  height="552"
+  height="648"
   xmlns="http://www.w3.org/2000/svg"
   fill="none"
   role="img"
@@ -41,7 +41,7 @@
     x="1"
     y="1"
     width="498"
-    height="550"
+    height="646"
     rx="10"
     ry="10"
     stroke-width="2"
@@ -53,7 +53,7 @@
       x="21.852"
       y="36"
     >
-      Language Stats (4.5MB)
+      Language Stats (4.7MB)
     </text>
   </g>
 
@@ -63,7 +63,7 @@
         class="lang"
         x="21.852"
         y="60.8"
-        width="106.83200000000001"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -78,16 +78,16 @@
       </text>
       <text
         class="descr"
-        x="143.25199999999998"
+        x="152.96399999999997"
         y="72"
       >
-        68.52%
+        67.01%
       </text>
       <rect
         class="graph"
-        x="206.38"
+        x="216.09199999999998"
         y="60.8"
-        width="274.19599999999997"
+        width="264.484"
         height="22.4"
         rx="4"
         ry="4"
@@ -100,7 +100,7 @@
         class="lang"
         x="21.852"
         y="92.8"
-        width="106.83200000000001"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -115,16 +115,16 @@
       </text>
       <text
         class="descr"
-        x="143.25199999999998"
+        x="152.96399999999997"
         y="104"
       >
-        14.11%
+        13.60%
       </text>
       <rect
         class="graph"
-        x="206.38"
+        x="216.09199999999998"
         y="92.8"
-        width="56.44492756420162"
+        width="53.66338640452569"
         height="22.4"
         rx="4"
         ry="4"
@@ -137,7 +137,7 @@
         class="lang"
         x="21.852"
         y="124.8"
-        width="106.83200000000001"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -152,16 +152,16 @@
       </text>
       <text
         class="descr"
-        x="152.964"
+        x="162.676"
         y="136"
       >
-        9.62%
+        9.26%
       </text>
       <rect
         class="graph"
-        x="206.38"
+        x="216.09199999999998"
         y="124.8"
-        width="38.4922371933532"
+        width="36.54810049645264"
         height="22.4"
         rx="4"
         ry="4"
@@ -174,7 +174,7 @@
         class="lang"
         x="21.852"
         y="156.8"
-        width="106.83200000000001"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -189,16 +189,16 @@
       </text>
       <text
         class="descr"
-        x="152.964"
+        x="162.676"
         y="168"
       >
-        2.23%
+        2.15%
       </text>
       <rect
         class="graph"
-        x="206.38"
+        x="216.09199999999998"
         y="156.8"
-        width="8.924124055676346"
+        width="8.473391172129393"
         height="22.4"
         rx="4"
         ry="4"
@@ -211,7 +211,44 @@
         class="lang"
         x="21.852"
         y="188.8"
-        width="106.83200000000001"
+        width="116.544"
+        height="22.4"
+        rx="4"
+        ry="4"
+        stroke="#438eff"
+      />
+      <text
+        class="descr"
+        x="26.708"
+        y="200"
+      >
+        Objective-C
+      </text>
+      <text
+        class="descr"
+        x="162.676"
+        y="200"
+      >
+        1.84%
+      </text>
+      <rect
+        class="graph"
+        x="216.09199999999998"
+        y="188.8"
+        width="7.247749460596242"
+        height="22.4"
+        rx="4"
+        ry="4"
+        fill="#438eff"
+        stroke="#438eff"
+      />
+    </g>
+    <g id="lang-">
+      <rect
+        class="lang"
+        x="21.852"
+        y="220.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -220,22 +257,22 @@
       <text
         class="descr"
         x="26.708"
-        y="200"
+        y="232"
       >
         Makefile
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="200"
+        x="162.676"
+        y="232"
       >
-        1.75%
+        1.71%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="188.8"
-        width="7.020302998640823"
+        x="216.09199999999998"
+        y="220.8"
+        width="6.7527198520701575"
         height="22.4"
         rx="4"
         ry="4"
@@ -247,8 +284,8 @@
       <rect
         class="lang"
         x="21.852"
-        y="220.8"
-        width="106.83200000000001"
+        y="252.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -257,22 +294,22 @@
       <text
         class="descr"
         x="26.708"
-        y="232"
+        y="264"
       >
         GLSL
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="232"
+        x="162.676"
+        y="264"
       >
-        1.06%
+        1.02%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="220.8"
-        width="4.257508041557517"
+        x="216.09199999999998"
+        y="252.8"
+        width="4.042473057247215"
         height="22.4"
         rx="4"
         ry="4"
@@ -284,8 +321,45 @@
       <rect
         class="lang"
         x="21.852"
-        y="252.8"
-        width="106.83200000000001"
+        y="284.8"
+        width="116.544"
+        height="22.4"
+        rx="4"
+        ry="4"
+        stroke="#f34b7d"
+      />
+      <text
+        class="descr"
+        x="26.708"
+        y="296"
+      >
+        C&#43;&#43;
+      </text>
+      <text
+        class="descr"
+        x="162.676"
+        y="296"
+      >
+        0.73%
+      </text>
+      <rect
+        class="graph"
+        x="216.09199999999998"
+        y="284.8"
+        width="2.900599385332729"
+        height="22.4"
+        rx="4"
+        ry="4"
+        fill="#f34b7d"
+        stroke="#f34b7d"
+      />
+    </g>
+    <g id="lang-">
+      <rect
+        class="lang"
+        x="21.852"
+        y="316.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -294,22 +368,22 @@
       <text
         class="descr"
         x="26.708"
-        y="264"
+        y="328"
       >
         CSS
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="264"
+        x="162.676"
+        y="328"
       >
-        0.68%
+        0.65%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="252.8"
-        width="2.716517695762028"
+        x="216.09199999999998"
+        y="316.8"
+        width="2.5789913872202614"
         height="22.4"
         rx="4"
         ry="4"
@@ -321,8 +395,8 @@
       <rect
         class="lang"
         x="21.852"
-        y="284.8"
-        width="106.83200000000001"
+        y="348.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -331,22 +405,22 @@
       <text
         class="descr"
         x="26.708"
-        y="296"
+        y="360"
       >
         Go
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="296"
+        x="162.676"
+        y="360"
       >
-        0.60%
+        0.57%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="284.8"
-        width="2.387482122147442"
+        x="216.09199999999998"
+        y="348.8"
+        width="2.2668969874475455"
         height="22.4"
         rx="4"
         ry="4"
@@ -358,8 +432,8 @@
       <rect
         class="lang"
         x="21.852"
-        y="316.8"
-        width="106.83200000000001"
+        y="380.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -368,22 +442,22 @@
       <text
         class="descr"
         x="26.708"
-        y="328"
+        y="392"
       >
         HTML
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="328"
+        x="162.676"
+        y="392"
       >
-        0.57%
+        0.55%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="316.8"
-        width="2.2954370739414514"
+        x="216.09199999999998"
+        y="380.8"
+        width="2.181435849819264"
         height="22.4"
         rx="4"
         ry="4"
@@ -395,8 +469,8 @@
       <rect
         class="lang"
         x="21.852"
-        y="348.8"
-        width="106.83200000000001"
+        y="412.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -405,22 +479,22 @@
       <text
         class="descr"
         x="26.708"
-        y="360"
+        y="424"
       >
         Shell
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="360"
+        x="162.676"
+        y="424"
       >
-        0.47%
+        0.45%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="348.8"
-        width="1.8733375032477455"
+        x="216.09199999999998"
+        y="412.8"
+        width="1.778720394674672"
         height="22.4"
         rx="4"
         ry="4"
@@ -432,8 +506,8 @@
       <rect
         class="lang"
         x="21.852"
-        y="380.8"
-        width="106.83200000000001"
+        y="444.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -442,22 +516,22 @@
       <text
         class="descr"
         x="26.708"
-        y="392"
+        y="456"
       >
         Gnuplot
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="392"
+        x="162.676"
+        y="456"
       >
         0.17%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="380.8"
-        width="0.6995084014030879"
+        x="216.09199999999998"
+        y="444.8"
+        width="0.6641781620582878"
         height="22.4"
         rx="4"
         ry="4"
@@ -469,8 +543,8 @@
       <rect
         class="lang"
         x="21.852"
-        y="412.8"
-        width="106.83200000000001"
+        y="476.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -479,22 +553,22 @@
       <text
         class="descr"
         x="26.708"
-        y="424"
+        y="488"
       >
         JavaScript
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="424"
+        x="162.676"
+        y="488"
       >
         0.09%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="412.8"
-        width="0.3686047548544313"
+        x="216.09199999999998"
+        y="476.8"
+        width="0.34998754570223695"
         height="22.4"
         rx="4"
         ry="4"
@@ -506,8 +580,45 @@
       <rect
         class="lang"
         x="21.852"
-        y="444.8"
-        width="106.83200000000001"
+        y="508.8"
+        width="116.544"
+        height="22.4"
+        rx="4"
+        ry="4"
+        stroke="#e16737"
+      />
+      <text
+        class="descr"
+        x="26.708"
+        y="520"
+      >
+        MATLAB
+      </text>
+      <text
+        class="descr"
+        x="162.676"
+        y="520"
+      >
+        0.07%
+      </text>
+      <rect
+        class="graph"
+        x="216.09199999999998"
+        y="508.8"
+        width="0.277909944721403"
+        height="22.4"
+        rx="4"
+        ry="4"
+        fill="#e16737"
+        stroke="#e16737"
+      />
+    </g>
+    <g id="lang-">
+      <rect
+        class="lang"
+        x="21.852"
+        y="540.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -516,22 +627,22 @@
       <text
         class="descr"
         x="26.708"
-        y="456"
+        y="552"
       >
         Vim Script
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="456"
+        x="162.676"
+        y="552"
       >
         0.07%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="444.8"
-        width="0.28955130478083635"
+        x="216.09199999999998"
+        y="540.8"
+        width="0.27492686727588755"
         height="22.4"
         rx="4"
         ry="4"
@@ -543,8 +654,8 @@
       <rect
         class="lang"
         x="21.852"
-        y="476.8"
-        width="106.83200000000001"
+        y="572.8"
+        width="116.544"
         height="22.4"
         rx="4"
         ry="4"
@@ -553,22 +664,22 @@
       <text
         class="descr"
         x="26.708"
-        y="488"
+        y="584"
       >
         Dockerfile
       </text>
       <text
         class="descr"
-        x="152.964"
-        y="488"
+        x="162.676"
+        y="584"
       >
         0.05%
       </text>
       <rect
         class="graph"
-        x="206.38"
-        y="476.8"
-        width="0.1848543080668272"
+        x="216.09199999999998"
+        y="572.8"
+        width="0.18124211074375227"
         height="22.4"
         rx="4"
         ry="4"
@@ -582,9 +693,9 @@
     <text
       class="descr"
       x="21.852"
-      y="528"
+      y="624"
     >
-      Last Update: 11 October 2026
+      Last Update: 18 October 2026
     </text>
   </g>
 
