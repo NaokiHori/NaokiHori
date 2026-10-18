@@ -8,7 +8,8 @@
       "SimpleTCSolver",
       "SimpleBubblyFlowSolver",
       "SpectralNSSolver1",
-      "CfdToolbox"
+      "CfdToolbox",
+      "GPU-Fluid"
     ]
   },
   {
