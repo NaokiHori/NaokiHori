@@ -3,37 +3,39 @@
   "descr": "GPGPU Direct Numerical Simulator",
   "topics": [
     "cfd",
+    "computational-fluid-dynamics",
     "finite-difference-method",
     "gpgpu",
-    "high-performance-computing"
+    "high-performance-computing",
+    "metal"
   ],
   "langs": [
     {
       "name": "Objective-C",
-      "size": 175811,
+      "size": 297781,
       "color": "#438eff"
     },
     {
       "name": "C",
-      "size": 89236,
+      "size": 129241,
       "color": "#555555"
     },
     {
       "name": "C++",
-      "size": 66339,
+      "size": 119884,
       "color": "#f34b7d"
     },
     {
       "name": "MATLAB",
-      "size": 6939,
+      "size": 11887,
       "color": "#e16737"
     },
     {
       "name": "Makefile",
-      "size": 2213,
+      "size": 3441,
       "color": "#427819"
     }
   ],
-  "nStars": 1,
-  "lastUpdate": 1792324645000
+  "nStars": 4,
+  "lastUpdate": 1792916728000
 }
