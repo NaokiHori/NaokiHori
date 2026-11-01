@@ -7,12 +7,12 @@
     },
   {
       "name": "TypeScript",
-      "size": 665603,
+      "size": 668656,
       "color": "#3178c6"
     },
   {
       "name": "Rust",
-      "size": 453317,
+      "size": 454215,
       "color": "#dea584"
     },
   {
@@ -32,7 +32,7 @@
     },
   {
       "name": "Makefile",
-      "size": 86128,
+      "size": 90806,
       "color": "#427819"
     },
   {
@@ -52,7 +52,7 @@
     },
   {
       "name": "HTML",
-      "size": 27057,
+      "size": 27046,
       "color": "#e34c26"
     },
   {
@@ -72,7 +72,7 @@
     },
   {
       "name": "JavaScript",
-      "size": 4341,
+      "size": 3834,
       "color": "#f1e05a"
     },
   {
@@ -82,9 +82,9 @@
     },
   {
       "name": "Dockerfile",
-      "size": 2248,
+      "size": 2592,
       "color": "#384d54"
     }
   ],
-  "date": 1792917679840
+  "date": 1793494247772
 }

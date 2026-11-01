@@ -20,7 +20,7 @@
   "langs": [
     {
       "name": "TypeScript",
-      "size": 281972,
+      "size": 283094,
       "color": "#3178c6"
     },
     {
@@ -40,15 +40,15 @@
     },
     {
       "name": "Makefile",
-      "size": 467,
+      "size": 1858,
       "color": "#427819"
     },
     {
       "name": "Dockerfile",
-      "size": 369,
+      "size": 221,
       "color": "#384d54"
     }
   ],
   "nStars": 0,
-  "lastUpdate": 1792116415000
+  "lastUpdate": 1793349692000
 }

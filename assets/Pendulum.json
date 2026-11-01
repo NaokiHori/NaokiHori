@@ -10,17 +10,22 @@
   "langs": [
     {
       "name": "Rust",
-      "size": 17309,
+      "size": 18207,
       "color": "#dea584"
     },
     {
       "name": "TypeScript",
-      "size": 7579,
+      "size": 9510,
       "color": "#3178c6"
     },
     {
+      "name": "Makefile",
+      "size": 3287,
+      "color": "#427819"
+    },
+    {
       "name": "HTML",
-      "size": 1096,
+      "size": 1085,
       "color": "#e34c26"
     },
     {
@@ -29,11 +34,11 @@
       "color": "#563d7c"
     },
     {
-      "name": "JavaScript",
-      "size": 507,
-      "color": "#f1e05a"
+      "name": "Dockerfile",
+      "size": 492,
+      "color": "#384d54"
     }
   ],
   "nStars": 3,
-  "lastUpdate": 1766197014000
+  "lastUpdate": 1793489937000
 }
