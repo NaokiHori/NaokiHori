@@ -32,7 +32,7 @@ function App(): JSX.Element {
   const pages: Page[] = [
     {
       coverImage: coverImageKarman,
-      coverImageHRef: "https://github.com/NaokiHori/WebNSSolver",
+      coverImageHRef: "https://github.com/NaokiHori/VerySimpleNSSolver",
       title: "About",
       heading: "Naoki HORI",
       pageContents: () => <About />,
