@@ -1,0 +1,24 @@
+{
+  "name": "naokihori",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vanilla-extract/vite-plugin": "^5.2.6",
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0",
+    "oxlint-tsgolint": "^7.0.2005",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.21.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "optionalDependencies": {
+    "@typescript/typescript-linux-arm64": "^7.0.2"
+  }
+}
