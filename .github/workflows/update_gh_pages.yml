@@ -3,6 +3,8 @@ concurrency:
   group: "pages"
 jobs:
   build:
+    env:
+      OUTPUT_DIRECTORY: dist
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -15,17 +17,29 @@ jobs:
         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           persist-credentials: false
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        name: Build app
+        run: |
+          cd app
+          make build-image
+          make update-assets
       - name: Build web
         run: |
           cd web
           make build-image
           make polish
           make build
-          mv dist ../
+      - name: Pack all artifacts
+        run: |
+          mkdir -p ${{ env.OUTPUT_DIRECTORY }}
+          mkdir -p ${{ env.OUTPUT_DIRECTORY }}/stats
+          mv app/assets/* ${{ env.OUTPUT_DIRECTORY }}/stats/
+          mv web/dist/* ${{ env.OUTPUT_DIRECTORY }}/
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
-          path: dist
+          path: ${{ env.OUTPUT_DIRECTORY }}
     timeout-minutes: 5
   deploy:
     environment:

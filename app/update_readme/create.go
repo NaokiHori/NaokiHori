@@ -136,5 +136,5 @@ func Create(mypaths *MyPaths) {
 	tpl := load(*mypaths.TemplateFile)
 	t, err := template.New("readme").Parse(string(tpl))
 	check(err)
-	dump("README.md", t, result)
+	dump(*mypaths.OutputFile, t, result)
 }
