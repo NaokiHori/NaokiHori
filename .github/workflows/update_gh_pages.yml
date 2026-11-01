@@ -29,7 +29,7 @@ jobs:
           cd web
           make build-image
           make polish
-          make build
+          make build ARTIFACT_BASE=https://naokihori.github.io/NaokiHori/
       - name: Pack all artifacts
         run: |
           mkdir -p ${{ env.OUTPUT_DIRECTORY }}
