@@ -1,11 +1,3 @@
-<h1>
-  <div align="center">
-    <a href="https://naokihori.github.io/NaokiHori/">
-      Welcome
-    </a>
-  </div>
-</h1>
-
 <div align="center">
   <a href="https://naokihori.github.io/NaokiHori/">
     <img
@@ -15,21 +7,6 @@
     />
   </a>
 </div>
-
-<h2>
-  <div align="left">
-    Interest
-  </div>
-</h2>
-
-<ul>
-  <li>
-    Numerical methods
-  </li>
-  <li>
-    Software design
-  </li>
-</ul>
 
 <h2>
   Skill
@@ -76,17 +53,3 @@
 </div>
 {{- end }}
 {{- end }}
-
-<h2>
-  Platform
-</h2>
-
-<ul>
-  {{ range .Platforms }}
-  <li>
-    <a href="{{ .Href }}" target="_blank">
-      {{ .Label }}
-    </a>
-  </li>
-  {{ end }}
-</ul>

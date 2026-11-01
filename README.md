@@ -1,11 +1,3 @@
-<h1>
-  <div align="center">
-    <a href="https://naokihori.github.io/NaokiHori/">
-      Welcome
-    </a>
-  </div>
-</h1>
-
 <div align="center">
   <a href="https://naokihori.github.io/NaokiHori/">
     <img
@@ -15,21 +7,6 @@
     />
   </a>
 </div>
-
-<h2>
-  <div align="left">
-    Interest
-  </div>
-</h2>
-
-<ul>
-  <li>
-    Numerical methods
-  </li>
-  <li>
-    Software design
-  </li>
-</ul>
 
 <h2>
   Skill
@@ -184,35 +161,3 @@
     <img src="https://naokihori.github.io/NaokiHori/stats/NaokiHori.svg" />
   </a>
 </div>
-
-<h2>
-  Platform
-</h2>
-
-<ul>
-  
-  <li>
-    <a href="https://gitlab.com/NaokiHori" target="_blank">
-      GitLab (smaller projects)
-    </a>
-  </li>
-  
-  <li>
-    <a href="https://www.youtube.com/@NaokiHori" target="_blank">
-      YouTube (gallery)
-    </a>
-  </li>
-  
-  <li>
-    <a href="https://www.linkedin.com/in/naoki-hori-b559032a1/" target="_blank">
-      Linkedin
-    </a>
-  </li>
-  
-  <li>
-    <a href="https://qiita.com/NaokiHori" target="_blank">
-      Qiita (articles in Japanese)
-    </a>
-  </li>
-  
-</ul>

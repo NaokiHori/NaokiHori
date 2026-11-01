@@ -80,32 +80,6 @@ func getRepositoryTypes(mypaths *MyPaths) []RepositoryType {
 	return result
 }
 
-type Platform struct {
-	Label string
-	Href  string
-}
-
-func getPlatforms(mypaths *MyPaths) []Platform {
-	var result []Platform
-	result = append(result, Platform{
-		Label: "GitLab (smaller projects)",
-		Href:  "https://gitlab.com/NaokiHori",
-	})
-	result = append(result, Platform{
-		Label: "YouTube (gallery)",
-		Href:  "https://www.youtube.com/@NaokiHori",
-	})
-	result = append(result, Platform{
-		Label: "Linkedin",
-		Href:  "https://www.linkedin.com/in/naoki-hori-b559032a1/",
-	})
-	result = append(result, Platform{
-		Label: "Qiita (articles in Japanese)",
-		Href:  "https://qiita.com/NaokiHori",
-	})
-	return result
-}
-
 func load(filename string) []byte {
 	f, err := os.Open(filename)
 	defer f.Close()
@@ -127,11 +101,9 @@ func Create(mypaths *MyPaths) {
 	result := struct {
 		Skills          Skills
 		RepositoryTypes []RepositoryType
-		Platforms       []Platform
 	}{
 		Skills:          getSkills(mypaths),
 		RepositoryTypes: getRepositoryTypes(mypaths),
-		Platforms:       getPlatforms(mypaths),
 	}
 	tpl := load(*mypaths.TemplateFile)
 	t, err := template.New("readme").Parse(string(tpl))
