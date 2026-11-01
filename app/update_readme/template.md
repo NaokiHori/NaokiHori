@@ -9,7 +9,7 @@
 <div align="center">
   <a href="https://naokihori.github.io/NaokiHori/">
     <img
-      src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/image/cover.png"
+      src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/cover.png"
       alt="cover"
       width="95%"
     />
@@ -56,7 +56,7 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/language.svg" />
+  <img src="https://naokihori.github.io/NaokiHori/stats/language.svg" />
 </div>
 
 <h2>

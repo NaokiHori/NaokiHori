@@ -9,7 +9,7 @@
 <div align="center">
   <a href="https://naokihori.github.io/NaokiHori/">
     <img
-      src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/image/cover.png"
+      src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/cover.png"
       alt="cover"
       width="95%"
     />
@@ -133,7 +133,7 @@
 </div>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/language.svg" />
+  <img src="https://naokihori.github.io/NaokiHori/stats/language.svg" />
 </div>
 
 <h2>
@@ -145,7 +145,7 @@
 </h3>
 <div align="center">
   <a href="https://github.com/NaokiHori/SimpleNSSolver" target="_blank">
-    <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/SimpleNSSolver.svg" />
+    <img src="https://naokihori.github.io/NaokiHori/stats/SimpleNSSolver.svg" />
   </a>
 </div>
 
@@ -154,7 +154,7 @@
 </h3>
 <div align="center">
   <a href="https://github.com/NaokiHori/SimpleDecomp" target="_blank">
-    <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/SimpleDecomp.svg" />
+    <img src="https://naokihori.github.io/NaokiHori/stats/SimpleDecomp.svg" />
   </a>
 </div>
 
@@ -163,7 +163,7 @@
 </h3>
 <div align="center">
   <a href="https://github.com/NaokiHori/Collision" target="_blank">
-    <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/Collision.svg" />
+    <img src="https://naokihori.github.io/NaokiHori/stats/Collision.svg" />
   </a>
 </div>
 
@@ -172,7 +172,7 @@
 </h3>
 <div align="center">
   <a href="https://github.com/NaokiHori/SimpleNpyIO" target="_blank">
-    <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/SimpleNpyIO.svg" />
+    <img src="https://naokihori.github.io/NaokiHori/stats/SimpleNpyIO.svg" />
   </a>
 </div>
 
@@ -181,7 +181,7 @@
 </h3>
 <div align="center">
   <a href="https://github.com/NaokiHori/NaokiHori" target="_blank">
-    <img src="https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/assets/NaokiHori.svg" />
+    <img src="https://naokihori.github.io/NaokiHori/stats/NaokiHori.svg" />
   </a>
 </div>
 
