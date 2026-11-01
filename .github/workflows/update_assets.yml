@@ -1,11 +1,6 @@
 name: UpdateAssets
 
 on:
-  workflow_run:
-    workflows:
-      - UpdateReadme
-    types:
-      - completed
   schedule:
     - cron: "34 3 * * 0"
 
