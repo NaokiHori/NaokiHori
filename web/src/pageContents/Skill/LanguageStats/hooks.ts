@@ -65,7 +65,7 @@ export function useLanguageInfo(): {
   squashed: LanguageInfo;
 } {
   // fetch json file storing information about my language use
-  const configSrc = "./stats/language.json";
+  const configSrc = "https://naokihori.github.io/NaokiHori/stats/language.json";
   const defaultLanguageInfo: LanguageInfo = {
     infoList: new Array<Info>(),
     globalStats: {

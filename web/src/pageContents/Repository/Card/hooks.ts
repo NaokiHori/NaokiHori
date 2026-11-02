@@ -90,7 +90,7 @@ export function useCardInfo(repositoryName: string): {
     nStars: 0,
     lastUpdate: null,
   } satisfies CardInfo;
-  const configSrc = `./stats/${repositoryName}.json`;
+  const configSrc = `https://naokihori.github.io/NaokiHori/stats/${repositoryName}.json`;
   const [cardInfo, setCardInfo] = React.useState<CardInfo>(defaultCardInfo);
   const [isCardInfoLoaded, setIsCardInfoLoaded] = React.useState<boolean>(false);
   React.useEffect(() => {
