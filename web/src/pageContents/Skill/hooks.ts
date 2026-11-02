@@ -68,7 +68,7 @@ export function useSkillInfo(): {
         throw error;
       },
     );
-    return () => {
+    return (): void => {
       setLanguageSkillInfoList([]);
       setToolSkillInfoList([]);
     };

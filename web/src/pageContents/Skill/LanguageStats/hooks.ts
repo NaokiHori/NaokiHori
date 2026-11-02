@@ -79,17 +79,16 @@ export function useLanguageInfo(): {
   React.useEffect(() => {
     fetchAndParseJson<RawData>(configSrc, validator).then(
       (rawData: RawData): void => {
-        // from UNIX milli second to Date
+        // from UNIX millisecond to Date
         setDate(new Date(rawData.date));
         // convert json data to data type of use
         const originalInfoList = new Array<Info>();
         for (const language of rawData.languages) {
-          const originalInfo: Info = {
+          originalInfoList.push({
             name: language.name,
             size: language.size,
             color: language.color,
-          };
-          originalInfoList.push(originalInfo);
+          });
         }
         // sort in descending order just in case
         originalInfoList.sort((a: Info, b: Info) => b.size - a.size);
@@ -121,7 +120,7 @@ export function useLanguageInfo(): {
         throw error;
       },
     );
-    return () => {
+    return (): void => {
       setOriginalInfo(defaultLanguageInfo);
       setSquashedInfo(defaultLanguageInfo);
     };

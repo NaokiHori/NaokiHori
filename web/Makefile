@@ -51,5 +51,5 @@ polish:
     --name $(CONTAINER) \
     -v "${PWD}/src":/app/src:ro \
     $(IMAGE) \
-    npx oxlint --type-aware -D correctness src/
+    npx oxlint --type-aware -D correctness -D suspicious -D perf src/
 

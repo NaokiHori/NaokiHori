@@ -117,7 +117,7 @@ export function useCardInfo(repositoryName: string): {
         throw error;
       },
     );
-    return () => {
+    return (): void => {
       setCardInfo(defaultCardInfo);
       setIsCardInfoLoaded(false);
     };

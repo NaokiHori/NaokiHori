@@ -82,7 +82,7 @@ export function useRepositoryInfo(): {
         throw error;
       },
     );
-    return () => {
+    return (): void => {
       setRepositoryInfo({
         categories: defaultCategories,
       } satisfies RepositoryInfo);

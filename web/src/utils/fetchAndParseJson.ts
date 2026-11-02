@@ -21,6 +21,6 @@ export async function fetchAndParseJson<T>(
       if (!validator(data)) {
         throw new Error(`json validation failed: invalid data type`);
       }
-      return data as Promise<T>;
+      return data;
     });
 }
