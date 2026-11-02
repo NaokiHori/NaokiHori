@@ -1,0 +1,22 @@
+[
+  {
+    "name": "GitHub",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+  },
+  {
+    "name": "GitLab",
+    "src": "https://about.gitlab.com/press/press-kit/"
+  },
+  {
+    "name": "YouTube",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
+  },
+  {
+    "name": "LinkedIn",
+    "src": "https://brand.linkedin.com/downloads"
+  },
+  {
+    "name": "Qiita",
+    "src": "https://help.qiita.com/ja/articles/others-brand-guideline"
+  }
+]

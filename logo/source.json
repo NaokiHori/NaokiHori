@@ -92,18 +92,6 @@
     "src": "https://github.com/prisma/presskit"
   },
   {
-    "name": "YouTube",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"
-  },
-  {
-    "name": "LinkedIn",
-    "src": "https://brand.linkedin.com/downloads"
-  },
-  {
-    "name": "Qiita",
-    "src": "https://help.qiita.com/ja/articles/others-brand-guideline"
-  },
-  {
     "name": "VanillaExtract",
     "src": "https://raw.githubusercontent.com/vanilla-extract-css/vanilla-extract/master/site/logo.svg"
   },

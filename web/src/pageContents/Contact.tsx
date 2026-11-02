@@ -1,5 +1,10 @@
 import { JSX } from "react";
 import * as style from "./contact.css";
+import gitHubLogoSource from "./contact/GitHub.svg";
+import gitLabLogoSource from "./contact/GitLab.svg";
+import youTubeLogoSource from "./contact/YouTube.svg";
+import linkedInLogoSource from "./contact/LinkedIn.png";
+import qiitaLogoSource from "./contact/Qiita.png";
 
 interface ContactInfo {
   href: string;
@@ -22,27 +27,27 @@ export function Contact(): JSX.Element {
     {
       href: "https://github.com/NaokiHori",
       label: "GitHub",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitHub.svg",
+      src: gitHubLogoSource,
     },
     {
       href: "https://gitlab.com/NaokiHori",
       label: "GitLab",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/GitLab.svg",
+      src: gitLabLogoSource,
     },
     {
       href: "https://www.youtube.com/@NaokiHori",
       label: "YouTube",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/YouTube.svg",
+      src: youTubeLogoSource,
     },
     {
       href: "https://www.linkedin.com/in/naoki-hori-b559032a1/",
-      label: "Linkedin",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/LinkedIn.png",
+      label: "LinkedIn",
+      src: linkedInLogoSource,
     },
     {
       href: "https://qiita.com/NaokiHori",
       label: "Qiita",
-      src: "https://raw.githubusercontent.com/NaokiHori/NaokiHori/main/logo/Qiita.png",
+      src: qiitaLogoSource,
     },
   ];
   return (
